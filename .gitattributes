@@ -1,0 +1,3 @@
+*.ipk binary
+Packages -text
+Packages.gz binary

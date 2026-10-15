@@ -1,0 +1,1390 @@
+Package: binutils
+Version: 2.45.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: zlib-ng
+License: GPL-3.0+, GPL-2.0+, LGPL-2.1+
+Installed-Size: 11653120
+Description: binutils
+Filename: binutils_2.45.1-r3_kindlepw2.ipk
+Size: 3517060
+SHA256sum: 802af63ab200aabdb2e61fa88ac1b63882a246bdb1096d4a1e1c51c2e16e503c
+
+Package: ca-certificates
+Version: 20260223-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-2.0+ (script), MPL-2.0 (data)
+Installed-Size: 624640
+Description: ca-certificates
+Filename: ca-certificates_20260223-r3_kindlepw2.ipk
+Size: 264424
+SHA256sum: f4523fb800d2f14e16bac2da22f1d4080a0f2ad860446c9586c8c94e02b961d6
+
+Package: coreutils
+Version: 9.10-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libopenssl
+License: GPL-3.0+
+Installed-Size: 1392640
+Description: coreutils
+Filename: coreutils_9.10-r3_kindlepw2.ipk
+Size: 652217
+SHA256sum: 8e5572d89ed905a6a5ca341e0a833349935bfa3cae603454c14b6c2a4e1a797a
+
+Package: dropbear
+Version: 2026.93-r6
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libxcrypt, openssh
+License: MIT, BSD-2-Clause, Public domain , Unlicense, WTFPL
+Installed-Size: 378880
+Description: dropbear
+Filename: dropbear_2026.93-r6_kindlepw2.ipk
+Size: 193793
+SHA256sum: 6cd01ab55bb31b1624e35f3d912a9b831e3eccf2d2ff85f0abdde3ddc018e2ad
+
+Package: dtc
+Version: 1.7.2-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-2.0+ or BSD-2-Clause (library) , GPL-2.0+ (programs)
+Installed-Size: 276480
+Description: dtc
+Filename: dtc_1.7.2-r3_kindlepw2.ipk
+Size: 95854
+SHA256sum: c6a6fe85985d751d9696c62c40d786817375ebb2eaf249b15b464e0ba6ec7f7b
+
+Package: elfutils
+Version: 0.194-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: toolchain-libatomic, toolchain-libstdcpp, xz, zlib-ng, zstd
+License: GPL-2.0+ or LGPL-3.0+ (library) , GPL-3.0+ (programs)
+Installed-Size: 3143680
+Description: elfutils
+Filename: elfutils_0.194-r3_kindlepw2.ipk
+Size: 1166076
+SHA256sum: 4037624a82e7d8fb8c4a13b15c43c879bb75d4d66257f1476c633098541ae3d3
+
+Package: evemu
+Version: 2.7.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libevdev, python3
+License: LGPL-3.0 (library), GPL-3.0 (tools)
+Installed-Size: 245760
+Description: evemu
+Filename: evemu_2.7.0-r3_kindlepw2.ipk
+Size: 43879
+SHA256sum: b063f820098dad313c3f8dad99c9a813710d5b37c0c8f34559f23c8eec3840c1
+
+Package: evtest
+Version: 1.36-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-2.0+
+Installed-Size: 51200
+Description: evtest
+Filename: evtest_1.36-r3_kindlepw2.ipk
+Size: 12693
+SHA256sum: f4280f4bce36cb470b9229c2fd34267206154697b43b6239bc1077167f1bef9b
+
+Package: fbgrab
+Version: 1.5-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-2.0
+Installed-Size: 30720
+Description: fbgrab
+Filename: fbgrab_1.5-r3_kindlepw2.ipk
+Size: 7397
+SHA256sum: b7dbd6a914cc693dbcfe46948f09035c1a87a73c7eaae48eafd522237743f2b5
+
+Package: fbink
+Version: e5505c81aeb44eca66d8b67e9ab1ceb8244abd9e-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-3.0+, LGPL-3.0, BSD-2-Clause, MIT, Zlib
+Installed-Size: 1525760
+Description: fbink
+Filename: fbink_e5505c81aeb44eca66d8b67e9ab1ceb8244abd9e-r4_kindlepw2.ipk
+Size: 552321
+SHA256sum: 6445386aeaab2d8e3d0d7a6b1fd995b8a6833e8667d7399aa900b25e7aefd791
+
+Package: file
+Version: 5.47-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: xz, zlib-ng, zstd
+License: BSD-2-Clause, BSD-3-Clause (vasprintf.c)
+Installed-Size: 10864640
+Description: file
+Filename: file_5.47-r3_kindlepw2.ipk
+Size: 542758
+SHA256sum: 911793d50cdd88afd7dd5e7b0a2f0963769c698af7670e6cea5f01ce18014f4b
+
+Package: gawk
+Version: 5.4.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-3.0+
+Installed-Size: 2508800
+Description: gawk
+Filename: gawk_5.4.0-r3_kindlepw2.ipk
+Size: 833329
+SHA256sum: 3447c03f0eeb01a41e7a5281b885146114b6b34f55d51995c3f5e98829c55d72
+
+Package: htop
+Version: 3.5.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libunwind
+License: GPL-2.0+
+Installed-Size: 348160
+Description: htop
+Filename: htop_3.5.1-r3_kindlepw2.ipk
+Size: 148445
+SHA256sum: 364beb13d312fda1e7b2b9aebdf827bc8b3d64c7e05664b21e4a8564a192f4f9
+
+Package: imagemagick
+Version: 7.1.2-26-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: toolchain-libstdcpp, xz, zlib-ng, zstd
+License: Apache-2.0
+Installed-Size: 5980160
+Description: imagemagick
+Filename: imagemagick_7.1.2-26-r4_kindlepw2.ipk
+Size: 2363679
+SHA256sum: b17d97b9de1bd6f81ace9f0c07bd00c0c5a44ca03fb8608e936e94089d381338
+
+Package: inotify-tools
+Version: 3.20.2.2-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-2.0+
+Installed-Size: 102400
+Description: inotify-tools
+Filename: inotify-tools_3.20.2.2-r3_kindlepw2.ipk
+Size: 30421
+SHA256sum: ea8f7f2b9eab0ce1baa8143a2934e6692e11686197a9b0b56052bcae7ac0aba1
+
+Package: jq
+Version: 1.8.2-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: oniguruma
+License: MIT (code), ICU (decNumber), CC-BY-3.0 (documentation), BSD-2-Clause (strptime)
+Installed-Size: 450560
+Description: jq
+Filename: jq_1.8.2-r3_kindlepw2.ipk
+Size: 190143
+SHA256sum: 77b67aef6536b148deb0ba64335c9bd448c9d4eaed86a21d937063c50065eb94
+
+Package: kindletool
+Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libarchive, zlib-ng
+License: GPL-3.0+
+Installed-Size: 133120
+Description: kindletool
+Filename: kindletool_95291295e039a1a3bc0bc9d6040b07f640dae74a-r3_kindlepw2.ipk
+Size: 57525
+SHA256sum: 0bd33646e1e33abb5ec6ca88db62ea0ae0a74adc8d4d286ad8b44d7482df6ac8
+
+Package: kmod
+Version: 34.2-r5
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libopenssl, xz, zlib-ng, zstd
+License: LGPL-2.1+ (library) , GPL-2.0+ (tools)
+Installed-Size: 256000
+Description: kmod
+Filename: kmod_34.2-r5_kindlepw2.ipk
+Size: 112115
+SHA256sum: 8f6c8db37a831a0337aef0c82044d1ecaf665416149f9a3e03316d2172037e17
+
+Package: less
+Version: 692-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-3.0+
+Installed-Size: 276480
+Description: less
+Filename: less_692-r3_kindlepw2.ipk
+Size: 122930
+SHA256sum: 0a762dbb4ed940f1b08a1c0e2154db92b8917807cf333cc642344ffb40307035
+
+Package: lftp
+Version: 4.9.3-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libopenssl, toolchain-libstdcpp, zlib-ng
+License: GPL-3.0+
+Installed-Size: 1638400
+Description: lftp
+Filename: lftp_4.9.3-r3_kindlepw2.ipk
+Size: 620820
+SHA256sum: db5df2fa3ca04326b824bce833491c76910146c8104e6f11baade8911dbbf38d
+
+Package: libarchive
+Version: 3.8.9-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libopenssl, xz, zlib-ng, zstd
+License: BSD-2-Clause, BSD-3-Clause, CC0-1.0, OpenSSL, Apache-2.0
+Installed-Size: 890880
+Description: libarchive
+Filename: libarchive_3.8.9-r4_kindlepw2.ipk
+Size: 410733
+SHA256sum: b690f71039306eb22c8ab0161935324bd325fc6414c36e840858b36eeb2199be
+
+Package: libevdev
+Version: 1.13.5-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: MIT
+Installed-Size: 133120
+Description: libevdev
+Filename: libevdev_1.13.5-r3_kindlepw2.ipk
+Size: 39043
+SHA256sum: 118a27f750c525f0e712e7d17bb5e5e87059d7ef6ca53ecaca8c88df768d56ed
+
+Package: libevent
+Version: 2.1.13-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libopenssl
+License: BSD-3-Clause, OpenBSD
+Installed-Size: 768000
+Description: libevent
+Filename: libevent_2.1.13-r3_kindlepw2.ipk
+Size: 296835
+SHA256sum: a56e8d66e96013c785fa126cc320ca04be08b9a5d099755ea9ac375531fb151f
+
+Package: libfuse3
+Version: 3.18.2-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: toolchain-libatomic
+License: LGPL-2.1
+Installed-Size: 327680
+Description: libfuse3
+Filename: libfuse3_3.18.2-r4_kindlepw2.ipk
+Size: 97279
+SHA256sum: a707150157b7711b6b24830e1d9bbbb90f5d7c154bab12c92cb3d720196e0ae6
+
+Package: libmobi
+Version: 906274205c11944b628da1c553b255acb1af7c55-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: zlib-ng
+License: LGPL-3.0+
+Installed-Size: 296960
+Description: libmobi
+Filename: libmobi_906274205c11944b628da1c553b255acb1af7c55-r3_kindlepw2.ipk
+Size: 115913
+SHA256sum: 260bbc6c310f902c3279ae435f0ee10192d00bba9275fa4f83b2911c35c9ecb2
+
+Package: libopenssl
+Version: 3.6.3-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: toolchain-libatomic, zlib-ng
+License: Apache-2.0
+Installed-Size: 5908480
+Description: libopenssl
+Filename: libopenssl_3.6.3-r4_kindlepw2.ipk
+Size: 2553271
+SHA256sum: 285c01d2ee07e9aca5a04cacc8738f3674748bb73670989214aa258ff5773aa9
+
+Package: libunwind
+Version: 1.8.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: xz, zlib-ng
+License: MIT
+Installed-Size: 235520
+Description: libunwind
+Filename: libunwind_1.8.1-r3_kindlepw2.ipk
+Size: 80588
+SHA256sum: 6c8900dc54d40afba72926de96a08c1222fe5dd006da34c724a060ba86de7ad1
+
+Package: libxcrypt
+Version: 4.5.2-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: LGPL-2.1+
+Installed-Size: 235520
+Description: libxcrypt
+Filename: libxcrypt_4.5.2-r4_kindlepw2.ipk
+Size: 101476
+SHA256sum: 17115ef6f1755e06efe9f278f028397e9e8e05e5d948404e35805efc50b6631c
+
+Package: lsof
+Version: 4.99.6-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: lsof license
+Installed-Size: 317440
+Description: lsof
+Filename: lsof_4.99.6-r3_kindlepw2.ipk
+Size: 94756
+SHA256sum: b3475f1382b765d607961159eb1410ded113f752904330449587ee87b227a11e
+
+Package: ltrace
+Version: 0.8.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: elfutils, libunwind
+License: GPL-2.0
+Installed-Size: 348160
+Description: ltrace
+Filename: ltrace_0.8.1-r3_kindlepw2.ipk
+Size: 143924
+SHA256sum: e11ca5e3f6e24729e3c570bedea40c635423cf5ead8bc41711e8847c9ae21e18
+
+Package: mobicover
+Version: 20110-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libmobi
+License: LGPL-3.0+
+Installed-Size: 30720
+Description: mobicover
+Filename: mobicover_20110-r3_kindlepw2.ipk
+Size: 6254
+SHA256sum: 031f9c31a88a1ef3d6fadaa4995b6cbf759ff35649446c1350a247b491e93380
+
+Package: mosh
+Version: 1.4.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libopenssl, toolchain-libstdcpp, zlib-ng
+License: GPL-3.0+ with exception
+Installed-Size: 747520
+Description: mosh
+Filename: mosh_1.4.0-r3_kindlepw2.ipk
+Size: 292013
+SHA256sum: 4b45e5171a33c9e8743a22fed8a839545dec663f8c1875afde9579330ff45058
+
+Package: nano
+Version: 9.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: file
+License: GPL-3.0+
+Installed-Size: 481280
+Description: nano
+Filename: nano_9.0-r3_kindlepw2.ipk
+Size: 211437
+SHA256sum: 14361113a7aeb147811baaa932c645cb58505156821d371241b1c00708317888
+
+Package: oniguruma
+Version: 6.9.10-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: BSD-2-Clause
+Installed-Size: 583680
+Description: oniguruma
+Filename: oniguruma_6.9.10-r3_kindlepw2.ipk
+Size: 185102
+SHA256sum: 875cc365b38e320a6acda209f9cc5040f00bebba65191b020b3a49663803909b
+
+Package: openssh
+Version: 10.5p1-r5
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libxcrypt, zlib-ng
+License: BSD-3-Clause, BSD-2-Clause, Public Domain
+Installed-Size: 8355840
+Description: openssh
+Filename: openssh_10.5p1-r5_kindlepw2.ipk
+Size: 3497700
+SHA256sum: c1bb94544ce6b773e9ea74462f076d4a55f50be7a931849cd655a332930351d8
+
+Package: opkg
+Version: 0.7.0-r7
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libarchive, xz, zstd
+License: GPL-2.0+
+Installed-Size: 624640
+Description: opkg
+Filename: opkg_0.7.0-r7_kindlepw2.ipk
+Size: 314352
+SHA256sum: a0fed640333b584ec2f1025cba6f42ab2c1b1669c52cc406ab8e11c07591d5f8
+
+Package: pax-utils
+Version: 1.3.7-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-2.0
+Installed-Size: 235520
+Description: pax-utils
+Filename: pax-utils_1.3.7-r3_kindlepw2.ipk
+Size: 95943
+SHA256sum: d6be1cbc544346431c6f3ae6ae228aac5ab4887501cad745c1a5fdfddcf81b68
+
+Package: pcre2
+Version: 10.47-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: BSD-3-Clause
+Installed-Size: 624640
+Description: pcre2
+Filename: pcre2_10.47-r3_kindlepw2.ipk
+Size: 243784
+SHA256sum: 9bfe4f33dfef73b0a85e9146d8f50c3a763ce0d5b139dd46eb5cf24d7c33318f
+
+Package: pcre
+Version: 8.45-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: BSD-3-Clause
+Installed-Size: 409600
+Description: pcre
+Filename: pcre_8.45-r3_kindlepw2.ipk
+Size: 153756
+SHA256sum: bee3d6e697397721fec3c0ef8118e1702fdf61daac51e4278421cc86ea3d8a87
+
+Package: popt
+Version: 1.19-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: MIT
+Installed-Size: 61440
+Description: popt
+Filename: popt_1.19-r3_kindlepw2.ipk
+Size: 22438
+SHA256sum: b98ceca3141fc20cd239f47d9138c7355f81234195eecf33c980076d8de314d8
+
+Package: python-asn1crypto
+Version: 1.5.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 542720
+Description: python-asn1crypto
+Filename: python-asn1crypto_1.5.1-r3_kindlepw2.ipk
+Size: 95951
+SHA256sum: ca838bc86bf8db5d668ae1f1d053514a3ff891d8ac157db73b85673fec788d67
+
+Package: python-beautifulsoup4
+Version: 4.14.3-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 430080
+Description: python-beautifulsoup4
+Filename: python-beautifulsoup4_4.14.3-r3_kindlepw2.ipk
+Size: 98539
+SHA256sum: a38ccc9abf3e7cc1c2346531a6e971455b1375e05efd8f78b473f89cdd534af4
+
+Package: python-betamax
+Version: 0.9.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python-requests, python3
+License: Apache-2.0
+Installed-Size: 133120
+Description: python-betamax
+Filename: python-betamax_0.9.0-r3_kindlepw2.ipk
+Size: 25642
+SHA256sum: 4eac2461f0263291c7f11e01c56f8b7c3e20684259f8c01d8609a0ecdceed71a
+
+Package: python-certifi
+Version: 2026.4.22-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: ISC (Python code), MPL-2.0 (cacert.pem)
+Installed-Size: 266240
+Description: python-certifi
+Filename: python-certifi_2026.4.22-r4_kindlepw2.ipk
+Size: 135811
+SHA256sum: 51a44a67fa782e595d02c8c4ecf97cf558557b09b8cc987901957fc83549cda1
+
+Package: python-cffi
+Version: 2.0.0-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT-0
+Installed-Size: 604160
+Description: python-cffi
+Filename: python-cffi_2.0.0-r4_kindlepw2.ipk
+Size: 174810
+SHA256sum: 475bd60e8d0090c2f9897dbc50f2058427d6ad272ff38dd1649b98a4ce7f26b7
+
+Package: python-chardet
+Version: 5.2.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: LGPL-2.1+
+Installed-Size: 1208320
+Description: python-chardet
+Filename: python-chardet_5.2.0-r3_kindlepw2.ipk
+Size: 168596
+SHA256sum: b4375af1258df39f416ab319c9968987bb80b07a751236391d9f49faeea08f7c
+
+Package: python-charset-normalizer
+Version: 3.4.5-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 604160
+Description: python-charset-normalizer
+Filename: python-charset-normalizer_3.4.5-r4_kindlepw2.ipk
+Size: 178705
+SHA256sum: 3a92aaaa3b1bd211dedbd995af0d1ab183ee3a6540131a3920b13fa1c340e3d8
+
+Package: python-cryptography
+Version: 47.0.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libopenssl, python3
+License: Apache-2.0 or BSD-3-Clause
+Installed-Size: 4403200
+Description: python-cryptography
+Filename: python-cryptography_47.0.0-r3_kindlepw2.ipk
+Size: 1525909
+SHA256sum: 25ad52e62a12e2a6e56329f139f636a61ec9919b2007466813115c18590c5e00
+
+Package: python-cssselect
+Version: 1.4.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: BSD-3-Clause
+Installed-Size: 92160
+Description: python-cssselect
+Filename: python-cssselect_1.4.0-r3_kindlepw2.ipk
+Size: 18147
+SHA256sum: 299862066af0815dce0a976b9811e9d19823f2e71eecb7e34e4f41c6f3d2f3ee
+
+Package: python-defusedxml
+Version: 0.7.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: Python-2.0
+Installed-Size: 92160
+Description: python-defusedxml
+Filename: python-defusedxml_0.7.1-r3_kindlepw2.ipk
+Size: 20868
+SHA256sum: 1d6dc069d941f2bfef647cac183180f491070531d945d3e43938bc23f2eb3b94
+
+Package: python-fbink
+Version: d41523291fa8a5de2570749cf1f61135c7039b4f-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: fbink, python-cffi, python3
+License: GPL-3.0+
+Installed-Size: 133120
+Description: python-fbink
+Filename: python-fbink_d41523291fa8a5de2570749cf1f61135c7039b4f-r3_kindlepw2.ipk
+Size: 36467
+SHA256sum: a97c9f3e7570dbd5adf3fc1b0d680243ef6e25b9b3dcda36cc11197fd6252c16
+
+Package: python-future
+Version: 1.0.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 1792000
+Description: python-future
+Filename: python-future_1.0.0-r3_kindlepw2.ipk
+Size: 421440
+SHA256sum: e14c026b1102e2722d2472475eb8395561cfda4da40a0a58a2e6682f30df5b1f
+
+Package: python-html5lib
+Version: 1.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 563200
+Description: python-html5lib
+Filename: python-html5lib_1.1-r3_kindlepw2.ipk
+Size: 101226
+SHA256sum: a0d58b3183374ce53523cc0841fb4ef406c16e7781924da5c784585e7beee83d
+
+Package: python-httpie
+Version: 3.2.4-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python-charset-normalizer, python-defusedxml, python-multidict, python-pip, python-pygments, python-pysocks, python-requests, python-requests-toolbelt, python-rich, python-setuptools, python3
+License: BSD-3-Clause
+Installed-Size: 460800
+Description: python-httpie
+Filename: python-httpie_3.2.4-r3_kindlepw2.ipk
+Size: 100412
+SHA256sum: 60a71f5351cdec24cef8ca8089bc4b8643063d6b0cac011f7c192e44b6333ec1
+
+Package: python-idna
+Version: 3.11-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: BSD-3-Clause
+Installed-Size: 378880
+Description: python-idna
+Filename: python-idna_3.11-r4_kindlepw2.ipk
+Size: 63074
+SHA256sum: 9317dc69d8a125ca6f5689d9dd2e30e173257ef911fcd580f04ee3879af8668e
+
+Package: python-ioctl-opt
+Version: 5ceedbac3a3f650fd060c5d8ec407957dfe05df1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: LGPL-2.0+
+Installed-Size: 71680
+Description: python-ioctl-opt
+Filename: python-ioctl-opt_5ceedbac3a3f650fd060c5d8ec407957dfe05df1-r3_kindlepw2.ipk
+Size: 16311
+SHA256sum: 3e85b1e841939933340eddae69de324265f0cf4cf2c94bc48fb34ff35ec47943
+
+Package: python-libevdev
+Version: 0.13.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 194560
+Description: python-libevdev
+Filename: python-libevdev_0.13.1-r3_kindlepw2.ipk
+Size: 29970
+SHA256sum: 90c54ff8b56a0efa4dce3340478c28b911b590351dedbd5ddfe7734f11d12518
+
+Package: python-lxml
+Version: 6.0.2-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3, zlib-ng
+License: BSD-3-Clause, Others
+Installed-Size: 5406720
+Description: python-lxml
+Filename: python-lxml_6.0.2-r3_kindlepw2.ipk
+Size: 1854386
+SHA256sum: f6c3800db9829367da7a053597b17f016b4c4868215739a8cdf8fee3f5897e21
+
+Package: python-markdown-it-py
+Version: 4.0.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 317440
+Description: python-markdown-it-py
+Filename: python-markdown-it-py_4.0.0-r3_kindlepw2.ipk
+Size: 62633
+SHA256sum: c8fc907c8a0254fb4f4cb33768b89709c068ccef7822ea6189bd9faf4b85f365
+
+Package: python-mdurl
+Version: 0.1.2-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 51200
+Description: python-mdurl
+Filename: python-mdurl_0.1.2-r3_kindlepw2.ipk
+Size: 8800
+SHA256sum: 9085c0411642ee0813cb0d63240e933f02a539cdc08e9ab4a805728833e98fb6
+
+Package: python-multidict
+Version: 6.7.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: Apache-2.0
+Installed-Size: 163840
+Description: python-multidict
+Filename: python-multidict_6.7.1-r3_kindlepw2.ipk
+Size: 46853
+SHA256sum: 5625a9acc5fc689a7defe0a0cabf635d39c3ecb69fa37d4f38291556717462b0
+
+Package: python-numpy
+Version: 2.4.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3, toolchain-libstdcpp
+License: BSD-3-Clause, MIT, Zlib
+Installed-Size: 37539840
+Description: python-numpy
+Filename: python-numpy_2.4.0-r3_kindlepw2.ipk
+Size: 11087826
+SHA256sum: 465ee6d67f0e6cd506e2ca5ad0e960a07158bac2919d8f024c77d68ad1b60656
+
+Package: python-oauthlib
+Version: 3.3.1-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: BSD-3-Clause
+Installed-Size: 655360
+Description: python-oauthlib
+Filename: python-oauthlib_3.3.1-r4_kindlepw2.ipk
+Size: 118461
+SHA256sum: 25ebf10fdb18c1df5a4709493740c1fb5149940eacefe58cda6027747acd3ace
+
+Package: python-packaging
+Version: 26.2-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: Apache-2.0 or BSD-2-Clause
+Installed-Size: 419840
+Description: python-packaging
+Filename: python-packaging_26.2-r3_kindlepw2.ipk
+Size: 92283
+SHA256sum: 3ec71d55a7b030a5b6d9dcc1a20c486a140608df66b5f2ae6315f6e977bc22f9
+
+Package: python-pillow
+Version: 12.0.0-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3, zlib-ng
+License: HPND
+Installed-Size: 1720320
+Description: python-pillow
+Filename: python-pillow_12.0.0-r4_kindlepw2.ipk
+Size: 498137
+SHA256sum: e3c17654c29df15c5601a2b0b01badf29970c7efa04761053d4f01e1670c7ee3
+
+Package: python-pip
+Version: 26.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 6154240
+Description: python-pip
+Filename: python-pip_26.1-r3_kindlepw2.ipk
+Size: 1632833
+SHA256sum: fd9704b81c219e081f66e5eb6dcfa7ab7a09a857ca8805b54947237c2284ccc0
+
+Package: python-pycparser
+Version: 3.0-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: BSD-3-Clause
+Installed-Size: 235520
+Description: python-pycparser
+Filename: python-pycparser_3.0-r4_kindlepw2.ipk
+Size: 44500
+SHA256sum: c0b34edd6feed3d306a49095aad3f0b87baa8a75d62b2795e7b2cc96d0e27fd7
+
+Package: python-pyelftools
+Version: 0.32-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: Public domain
+Installed-Size: 798720
+Description: python-pyelftools
+Filename: python-pyelftools_0.32-r3_kindlepw2.ipk
+Size: 167270
+SHA256sum: 3044cc88678ca13480af8a8468fea904b48c2335a5f040f07e0fcd9416022821
+
+Package: python-pygments
+Version: 2.20.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: BSD-2-Clause
+Installed-Size: 4864000
+Description: python-pygments
+Filename: python-pygments_2.20.0-r3_kindlepw2.ipk
+Size: 1069475
+SHA256sum: bff949be478ab6a42d441cacaeefea9281b4dc7c7788b2b4d0255f92874ba98c
+
+Package: python-pyjwt
+Version: 2.12.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 133120
+Description: python-pyjwt
+Filename: python-pyjwt_2.12.1-r3_kindlepw2.ipk
+Size: 26176
+SHA256sum: 15b5edb981b71304ca515e46166884a6499e4ff3517bfed8ab5d4db85c0e78eb
+
+Package: python-pyopenssl
+Version: 26.1.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: Apache-2.0
+Installed-Size: 256000
+Description: python-pyopenssl
+Filename: python-pyopenssl_26.1.0-r3_kindlepw2.ipk
+Size: 56015
+SHA256sum: 247c2716e32dc8f3ba0bf65dc33bd607e13eaf4d9e7404f7d60f39269211b586
+
+Package: python-pysocks
+Version: 1.7.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: BSD-3-Clause
+Installed-Size: 71680
+Description: python-pysocks
+Filename: python-pysocks_1.7.1-r3_kindlepw2.ipk
+Size: 15955
+SHA256sum: 26401d1a21054eca9dbced6029b0f7a377e4f92b4a902e090e257a2b1a90dd79
+
+Package: python-requests-oauthlib
+Version: 2.0.0-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: ISC
+Installed-Size: 102400
+Description: python-requests-oauthlib
+Filename: python-requests-oauthlib_2.0.0-r4_kindlepw2.ipk
+Size: 19350
+SHA256sum: 01f7b18e16275d1688778e1e1810c02225f3ffd561664a8d78887852f1008dbc
+
+Package: python-requests-toolbelt
+Version: 1.0.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: Apache-2.0
+Installed-Size: 194560
+Description: python-requests-toolbelt
+Filename: python-requests-toolbelt_1.0.0-r3_kindlepw2.ipk
+Size: 40465
+SHA256sum: 544875b0dc7b0556c8de41de6616e7657b4986a332675222fa6d3a64c48986bd
+
+Package: python-requests
+Version: 2.33.1-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: Apache-2.0
+Installed-Size: 235520
+Description: python-requests
+Filename: python-requests_2.33.1-r4_kindlepw2.ipk
+Size: 58793
+SHA256sum: a9375f0d9ee801a4478372b4645042943e8fdead518f1a0d58ff9de5b345a8ef
+
+Package: python-rich
+Version: 15.0.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 1351680
+Description: python-rich
+Filename: python-rich_15.0.0-r3_kindlepw2.ipk
+Size: 232201
+SHA256sum: bbfcc506e5034aeb47dd5c4095b43c1b3d00e865f27ec9eed7478123d7a47fe7
+
+Package: python-setuptools
+Version: 80.9.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 4874240
+Description: python-setuptools
+Filename: python-setuptools_80.9.0-r3_kindlepw2.ipk
+Size: 1027111
+SHA256sum: 8166eec6931e059dd9c1364687d27f314672f36e359051129f10f131f5e69990
+
+Package: python-simplejson
+Version: 4.1.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: Academic Free License (AFL), MIT
+Installed-Size: 337920
+Description: python-simplejson
+Filename: python-simplejson_4.1.1-r3_kindlepw2.ipk
+Size: 78539
+SHA256sum: 021d79d2483526d42ab4b0e4412b7457c2968b9c39e20d0857c948ea22e9108f
+
+Package: python-six
+Version: 1.17.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 61440
+Description: python-six
+Filename: python-six_1.17.0-r3_kindlepw2.ipk
+Size: 10923
+SHA256sum: ad14f5a3fd75d6649dca5c875a89ab2caff73b06f4b5a5db6397055b3456f1c7
+
+Package: python-slpp
+Version: 1.2.3-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python-six, python3
+License: MIT
+Installed-Size: 30720
+Description: python-slpp
+Filename: python-slpp_1.2.3-r3_kindlepw2.ipk
+Size: 5144
+SHA256sum: 7d7ae4573e4834019dd89a436534196d517f056a582f139a8b831daa26adf73c
+
+Package: python-soupsieve
+Version: 2.8.3-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 163840
+Description: python-soupsieve
+Filename: python-soupsieve_2.8.3-r3_kindlepw2.ipk
+Size: 35313
+SHA256sum: 0bdfe450d6421647f4c16d41d85f5deb92d07b910c4606f019041b1de36b0271
+
+Package: python-unidecode
+Version: 1.4.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: GPL-2.0+
+Installed-Size: 1116160
+Description: python-unidecode
+Filename: python-unidecode_1.4.0-r3_kindlepw2.ipk
+Size: 189859
+SHA256sum: 4b68262ac548b7171dfac4e38a93b48f1b79627ed39fb471245c424addd6986a
+
+Package: python-urllib3
+Version: 2.7.0-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 491520
+Description: python-urllib3
+Filename: python-urllib3_2.7.0-r4_kindlepw2.ipk
+Size: 115100
+SHA256sum: 582b184ca0725c82b92780c0e6eb137e05f4ea1449ad4a34d7e09e5d89d83b82
+
+Package: python-wand
+Version: 0.7.2-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: imagemagick, python3
+License: MIT
+Installed-Size: 768000
+Description: python-wand
+Filename: python-wand_0.7.2-r3_kindlepw2.ipk
+Size: 136416
+SHA256sum: 6e2057c464452ff52d021851d33050faf7c87d6499e7e5f5b4660dbaa09e449b
+
+Package: python-webencodings
+Version: 0.5.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: BSD-3-Clause
+Installed-Size: 51200
+Description: python-webencodings
+Filename: python-webencodings_0.5.1-r3_kindlepw2.ipk
+Size: 9437
+SHA256sum: 25bca70df546d1c9acf9102bb70f28d6125a03b6552c6975c0b4553504d42d78
+
+Package: python3
+Version: 3.14.7-r7
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libopenssl, sqlite, zlib-ng
+License: Python-2.0, others
+Installed-Size: 21514240
+Description: python3
+Filename: python3_3.14.7-r7_kindlepw2.ipk
+Size: 8971629
+SHA256sum: 3a500e8a781ff7183210f7c37e2f0b208374c355b2743e2e97527854bbed0d96
+
+Package: rsync
+Version: 3.5.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libopenssl, popt, xxhash, zlib-ng, zstd
+License: GPL-3.0+ with exceptions
+Installed-Size: 563200
+Description: rsync
+Filename: rsync_3.5.0-r3_kindlepw2.ipk
+Size: 276066
+SHA256sum: f9beb89664b1d277b18a6a72e898cb03f7665c183ae0ec0628000b7abc24e0f9
+
+Package: shlock
+Version: 207ba6700e31c36bb4e38d4da221a4f86e466ee9-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: BSD-3-Clause
+Installed-Size: 20480
+Description: shlock
+Filename: shlock_207ba6700e31c36bb4e38d4da221a4f86e466ee9-r3_kindlepw2.ipk
+Size: 4489
+SHA256sum: 42edc73cad36b9add36ab440a5a50b1c802a0f4826e4a4c6e47c02b829b8ff18
+
+Package: sqlite
+Version: 3.26.0-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: zlib-ng
+License: blessing
+Installed-Size: 1269760
+Description: sqlite
+Filename: sqlite_3.26.0-r4_kindlepw2.ipk
+Size: 676900
+SHA256sum: 83709e256ecf74c3fa370a1ed772c64fbe3a7ca4dac8b725d9caa9e4067b21b1
+
+Package: sshfs
+Version: 3.7.6-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libfuse3, openssh
+License: GPL-2.0
+Installed-Size: 92160
+Description: sshfs
+Filename: sshfs_3.7.6-r3_kindlepw2.ipk
+Size: 35171
+SHA256sum: e2aceea5725b3745714b1d82115c25cbc2464e3fd1b1e23a5e55380405e4e01b
+
+Package: strace
+Version: 7.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: binutils, libunwind
+License: LGPL-2.1+
+Installed-Size: 2293760
+Description: strace
+Filename: strace_7.0-r3_kindlepw2.ipk
+Size: 860837
+SHA256sum: d826114cc8ffb010a8000a2a6ea49e23205f5c039926b7eabfb93518f3d101c8
+
+Package: the-silver-searcher
+Version: 7b571a8a94d0e22a06e3313cb0d9672b416fb2c1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: pcre2, xz, zlib-ng
+License: Apache-2.0
+Installed-Size: 112640
+Description: the-silver-searcher
+Filename: the-silver-searcher_7b571a8a94d0e22a06e3313cb0d9672b416fb2c1-r3_kindlepw2.ipk
+Size: 41000
+SHA256sum: 664bcb9ae658a2d83b1acb5812bd07ece2071b43df13ebf3e32d5a740425ea22
+
+Package: tmux
+Version: 3.6b-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libevent
+License: ISC
+Installed-Size: 942080
+Description: tmux
+Filename: tmux_3.6b-r3_kindlepw2.ipk
+Size: 418842
+SHA256sum: da188337e123d3ed1b256bdbb11556525edf22d05fffdcaac1c8f2deb4e858a3
+
+Package: toolchain-libatomic
+Version: 1.2.0-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-3.0-with-GCC-exception
+Installed-Size: 40960
+Description: GCC atomic runtime library
+Filename: toolchain-libatomic_1.2.0-r3_kindlepw2.ipk
+Size: 7513
+SHA256sum: 3c5a9da299ad251a930b1a9a3bacd3d5e53afd30ce8339ff7e78eb6c9f37a76b
+
+Package: toolchain-libstdcpp
+Version: 6.0.33-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-3.0-with-GCC-exception
+Installed-Size: 2017280
+Description: GCC C++ runtime library
+Filename: toolchain-libstdcpp_6.0.33-r3_kindlepw2.ipk
+Size: 714770
+SHA256sum: 3357566ff0d7e9b8cfb99b3261d58f012db5bf439523ab20b702e83ff396a66c
+
+Package: tree
+Version: 2.2.1-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-2.0+
+Installed-Size: 92160
+Description: tree
+Filename: tree_2.2.1-r3_kindlepw2.ipk
+Size: 36150
+SHA256sum: 80b071b7c6639dd8d08c8dcc167da7062eb95fc71521cd0a7b742018ec019947
+
+Package: usbnet-helper
+Version: 20110-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-2.0
+Installed-Size: 20480
+Description: usbnet-helper
+Filename: usbnet-helper_20110-r3_kindlepw2.ipk
+Size: 3034
+SHA256sum: 8f5e7b0460dfcdebf11673629e7df4e1b067000afbb1214c7182ab0ed464fbf3
+
+Package: xxhash
+Version: 0.8.3-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: BSD-2-Clause (library), GPL-2.0+ (xxhsum)
+Installed-Size: 102400
+Description: xxhash
+Filename: xxhash_0.8.3-r3_kindlepw2.ipk
+Size: 41263
+SHA256sum: e17e18dce181a9ceab495310988ac163fd526c4eafcd66d7e6bdba4da8eb28fa
+
+Package: xz
+Version: 5.8.3-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: 0BSD, GPL-2.0+, GPL-3.0+, LGPL-2.1+, FSFUL, FSFULLR, Public Domain
+Installed-Size: 337920
+Description: xz
+Filename: xz_5.8.3-r3_kindlepw2.ipk
+Size: 149469
+SHA256sum: 4037d7f713944f18815003b2ca163b812f22261d4fe2d20bccc35972ff1c7921
+
+Package: zlib-ng
+Version: 2.3.3-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: Zlib
+Installed-Size: 143360
+Description: zlib-ng
+Filename: zlib-ng_2.3.3-r3_kindlepw2.ipk
+Size: 69164
+SHA256sum: 6c72d172de4527098b58f76d204ab5eee3a39d7003513debff06228d2a3ae145
+
+Package: zstd
+Version: 1.5.7-r3
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: xz, zlib-ng
+License: BSD-3-Clause or GPL-2.0
+Installed-Size: 808960
+Description: zstd
+Filename: zstd_1.5.7-r3_kindlepw2.ipk
+Size: 363098
+SHA256sum: 8c793a718f3db1e5ad5f264ad9fab8e148e82d8d104b59a0e0a0bdf748550ea7
+
