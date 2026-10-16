@@ -64,26 +64,43 @@ bootstrap() {
     esac
     mkdir /tmp/eink-opkg-bootstrap.lock 2>/dev/null || { echo 'Another bootstrap is running.' >&2; return 1; }
     work=
+    stage=
     cleanup() {
         result=$?
         trap - 0
         [ -z "$work" ] || rm -rf "$work"
+        [ -z "$stage" ] || rm -rf "$stage"
         rmdir /tmp/eink-opkg-bootstrap.lock
         exit "$result"
     }
     trap cleanup 0
     trap 'exit 1' 1 2 15
     work=$(mktemp -d /tmp/eink-opkg.XXXXXX)
+    # Stock Kindle /var (including /tmp) is only 64 MiB. Keep the archive
+    # and regular IPKs on userstore; executable seed files and their symlinks
+    # must stay on tmpfs because userstore may be noexec and FAT.
+    stage=$(mktemp -d "$userstore/.eink-opkg.XXXXXX")
+    TMPDIR=$work
+    export TMPDIR
     if [ -n "$offline" ]; then
-        tar -xzf "$offline/bundle.tar.gz" -C "$work"
+        bundle=$offline/bundle.tar.gz
     else
+        bundle=$stage/bundle.tar.gz
         echo "Downloading $platform package manager..."
         case "$vendor" in
-            kindle) /usr/bin/curl -fL --connect-timeout 20 --max-time 180 "$base/bootstrap/$platform.tar.gz" -o "$work/bundle.tar.gz" ;;
-            kobo) wget -O "$work/bundle.tar.gz" "$base/bootstrap/$platform.tar.gz" ;;
+            kindle) /usr/bin/curl -fL --connect-timeout 20 --max-time 180 "$base/bootstrap/$platform.tar.gz" -o "$bundle" ;;
+            kobo) wget -O "$bundle" "$base/bootstrap/$platform.tar.gz" ;;
         esac
-        tar -xzf "$work/bundle.tar.gz" -C "$work"
     fi
+    control_scripts="activate run env ssh modprobe depmod"
+    extra_files=
+    if [ "$vendor" = kobo ]; then
+        control_scripts="$control_scripts qt usbnet"
+        extra_files=Packages
+    fi
+    tar -xzf "$bundle" -C "$stage" packages
+    tar -xzf "$bundle" -C "$work" seed packages.list platform eink-sdk-links $control_scripts $extra_files
+    [ -n "$offline" ] || rm -f "$bundle"
     bundled_platform=$(cat "$work/platform")
     [ "$bundled_platform" = "$platform" ] || {
         echo "This bundle is for $bundled_platform; this device requires $platform." >&2; return 1;
@@ -107,8 +124,6 @@ CONF
         awk '($1 == "src/gz" && $2 == "sdk-kernel") || ($1 == "arch" && $2 ~ /^kernel_/)' \
             "$store/opkg/opkg.conf" >> "$work/opkg.conf"
     fi
-    control_scripts="activate run env ssh modprobe depmod"
-    [ "$vendor" != kobo ] || control_scripts="$control_scripts qt usbnet"
     # Bootstrap hooks need the static helper before any runtime links exist.
     mkdir -p "$store/usr/libexec"
     cp "$work/eink-sdk-links" "$store/usr/libexec/eink-sdk-links.new"
@@ -131,7 +146,7 @@ CONF
         if [ -n "$installed" ] && seed_opkg compare-versions "$installed" '>=' "$version"; then
             echo "$name $installed is already installed."
         else
-            seed_opkg --force-reinstall install "$work/packages/$filename"
+            seed_opkg --force-reinstall install "$stage/packages/$filename"
         fi
     done < "$work/packages.list"
     cp "$work/opkg.conf" "$store/opkg/opkg.conf.new"
