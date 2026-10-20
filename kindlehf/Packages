@@ -381,8 +381,22 @@ Filename: kmod_34.2-r5_kindlehf.ipk
 Size: 112641
 SHA256sum: 1a3d36554ef0aeef5f2c864a3a94525ae6e958f42f1bfa672523d532d32a87cf
 
+Package: kppmods-supernet
+Version: 0.1.0+git.r3.5651436-r1
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: kppmods (>= 2.0.0+git.r10.fa3d0a9-r1)
+License: MIT
+Installed-Size: 51200
+Description: Supernet SSH controls for KPP Mods
+Filename: kppmods-supernet_0.1.0+git.r3.5651436-r1_kindlehf.ipk
+Size: 8964
+SHA256sum: 6825588bdca665024e97454fd66949584bab8dbb85d65baeb2f7b1ccbc360e76
+
 Package: kppmods
-Version: 2.0.0+git.r8.b32f5b9-r1
+Version: 2.0.0+git.r10.fa3d0a9-r1
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
@@ -391,9 +405,9 @@ Depends: toolchain-libstdcpp
 License: Proprietary, BSL-1.0, MIT, AGPL-3.0
 Installed-Size: 2447360
 Description: KPP Mods runtime and bundled Kindle extensions
-Filename: kppmods_2.0.0+git.r8.b32f5b9-r1_kindlehf.ipk
-Size: 1041624
-SHA256sum: 33fe4b321572c7d8a7821e9cfc19559f1e154a4c833030cc4eef180ae19cf07a
+Filename: kppmods_2.0.0+git.r10.fa3d0a9-r1_kindlehf.ipk
+Size: 1044234
+SHA256sum: 90a52c527bd0da1adc7b948de7ce4ff9e8eda2c4a74c8528b14b7a0e55d7f83f
 
 Package: less
 Version: 692-r3
@@ -1571,6 +1585,20 @@ Description: strace
 Filename: strace_7.0-r3_kindlehf.ipk
 Size: 871124
 SHA256sum: b47f42d9ecf8269e15701b7402d725591f730d1143b5242798760442b88e562d
+
+Package: supernet
+Version: 0.1.0+git.r3.5651436-r1
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: dropbear (>= 2026.93-r6)
+License: MIT
+Installed-Size: 71680
+Description: On-demand USB and Wi-Fi SSH access for Kindle
+Filename: supernet_0.1.0+git.r3.5651436-r1_kindlehf.ipk
+Size: 27404
+SHA256sum: 6b188928e888c34e98e110b639036f72d90bc6b2de269fa7ec373e4d0cd182f9
 
 Package: the-silver-searcher
 Version: 7b571a8a94d0e22a06e3313cb0d9672b416fb2c1-r3
