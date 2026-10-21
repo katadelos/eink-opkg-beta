@@ -244,7 +244,7 @@ Size: 112115
 SHA256sum: 8f6c8db37a831a0337aef0c82044d1ecaf665416149f9a3e03316d2172037e17
 
 Package: kppmods
-Version: 2.0.0+git.r11.f6a91e0-r1
+Version: 2.0.0+git.r14.30d3334-r1
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -253,9 +253,9 @@ Depends: toolchain-libstdcpp
 License: Proprietary, BSL-1.0, MIT, AGPL-3.0
 Installed-Size: 2447360
 Description: KPP Mods runtime and bundled Kindle extensions
-Filename: kppmods_2.0.0+git.r11.f6a91e0-r1_kindlepw2.ipk
-Size: 1044260
-SHA256sum: af0e8c73df3db701fa427952544d2e391be728f9323d3092246774413024af44
+Filename: kppmods_2.0.0+git.r14.30d3334-r1_kindlepw2.ipk
+Size: 1045335
+SHA256sum: 993144f52addd79f68391a2668edda80d815c6f168a2654afa28c8e146ee9589
 
 Package: less
 Version: 692-r3
