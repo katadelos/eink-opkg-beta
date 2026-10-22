@@ -64,43 +64,39 @@ bootstrap() {
     esac
     mkdir /tmp/eink-opkg-bootstrap.lock 2>/dev/null || { echo 'Another bootstrap is running.' >&2; return 1; }
     work=
-    stage=
+    downloads=
     cleanup() {
-        result=$?
-        trap - 0
         [ -z "$work" ] || rm -rf "$work"
-        [ -z "$stage" ] || rm -rf "$stage"
+        [ -z "$downloads" ] || rm -rf "$downloads"
         rmdir /tmp/eink-opkg-bootstrap.lock
-        exit "$result"
     }
-    trap cleanup 0
+    trap 'result=$?; trap - 0; cleanup; exit "$result"' 0
     trap 'exit 1' 1 2 15
-    work=$(mktemp -d /tmp/eink-opkg.XXXXXX)
-    # Stock Kindle /var (including /tmp) is only 64 MiB. Keep the archive
-    # and regular IPKs on userstore; executable seed files and their symlinks
-    # must stay on tmpfs because userstore may be noexec and FAT.
-    stage=$(mktemp -d "$userstore/.eink-opkg.XXXXXX")
+    # Keep executable seed files and opkg temporary files on tmpfs; userstore
+    # may be noexec and FAT. Store archives and regular IPKs on userstore.
+    work=$(mktemp -d /dev/shm/eink-opkg.XXXXXX)
+    downloads=$(mktemp -d "$userstore/.eink-opkg.XXXXXX")
     TMPDIR=$work
     export TMPDIR
     if [ -n "$offline" ]; then
         bundle=$offline/bundle.tar.gz
     else
-        bundle=$stage/bundle.tar.gz
         echo "Downloading $platform package manager..."
+        bundle=$downloads/bundle.tar.gz
         case "$vendor" in
             kindle) /usr/bin/curl -fL --connect-timeout 20 --max-time 180 "$base/bootstrap/$platform.tar.gz" -o "$bundle" ;;
             kobo) wget -O "$bundle" "$base/bootstrap/$platform.tar.gz" ;;
         esac
     fi
     control_scripts="activate run env ssh modprobe depmod"
+    [ "$vendor" != kobo ] || control_scripts="$control_scripts qt usbnet"
     extra_files=
-    if [ "$vendor" = kobo ]; then
-        control_scripts="$control_scripts qt usbnet"
-        extra_files=Packages
-    fi
-    tar -xzf "$bundle" -C "$stage" packages
-    tar -xzf "$bundle" -C "$work" seed packages.list platform eink-sdk-links $control_scripts $extra_files
-    [ -n "$offline" ] || rm -f "$bundle"
+    [ "$vendor" != kobo ] || extra_files=Packages
+    tar -xzf "$bundle" -C "$downloads" packages
+    set -- seed packages.list platform eink-sdk-links
+    for script in $control_scripts $extra_files; do set -- "$@" "$script"; done
+    tar -xzf "$bundle" -C "$work" "$@"
+    [ -n "$offline" ] || rm "$bundle"
     bundled_platform=$(cat "$work/platform")
     [ "$bundled_platform" = "$platform" ] || {
         echo "This bundle is for $bundled_platform; this device requires $platform." >&2; return 1;
@@ -146,12 +142,15 @@ CONF
         if [ -n "$installed" ] && seed_opkg compare-versions "$installed" '>=' "$version"; then
             echo "$name $installed is already installed."
         else
-            seed_opkg --force-reinstall install "$stage/packages/$filename"
+            seed_opkg --force-reinstall install "$downloads/packages/$filename"
         fi
     done < "$work/packages.list"
     cp "$work/opkg.conf" "$store/opkg/opkg.conf.new"
     mv "$store/opkg/opkg.conf.new" "$store/opkg/opkg.conf"
     . "$control/env"
+    # A piped installer cannot update the calling shell's environment. Show
+    # this before network access so it is available even if updating fails.
+    echo "Load opkg in your current shell: . $control/env"
     # Seed the feed index so an offline install can list available packages.
     [ "$vendor" != kobo ] || cp "$work/Packages" "$store/opkg/lists/$platform"
     if [ -n "$offline" ]; then
@@ -170,7 +169,16 @@ CONF
         opkg update
     fi
     opkg --version
-    echo "Ready. Load the environment: . $control/env"
+    echo 'Ready.'
     echo "After boot: sh $control/activate (after userstore mounts)."
+    # curl | sh runs in a child process and cannot change the caller's PATH.
+    # Hand terminal users a shell with the SDK environment already loaded.
+    if [ -t 1 ] && [ -t 2 ] && ( : </dev/tty ) 2>/dev/null; then
+        cleanup
+        trap - 0 1 2 15
+        unset TMPDIR
+        echo 'Starting an SDK shell. Type exit to return to your previous shell.'
+        exec /bin/sh -i </dev/tty
+    fi
 }
 bootstrap "$@"
