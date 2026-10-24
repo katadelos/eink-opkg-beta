@@ -479,7 +479,7 @@ Size: 190494
 SHA256sum: 7d95d76b8fcdcc74753dfce0a840a684b6492444b5b329ea3e836588e346a570
 
 Package: k2
-Version: 0.2.0-r4
+Version: 0.2.0-r5
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -488,9 +488,9 @@ Depends: dejavu, eboard (>= 0.1.1-r1), ereader-hal (>= 0.4.0-r1), opkg (>= 0.7.0
 License: MIT
 Installed-Size: 1853440
 Description: k2 package and system manager
-Filename: k2_0.2.0-r4_kindle5.ipk
-Size: 1143458
-SHA256sum: eb595aa6449c3147aadd969eef698549b522deae68dace014e8cd8ec0d4d6b6a
+Filename: k2_0.2.0-r5_kindle5.ipk
+Size: 1143514
+SHA256sum: f3abb07b3481650c550414abe3ad0458e517ff9cf587dde97649292515f80231
 
 Package: kindletool
 Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r3
