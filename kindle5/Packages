@@ -986,7 +986,7 @@ Size: 3505027
 SHA256sum: 4fc95c9610eb6b56712f11325eb68d1edc6ada0d9f33e91edbad3962358a8679
 
 Package: opkg
-Version: 0.7.0-r7
+Version: 0.7.0-r12
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -995,9 +995,9 @@ Depends: bzip2, libarchive, libcurl, lz4, xz, zstd
 License: GPL-2.0+
 Installed-Size: 624640
 Description: opkg
-Filename: opkg_0.7.0-r7_kindle5.ipk
-Size: 314197
-SHA256sum: 087a4e516b7cf160c49af2423ee632e405e0b45df5b605a86254235bc111a112
+Filename: opkg_0.7.0-r12_kindle5.ipk
+Size: 315542
+SHA256sum: c904fe057a4b69edce6e209c03bcc2b9d40af319c0c0e6bfc366ece069e19eb2
 
 Package: pango
 Version: 1.50.14-r4

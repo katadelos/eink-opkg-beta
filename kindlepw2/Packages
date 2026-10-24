@@ -1000,7 +1000,7 @@ Size: 3497702
 SHA256sum: 9988c41cf78aa05732add8e9e928f9c2667942eb22f4da626ba165eb556ac718
 
 Package: opkg
-Version: 0.7.0-r9
+Version: 0.7.0-r12
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -1009,9 +1009,9 @@ Depends: bzip2, libarchive, libcurl, lz4, xz, zstd
 License: GPL-2.0+
 Installed-Size: 624640
 Description: opkg
-Filename: opkg_0.7.0-r9_kindlepw2.ipk
-Size: 314695
-SHA256sum: e859634e93482ee79eebcf1cd7f34e670193783cd90533b15635115b90f4733e
+Filename: opkg_0.7.0-r12_kindlepw2.ipk
+Size: 315523
+SHA256sum: 9126be5d7b3eaa394aa02838f7a34ff5c7782f0ebd404d5005b8ddae28e674df
 
 Package: pango
 Version: 1.50.14-r4

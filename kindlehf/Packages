@@ -1014,7 +1014,7 @@ Size: 3497826
 SHA256sum: aee30d4dd893475ebefb6cb8b11e656ca1a484c5d7474b73bc806175a4e1d01e
 
 Package: opkg
-Version: 0.7.0-r7
+Version: 0.7.0-r12
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
@@ -1023,9 +1023,9 @@ Depends: bzip2, libarchive, libcurl, lz4, xz, zstd
 License: GPL-2.0+
 Installed-Size: 634880
 Description: opkg
-Filename: opkg_0.7.0-r7_kindlehf.ipk
-Size: 320639
-SHA256sum: ab90fc3f1c4627dc63a6e3b7a21e9c7cf3ac63fc6b62a94d9dbc36368742cd38
+Filename: opkg_0.7.0-r12_kindlehf.ipk
+Size: 321507
+SHA256sum: c056744881799f846c296f781e39d99c5928d72644bda5b12b48f400a12afeae
 
 Package: pango
 Version: 1.50.14-r4

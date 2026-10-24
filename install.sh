@@ -88,7 +88,7 @@ bootstrap() {
             kobo) wget -O "$bundle" "$base/bootstrap/$platform.tar.gz" ;;
         esac
     fi
-    control_scripts="activate run env ssh modprobe depmod"
+    control_scripts="activate run env ssh-server modprobe depmod"
     [ "$vendor" != kobo ] || control_scripts="$control_scripts qt usbnet"
     extra_files=
     [ "$vendor" != kobo ] || extra_files=Packages
@@ -130,6 +130,8 @@ CONF
         chmod 755 "$control/$script.new"
         mv "$control/$script.new" "$control/$script"
     done
+    # Remove the former server command so ssh resolves to the Dropbear client.
+    rm -f "$control/ssh"
     /bin/sh "$control/activate"
     seed_opkg() {
         LD_LIBRARY_PATH="$work/seed/usr/lib:$work/seed/lib" \
