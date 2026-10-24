@@ -1,3 +1,17 @@
+Package: at-spi2-core
+Version: 2.58.2-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: dbus, gobject-introspection, libglib2, libxml2, xlib-libxtst
+License: LGPL-2.1+
+Installed-Size: 3921920
+Description: at-spi2-core
+Filename: at-spi2-core_2.58.2-r4_kindle5.ipk
+Size: 689071
+SHA256sum: 39249843837d7e9f05052145220dba749b2b6278a8284b364cd2fcfb6da3636e
+
 Package: binutils
 Version: 2.45.1-r3
 Architecture: kindle5
@@ -38,6 +52,20 @@ Filename: ca-certificates_20260223-r3_kindle5.ipk
 Size: 264424
 SHA256sum: eea7030d6d9dc70ece056165fc2236ac2ec2da977cf08f98b4d443f2607a4942
 
+Package: cairo
+Version: 1.16.0-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: fontconfig, libglib2, libpng, libxcb, pixman, xlib-libx11, xlib-libxext, xlib-libxrender, zlib-ng
+License: LGPL-2.1 or MPL-1.1 (library)
+Installed-Size: 1044480
+Description: cairo
+Filename: cairo_1.16.0-r4_kindle5.ipk
+Size: 508981
+SHA256sum: 206c9cef7f31baaf293faed4d38dca71c91f8e006d4233dbf9321963ec8eadb9
+
 Package: coreutils
 Version: 9.10-r3
 Architecture: kindle5
@@ -51,6 +79,33 @@ Description: coreutils
 Filename: coreutils_9.10-r3_kindle5.ipk
 Size: 653108
 SHA256sum: d2cc9aa2e7947918ade19afce95aed6bfc82a457a696d36c7cefe0ddf3e8b2c4
+
+Package: dbus
+Version: 1.14.10-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: expat, xlib-libx11
+License: AFL-2.1 or GPL-2.0+ (library, tools), GPL-2.0+ (tools)
+Installed-Size: 307200
+Description: dbus
+Filename: dbus_1.14.10-r4_kindle5.ipk
+Size: 123865
+SHA256sum: 3e5c8b33e063c2e1257149d05a1f504cb583a5b9c3d24d6a7acd5507e05573a6
+
+Package: dejavu
+Version: 2.37-r5
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: unknown
+Installed-Size: 9676800
+Description: dejavu
+Filename: dejavu_2.37-r5_kindle5.ipk
+Size: 4984443
+SHA256sum: 2f133d3b1a476b60b9bf53fcc766a404d2afae93cf72c93aa7fba6ce68c2ce9b
 
 Package: dosfstools
 Version: 2.11-r3
@@ -92,6 +147,20 @@ Filename: dtc_1.7.2-r3_kindle5.ipk
 Size: 96082
 SHA256sum: 365110f26b99830a23a7f6b9cb3ff14e0b9a87916a4d3bf540e5cf2e6946cfb2
 
+Package: eboard
+Version: 0.1.2-r3
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python-pyqt5, python3, qt5declarative, xlib-libxdamage
+License: MIT
+Installed-Size: 81920
+Description: Shared Qt Quick keyboard and e-paper feedback
+Filename: eboard_0.1.2-r3_kindle5.ipk
+Size: 16385
+SHA256sum: de69f0ac17c5034bdc03f5934dfc65376b7ae9d7b28ca912633172db0df54ae4
+
 Package: elfutils
 Version: 0.194-r3
 Architecture: kindle5
@@ -105,6 +174,20 @@ Description: elfutils
 Filename: elfutils_0.194-r3_kindle5.ipk
 Size: 1162546
 SHA256sum: dc467ae0505649011d0d04774ca55078a366f0ecdd3517058ce7144aa0296bb5
+
+Package: ereader-hal
+Version: 0.5.0-r1
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3 (>= 3.14)
+License: MIT
+Installed-Size: 327680
+Description: Kindle and Kobo hardware controls with Python bindings
+Filename: ereader-hal_0.5.0-r1_kindle5.ipk
+Size: 131257
+SHA256sum: 7c0b792a645ea50ee6c0713515905a3fb3a2d615c592e4fd7107c6b2c710bcaa
 
 Package: evemu
 Version: 2.7.0-r3
@@ -243,19 +326,61 @@ Filename: gdb_8.1-r3_kindle5.ipk
 Size: 2835589
 SHA256sum: 7f650516479f24816d84875baf8347aa2e85bf613069428fbdf784cf9b8312e5
 
+Package: gdk-pixbuf
+Version: 2.42.12-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: gobject-introspection, jpeg-turbo, libglib2, libpng
+License: LGPL-2.1+
+Installed-Size: 3082240
+Description: gdk-pixbuf
+Filename: gdk-pixbuf_2.42.12-r4_kindle5.ipk
+Size: 633850
+SHA256sum: 005f73b518b5879020aaa7f1dabc85e19769c99c61df75621fad4cf5c76877db
+
 Package: gmp
-Version: 4.2.1-r3
+Version: 6.3.0-r4
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
 Depends: toolchain-libstdcpp
-License: LGPL-2.1+ or GPL-2.0+
-Installed-Size: 256000
+License: LGPL-3.0+ or GPL-2.0+
+Installed-Size: 460800
 Description: gmp
-Filename: gmp_4.2.1-r3_kindle5.ipk
-Size: 121144
-SHA256sum: f76d62fff01c42a924cf0ff538d54a6420e90efac4cae6db8529ea29dcd3253f
+Filename: gmp_6.3.0-r4_kindle5.ipk
+Size: 223650
+SHA256sum: 798ddc51137f4c52541aef20265e29586686a09065d6af5344d3ad7faa81dd4b
+
+Package: gnutls
+Version: 3.8.13-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libtasn1 (>= 4.21.0-r3), nettle (>= 3.10.2-r3), zlib-ng
+License: LGPL-2.1+ (core library)
+Installed-Size: 2365440
+Description: gnutls
+Filename: gnutls_3.8.13-r4_kindle5.ipk
+Size: 1043512
+SHA256sum: 7942d5516d7125e05dd19f36954f5394d189bc1c96ad235914c4d5bddcafc689
+
+Package: gobject-introspection
+Version: 1.84.0-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libffi, python3, zlib-ng
+License: LGPL-2.0+, GPL-2.0+, BSD-2-Clause
+Installed-Size: 174080
+Description: gobject-introspection
+Filename: gobject-introspection_1.84.0-r4_kindle5.ipk
+Size: 36266
+SHA256sum: 6df242c53d31fc66d2f4ff620054a0731970b3fb3cc96ff3bc2da1cd1d0d2e1e
 
 Package: harfbuzz
 Version: 1.1.2-r3
@@ -381,6 +506,20 @@ Filename: kmod_34.2-r5_kindle5.ipk
 Size: 112108
 SHA256sum: dbb890f96bdf9846b34170063917bd173394faf4b12194ae07db0ca5f9af710f
 
+Package: kterm
+Version: 2.6-r8
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: dbus, dejavu, libgtk3, vte (>= 0.66.2-r5)
+License: GPL-3.0+
+Installed-Size: 256000
+Description: GTK3 terminal with an embedded keyboard for Kindle
+Filename: kterm_2.6-r8_kindle5.ipk
+Size: 48507
+SHA256sum: fbb5270a923305da88402f13ab2b3ffd70aec10cdf40cff34be789091966556c
+
 Package: less
 Version: 692-r3
 Architecture: kindle5
@@ -437,6 +576,20 @@ Filename: libcurl_7.86.0-r3_kindle5.ipk
 Size: 309578
 SHA256sum: d61a8648ec5e8926209d3550353353486826a2d7e690d561a9e1a2e18ada40e5
 
+Package: libepoxy
+Version: 1.5.10-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: xlib-libx11
+License: MIT
+Installed-Size: 1003520
+Description: libepoxy
+Filename: libepoxy_1.5.10-r4_kindle5.ipk
+Size: 202217
+SHA256sum: 853781235b2a0d91910b247178821013903e6ae81758aa0157f41ec2858ac159
+
 Package: libevdev
 Version: 1.13.5-r3
 Architecture: kindle5
@@ -476,6 +629,19 @@ Description: libffi
 Filename: libffi_3.4.8-r3_kindle5.ipk
 Size: 16804
 SHA256sum: 3433479c4e81c2ddf49bf7d0cfe26e249bb70790e0d64010b81519df184d207c
+
+Package: libfribidi
+Version: 1.0.16-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: LGPL-2.1+
+Installed-Size: 153600
+Description: libfribidi
+Filename: libfribidi_1.0.16-r4_kindle5.ipk
+Size: 27593
+SHA256sum: 55ed6301e730519162baba0cfeda9e1b52106855949b5e0ba7eddb26c8b60c37
 
 Package: libfuse3
 Version: 3.18.2-r4
@@ -517,6 +683,20 @@ Description: libglib2
 Filename: libglib2_2.29.18-r3_kindle5.ipk
 Size: 2615758
 SHA256sum: 8589b84df59ee00137d28fdda17673622fce427e9d056a1403f02ead27d07137
+
+Package: libgtk3
+Version: 3.24.51-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: at-spi2-core, cairo, dejavu, fontconfig, gdk-pixbuf, gobject-introspection, libepoxy, libglib2, pango, xlib-libx11, xlib-libxdamage, xlib-libxext, xlib-libxfixes, xlib-libxi, xlib-libxrandr, xlib-libxrender
+License: LGPL-2.0+
+Installed-Size: 50421760
+Description: libgtk3
+Filename: libgtk3_3.24.51-r4_kindle5.ipk
+Size: 14193964
+SHA256sum: dc37ac101dcdeb6389c431b201e6b47fe187cd4c8799f2de36aa6804c31916d7
 
 Package: libmobi
 Version: 906274205c11944b628da1c553b255acb1af7c55-r3
@@ -560,6 +740,32 @@ Filename: libpng_1.6.36-r4_kindle5.ipk
 Size: 121487
 SHA256sum: d67ac4e8f3901a77b6f3b9586a34e5da0f16ca99966346e27464197294216e3b
 
+Package: libpthread-stubs
+Version: 0.5-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: MIT
+Installed-Size: 10240
+Description: libpthread-stubs
+Filename: libpthread-stubs_0.5-r4_kindle5.ipk
+Size: 895
+SHA256sum: 3c9b705bc293c13705c36c7df0bef54c1f2a62a57ccb2773d33796c9fbedfa3f
+
+Package: libtasn1
+Version: 4.21.0-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-3.0+ (tests, tools), LGPL-2.1+ (library)
+Installed-Size: 92160
+Description: libtasn1
+Filename: libtasn1_4.21.0-r4_kindle5.ipk
+Size: 35852
+SHA256sum: 1f7e8c45eaf61dd79c9bf5c9ca2b83907d325b3583c752f17e8223b5cb4c0959
+
 Package: libunwind
 Version: 1.8.1-r3
 Architecture: kindle5
@@ -574,6 +780,20 @@ Filename: libunwind_1.8.1-r3_kindle5.ipk
 Size: 80788
 SHA256sum: 1e568d04696fe57753e57a52a44139219e46783198ed0793b8670aa389aa9091
 
+Package: libxcb
+Version: 1.17.0-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: xcb-proto, xlib-libxau, xlib-libxdmcp
+License: MIT
+Installed-Size: 1034240
+Description: libxcb
+Filename: libxcb_1.17.0-r4_kindle5.ipk
+Size: 214284
+SHA256sum: 8899d332d00a11f91ed4516d5a9a056e90cc8b4d62873bf5d0e8b0fa30768fe1
+
 Package: libxcrypt
 Version: 4.5.2-r4
 Architecture: kindle5
@@ -586,6 +806,20 @@ Description: libxcrypt
 Filename: libxcrypt_4.5.2-r4_kindle5.ipk
 Size: 101381
 SHA256sum: da8f3a69c6a4380cdf3f7cfb37e37e99d242d7006d01c48e5f3973e0fc92b169
+
+Package: libxkbcommon
+Version: 1.9.2-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libxcb
+License: MIT/X11
+Installed-Size: 358400
+Description: libxkbcommon
+Filename: libxkbcommon_1.9.2-r4_kindle5.ipk
+Size: 152787
+SHA256sum: 3e091a66a52f6863e334208feaf96b466c353b9608b90a342cd90806bc86dc57
 
 Package: libxml2
 Version: 2.9.1-r3
@@ -711,18 +945,18 @@ Size: 318547
 SHA256sum: 0b1b5bd4a70d6270dc6834a262ab89d9e37b63ac29895cbdfd75a5de7391751b
 
 Package: nettle
-Version: 2.7.1-r3
+Version: 3.10.2-r4
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: gmp
-License: LGPL-2.1+
-Installed-Size: 440320
+Depends: gmp (>= 6.3.0-r3)
+License: GPL-2.0+ or LGPL-3.0+
+Installed-Size: 696320
 Description: nettle
-Filename: nettle_2.7.1-r3_kindle5.ipk
-Size: 245671
-SHA256sum: 420681737597ba41c0267e4c6f511070325850baf8029116f8759f704338a4a2
+Filename: nettle_3.10.2-r4_kindle5.ipk
+Size: 376659
+SHA256sum: 117518ff25f022f85720fa81f27e542059a35552d8271a1c615162a8062ce041
 
 Package: oniguruma
 Version: 6.9.10-r3
@@ -765,6 +999,20 @@ Filename: opkg_0.7.0-r7_kindle5.ipk
 Size: 314197
 SHA256sum: 087a4e516b7cf160c49af2423ee632e405e0b45df5b605a86254235bc111a112
 
+Package: pango
+Version: 1.50.14-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: cairo, fontconfig, freetype, gobject-introspection, harfbuzz, libfribidi, libglib2
+License: LGPL-2.0+
+Installed-Size: 1935360
+Description: pango
+Filename: pango_1.50.14-r4_kindle5.ipk
+Size: 412201
+SHA256sum: 2aff9d02bc474e5d5c35201303ee632b9a942611043e43ca5aaf63c885881f1d
+
 Package: pax-utils
 Version: 1.3.7-r3
 Architecture: kindle5
@@ -804,6 +1052,19 @@ Filename: pcre_8.45-r3_kindle5.ipk
 Size: 153137
 SHA256sum: 2c57c5a631227c0e532bbe9a11b15be5b59258c1addba2ec0dbf8d36f784ac6b
 
+Package: pixman
+Version: 0.46.4-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: MIT
+Installed-Size: 655360
+Description: pixman
+Filename: pixman_0.46.4-r4_kindle5.ipk
+Size: 223967
+SHA256sum: f1e5a643927005b45b8bc1c35e13a4ba44de6681732a5f149c88c1e8fe389756
+
 Package: popt
 Version: 1.19-r3
 Architecture: kindle5
@@ -830,6 +1091,20 @@ Description: protobuf
 Filename: protobuf_2.4.1-r3_kindle5.ipk
 Size: 630217
 SHA256sum: d3592cd17a6f49e0c5f93a9059d7a8d3bae8debc78e1dd12705ccb171005b33c
+
+Package: python-anyio
+Version: 4.13.0-r5
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 522240
+Description: python-anyio
+Filename: python-anyio_4.13.0-r5_kindle5.ipk
+Size: 96475
+SHA256sum: 62c26f7139fe5e0aba1f6add4bcb193cef49ec8b457040cf06c0da2003ac6c88
 
 Package: python-asn1crypto
 Version: 1.5.1-r3
@@ -999,6 +1274,34 @@ Filename: python-future_1.0.0-r3_kindle5.ipk
 Size: 421436
 SHA256sum: 225c792ec5483ddaa20c0f3fb905ccfdbd69c24f11138d073af2de4e95408c17
 
+Package: python-gobject
+Version: 3.54.5-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: gobject-introspection, libglib2, libgtk3, python-pycairo, python3
+License: LGPL-2.1+
+Installed-Size: 1157120
+Description: python-gobject
+Filename: python-gobject_3.54.5-r4_kindle5.ipk
+Size: 363668
+SHA256sum: ac8641a48212499040658db498984aa4f8e4a85ff2745a44033ed873c6d93c4a
+
+Package: python-h11
+Version: 0.16.0-r5
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 133120
+Description: python-h11
+Filename: python-h11_0.16.0-r5_kindle5.ipk
+Size: 33380
+SHA256sum: 6fd7dcd6a2c8c6c1a43235b6864dd510efc6098ad1928a5b0aae4cf5a7d5cee1
+
 Package: python-html5lib
 Version: 1.1-r3
 Architecture: kindle5
@@ -1013,6 +1316,20 @@ Filename: python-html5lib_1.1-r3_kindle5.ipk
 Size: 101225
 SHA256sum: 018b4342cc718b249a6fef261a768195f3bb6b10516fbe17026cbb5c76a7b25c
 
+Package: python-httpcore
+Version: 1.0.9-r5
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: BSD-3-Clause
+Installed-Size: 337920
+Description: python-httpcore
+Filename: python-httpcore_1.0.9-r5_kindle5.ipk
+Size: 58259
+SHA256sum: 9a5728ae6ac53b176430e4bd01f8a3dc28b99b015f7028d9225f35527a2689e0
+
 Package: python-httpie
 Version: 3.2.4-r3
 Architecture: kindle5
@@ -1026,6 +1343,20 @@ Description: python-httpie
 Filename: python-httpie_3.2.4-r3_kindle5.ipk
 Size: 100412
 SHA256sum: 98ab7d7cbdc619c972e020efe9704401e03912dba50e62ed215a3b4f4300c274
+
+Package: python-httpx
+Version: 0.28.1-r5
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: BSD-3-Clause
+Installed-Size: 337920
+Description: python-httpx
+Filename: python-httpx_0.28.1-r5_kindle5.ipk
+Size: 64826
+SHA256sum: 88e0ea303e3ec3801ad1d0cad46f10b955aa77b0f624e527e856b90e4240976e
 
 Package: python-idna
 Version: 3.11-r4
@@ -1195,6 +1526,20 @@ Filename: python-pip_26.1-r3_kindle5.ipk
 Size: 1632834
 SHA256sum: 0d5981a1e4a8c05795a555bbc648c2ae11581f8a3bda5efc37f58ae0e09f2b7f
 
+Package: python-pycairo
+Version: 1.29.0-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: cairo, python3
+License: LGPL-2.1 or MPL-1.1
+Installed-Size: 430080
+Description: python-pycairo
+Filename: python-pycairo_1.29.0-r4_kindle5.ipk
+Size: 110956
+SHA256sum: 6172e8fcbd87f38a8ba2b851966f125d699346974591b52ed0230409f3f30161
+
 Package: python-pycparser
 Version: 3.0-r4
 Architecture: kindle5
@@ -1264,6 +1609,34 @@ Description: python-pyopenssl
 Filename: python-pyopenssl_26.1.0-r3_kindle5.ipk
 Size: 56013
 SHA256sum: 132ac4ec8dd59dcaa208f0c8fae6e8f2c8027f93c12743c730f215c2044c517b
+
+Package: python-pyqt5-sip
+Version: 12.18.0-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: BSD-2-Clause
+Installed-Size: 163840
+Description: python-pyqt5-sip
+Filename: python-pyqt5-sip_12.18.0-r4_kindle5.ipk
+Size: 61354
+SHA256sum: 30a3050a3e0e7757547e4612483d675226bbd70de2af9a49e7a4e45b7b57c00e
+
+Package: python-pyqt5
+Version: 5.15.6-r8
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python-pyqt5-sip, qt5base, qt5declarative, qt5svg, qt5websockets
+License: GPL-3.0
+Installed-Size: 13711360
+Description: python-pyqt5
+Filename: python-pyqt5_5.15.6-r8_kindle5.ipk
+Size: 3044300
+SHA256sum: e8d5520e566b15ebbd00db014a54306e38b003ef8c87df3df209c85c7593b2c2
 
 Package: python-pysocks
 Version: 1.7.1-r3
@@ -1475,6 +1848,90 @@ Filename: python3_3.14.7-r7_kindle5.ipk
 Size: 8968470
 SHA256sum: fecc5b8d9721e463ae0ced90ba2dc326e2cd9c6e9b961a177561cdba20fe50b3
 
+Package: qt5base
+Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r9
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: freetype, jpeg-turbo, libglib2, libgtk3, libopenssl, libpng, libxcb, libxkbcommon, pcre2, toolchain-libatomic, toolchain-libstdcpp, xcb-util-image, xcb-util-keysyms, xcb-util-renderutil, xcb-util-wm, xlib-libx11, xlib-libxext, zlib-ng, zstd
+License: GPL-2.0+ or LGPL-3.0, GPL-3.0 with exception(tools), GFDL-1.3 (docs)
+Installed-Size: 23879680
+Description: qt5base
+Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r9_kindle5.ipk
+Size: 8938598
+SHA256sum: 246fc3c19ed33542ed8249172253a2a1d0e2df7f9c4d76b9f6e9bb963c990150
+
+Package: qt5declarative
+Version: 50c8def854806485d66aabcf6918e8b987032e55-r6
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: qt5base
+License: GPL-2.0+ or LGPL-3.0, GPL-3.0 with exception(tools), GFDL-1.3 (docs)
+Installed-Size: 13824000
+Description: qt5declarative
+Filename: qt5declarative_50c8def854806485d66aabcf6918e8b987032e55-r6_kindle5.ipk
+Size: 4169132
+SHA256sum: 75b831f306b3e03104486999ad222b3d334f1038186f19410c6a01d72ed3d449
+
+Package: qt5quickcontrols2
+Version: 69fea340f8f4c483a9b2889e4e24a4b1b52ebc87-r5
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: qt5base, qt5declarative
+License: GPL-3.0 or LGPL-3.0, GFDL-1.3 (docs)
+Installed-Size: 8632320
+Description: qt5quickcontrols2
+Filename: qt5quickcontrols2_69fea340f8f4c483a9b2889e4e24a4b1b52ebc87-r5_kindle5.ipk
+Size: 2024556
+SHA256sum: f90415238d5be86457c06d169b50068028e820f291554a20b8f43c769a26e07e
+
+Package: qt5quickcontrols
+Version: 9325659ec390eda5b160736a926ba58ccb445cce-r5
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: qt5base, qt5declarative
+License: GPL-2.0 or GPL-3.0 or LGPL-3.0, GFDL-1.3 (docs)
+Installed-Size: 5345280
+Description: qt5quickcontrols
+Filename: qt5quickcontrols_9325659ec390eda5b160736a926ba58ccb445cce-r5_kindle5.ipk
+Size: 1344631
+SHA256sum: 042692912243e152c4cf75301e77c773a55a3134a0b411428125979993f2e6bd
+
+Package: qt5svg
+Version: 690128b2b8fb6d6fbdc43b2b2633f0f1de3f0638-r5
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: qt5base
+License: GPL-2.0+ or LGPL-3.0, GPL-3.0 with exception(tools), GFDL-1.3 (docs)
+Installed-Size: 440320
+Description: qt5svg
+Filename: qt5svg_690128b2b8fb6d6fbdc43b2b2633f0f1de3f0638-r5_kindle5.ipk
+Size: 143286
+SHA256sum: 9748d97c5b1aad78e7d95e633b81844e81cc9fcc8d1cf9f6d9b6d38e01b91a04
+
+Package: qt5websockets
+Version: dbbdc64b804f7c4d0ed92198aaab49b07fa15e7f-r5
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: qt5base, qt5declarative
+License: GPL-2.0+ or LGPL-3.0, GPL-3.0 with exception(tools)
+Installed-Size: 276480
+Description: qt5websockets
+Filename: qt5websockets_dbbdc64b804f7c4d0ed92198aaab49b07fa15e7f-r5_kindle5.ipk
+Size: 79631
+SHA256sum: 8ea1879b304063f81dc588dc28d0e3c080e7740a54e2bbc5111ebcb8fca16a52
+
 Package: readline
 Version: 5.2-r3
 Architecture: kindle5
@@ -1651,6 +2108,241 @@ Description: util-linux
 Filename: util-linux_2.12r-r3_kindle5.ipk
 Size: 595664
 SHA256sum: 5676d557914ac952579cd4a1e7c27002bb5c97e95541fe33df2a2118947d0757
+
+Package: vte
+Version: 0.66.2-r5
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: gnutls, gobject-introspection, icu, libfribidi, libgtk3, pcre2
+License: LGPL-3.0+
+Installed-Size: 1351680
+Description: vte
+Filename: vte_0.66.2-r5_kindle5.ipk
+Size: 350189
+SHA256sum: 5978e8bfcf587e6f761708000cfa8177a1dda17b0f78df84db14d6a7888f599b
+
+Package: xcb-proto
+Version: 1.17.0-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: MIT
+Installed-Size: 1146880
+Description: xcb-proto
+Filename: xcb-proto_1.17.0-r4_kindle5.ipk
+Size: 197116
+SHA256sum: 2987c3c49545e5e55b3c723e1698c51c8b76f6bc962fc1329866f07eb10cd8de
+
+Package: xcb-util-image
+Version: 0.4.1-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: xcb-util
+License: MIT
+Installed-Size: 30720
+Description: xcb-util-image
+Filename: xcb-util-image_0.4.1-r4_kindle5.ipk
+Size: 7348
+SHA256sum: d03a89ce6924f083f732162affdbefb17f084b1f8c8c47dacf08cdbcd651b5f4
+
+Package: xcb-util-keysyms
+Version: 0.4.1-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libxcb
+License: MIT
+Installed-Size: 20480
+Description: xcb-util-keysyms
+Filename: xcb-util-keysyms_0.4.1-r4_kindle5.ipk
+Size: 3896
+SHA256sum: 175d8d610bcfaf373a7f3d6c523f4dd1a7adfbc99958824aab89f38189b74fb1
+
+Package: xcb-util-renderutil
+Version: 0.3.10-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: xcb-util
+License: MIT
+Installed-Size: 30720
+Description: xcb-util-renderutil
+Filename: xcb-util-renderutil_0.3.10-r4_kindle5.ipk
+Size: 5451
+SHA256sum: 8df5a39ff6032736096c02d30d811265f108294230704ef861abf9952989a9da
+
+Package: xcb-util-wm
+Version: 0.4.2-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libxcb
+License: MIT
+Installed-Size: 81920
+Description: xcb-util-wm
+Filename: xcb-util-wm_0.4.2-r4_kindle5.ipk
+Size: 16705
+SHA256sum: 0ebb75cbb9a2117814dcff21b032de51319d7ae9218ac65f73c8b79a371e1c9a
+
+Package: xcb-util
+Version: 0.4.1-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libxcb
+License: MIT
+Installed-Size: 30720
+Description: xcb-util
+Filename: xcb-util_0.4.1-r4_kindle5.ipk
+Size: 6792
+SHA256sum: 3dba965b5dedf751bc48f064fd675e458cd4f2cb65ee89aa9eee47f5b47e3265
+
+Package: xlib-libx11
+Version: 1.8.12-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libxcb, xlib-libxau, xlib-libxdmcp
+License: MIT
+Installed-Size: 2549760
+Description: xlib_libX11
+Filename: xlib-libx11_1.8.12-r4_kindle5.ipk
+Size: 859148
+SHA256sum: 3a4ccd209e33baf20bdf6c1796fa9d55c9837aa76bf0abde00a4492883f5f7b6
+
+Package: xlib-libxau
+Version: 1.0.12-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: MIT
+Installed-Size: 20480
+Description: xlib_libXau
+Filename: xlib-libxau_1.0.12-r4_kindle5.ipk
+Size: 4820
+SHA256sum: 3f1ce3240cf55b002ae4669f9fb475bec7174eabe551e41fb9d103a3232dc247
+
+Package: xlib-libxdamage
+Version: 1.1.2-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: xlib-libx11, xlib-libxfixes
+License: MIT
+Installed-Size: 20480
+Description: xlib_libXdamage
+Filename: xlib-libxdamage_1.1.2-r4_kindle5.ipk
+Size: 4038
+SHA256sum: 23d09854520af52682cd58ea9ceaf6e9d5db5bf83ba02dd8c5890b69c0dc9ec3
+
+Package: xlib-libxdmcp
+Version: 1.1.5-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: MIT
+Installed-Size: 30720
+Description: xlib_libXdmcp
+Filename: xlib-libxdmcp_1.1.5-r4_kindle5.ipk
+Size: 8174
+SHA256sum: dd6f0a868b4fe654c477eb183bd42fd0f7f70f3858535ffaa41c5c83301b68ea
+
+Package: xlib-libxext
+Version: 1.3.6-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: xlib-libx11
+License: MIT
+Installed-Size: 81920
+Description: xlib_libXext
+Filename: xlib-libxext_1.3.6-r4_kindle5.ipk
+Size: 23374
+SHA256sum: 563fd5e48d7dd1cdcc19d13dc306ae604c356d67fa503fff751d2a68f02fbb1a
+
+Package: xlib-libxfixes
+Version: 6.0.2-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: xlib-libx11
+License: MIT
+Installed-Size: 30720
+Description: xlib_libXfixes
+Filename: xlib-libxfixes_6.0.2-r4_kindle5.ipk
+Size: 7241
+SHA256sum: 116d3ee34fa4892aeeaf59cfda6c067b33615c658069ebedf991292412dd0315
+
+Package: xlib-libxi
+Version: 1.8.2-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: xlib-libx11, xlib-libxext, xlib-libxfixes
+License: MIT
+Installed-Size: 71680
+Description: xlib_libXi
+Filename: xlib-libxi_1.8.2-r4_kindle5.ipk
+Size: 25881
+SHA256sum: a64861efe176734cb4a6c1621cd5cb83e65c9f35ab1727ab5684c15e48e937bc
+
+Package: xlib-libxrandr
+Version: 1.5.4-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: xlib-libx11, xlib-libxext, xlib-libxrender
+License: MIT
+Installed-Size: 51200
+Description: xlib_libXrandr
+Filename: xlib-libxrandr_1.5.4-r4_kindle5.ipk
+Size: 15012
+SHA256sum: d29e451333a3be751bd9ac0f91fed2b055780ab4fec6c633f4aa571060101536
+
+Package: xlib-libxrender
+Version: 0.9.12-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: xlib-libx11
+License: MIT
+Installed-Size: 51200
+Description: xlib_libXrender
+Filename: xlib-libxrender_0.9.12-r4_kindle5.ipk
+Size: 16346
+SHA256sum: 2d38b93b05f3f36c328fe51930be17cb590b229d7329abd9472ea139b12709a8
+
+Package: xlib-libxtst
+Version: 1.2.5-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: xlib-libx11, xlib-libxext, xlib-libxi
+License: MIT
+Installed-Size: 30720
+Description: xlib_libXtst
+Filename: xlib-libxtst_1.2.5-r4_kindle5.ipk
+Size: 8844
+SHA256sum: 3852e0f594426c91c17a5567d54b5f5cb11fcf5126031c0ba19fdd663759e419
 
 Package: xxhash
 Version: 0.8.3-r3
