@@ -478,6 +478,20 @@ Filename: jq_1.8.2-r3_kindle5.ipk
 Size: 190494
 SHA256sum: 7d95d76b8fcdcc74753dfce0a840a684b6492444b5b329ea3e836588e346a570
 
+Package: k2
+Version: 0.2.0-r3
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: dejavu, eboard (>= 0.1.1-r1), ereader-hal (>= 0.4.0-r1), opkg (>= 0.7.0-r12), python-certifi, python-pyqt5, python3 (>= 3.14.7-r6), qt5quickcontrols2, qt5svg, xlib-libxdamage
+License: MIT
+Installed-Size: 1853440
+Description: k2 package and system manager
+Filename: k2_0.2.0-r3_kindle5.ipk
+Size: 1143454
+SHA256sum: ea9f68feef2fab80da94b77e55392e752e900ff31a6e8786af94030d6133d84e
+
 Package: kindletool
 Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r3
 Architecture: kindle5
