@@ -479,7 +479,7 @@ Size: 190140
 SHA256sum: 7d5d8e597fbc837b37fbb15dc994fb23901e2b5b734a0b4ac82ba7798ac0837e
 
 Package: k2
-Version: 0.2.0-r3
+Version: 0.2.0-r4
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -488,9 +488,9 @@ Depends: dejavu, eboard (>= 0.1.1-r1), ereader-hal (>= 0.4.0-r1), opkg (>= 0.7.0
 License: MIT
 Installed-Size: 1853440
 Description: k2 package and system manager
-Filename: k2_0.2.0-r3_kindlepw2.ipk
-Size: 1143463
-SHA256sum: 29b2759e4f1fad9944b5a91e7f966f8edbd47c5f216dffdfc92c618dba3ff8c8
+Filename: k2_0.2.0-r4_kindlepw2.ipk
+Size: 1143466
+SHA256sum: dd442d6a3382c9bb2ab2688527a04b99850091c44d73221d217166cc1fa9cb61
 
 Package: kindletool
 Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r4
@@ -1877,18 +1877,18 @@ Size: 8973538
 SHA256sum: 534b1c5a7b90d358e7d9b395a8e4493e1b857204a40b74dd88223727f3714085
 
 Package: qt5base
-Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r9
+Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r10
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: freetype, jpeg-turbo, libglib2, libgtk3, libopenssl, libpng, libxcb, libxkbcommon, pcre2, toolchain-libatomic, toolchain-libstdcpp, xcb-util-image, xcb-util-keysyms, xcb-util-renderutil, xcb-util-wm, xlib-libx11, xlib-libxext, zlib-ng, zstd
+Depends: freetype, jpeg-turbo, libglib2, libgtk3, libopenssl, libpng, libxcb, libxkbcommon, pcre2 (>= 10.47-r4), toolchain-libatomic, toolchain-libstdcpp, xcb-util-image, xcb-util-keysyms, xcb-util-renderutil, xcb-util-wm, xlib-libx11, xlib-libxext, zlib-ng, zstd
 License: GPL-2.0+ or LGPL-3.0, GPL-3.0 with exception(tools), GFDL-1.3 (docs)
 Installed-Size: 23879680
 Description: qt5base
-Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r9_kindlepw2.ipk
-Size: 8933057
-SHA256sum: 29776f637ee695db09eb0689b79a936504902daa54531cb7644531768428fc91
+Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r10_kindlepw2.ipk
+Size: 8933072
+SHA256sum: 5b345c3936838bcedb4db358d0122a7f65857d9a639b452af85bccc8f397e4c2
 
 Package: qt5declarative
 Version: 50c8def854806485d66aabcf6918e8b987032e55-r6

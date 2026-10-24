@@ -479,7 +479,7 @@ Size: 190494
 SHA256sum: 7d95d76b8fcdcc74753dfce0a840a684b6492444b5b329ea3e836588e346a570
 
 Package: k2
-Version: 0.2.0-r3
+Version: 0.2.0-r4
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -488,9 +488,9 @@ Depends: dejavu, eboard (>= 0.1.1-r1), ereader-hal (>= 0.4.0-r1), opkg (>= 0.7.0
 License: MIT
 Installed-Size: 1853440
 Description: k2 package and system manager
-Filename: k2_0.2.0-r3_kindle5.ipk
-Size: 1143454
-SHA256sum: ea9f68feef2fab80da94b77e55392e752e900ff31a6e8786af94030d6133d84e
+Filename: k2_0.2.0-r4_kindle5.ipk
+Size: 1143458
+SHA256sum: eb595aa6449c3147aadd969eef698549b522deae68dace014e8cd8ec0d4d6b6a
 
 Package: kindletool
 Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r3
@@ -1041,17 +1041,17 @@ Size: 95613
 SHA256sum: d0bb61d3d6742d90064241d84f120320ddfce9dc4ee05cdaaf10f20c730676f6
 
 Package: pcre2
-Version: 10.47-r3
+Version: 10.47-r4
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
 License: BSD-3-Clause
-Installed-Size: 624640
+Installed-Size: 1064960
 Description: pcre2
-Filename: pcre2_10.47-r3_kindle5.ipk
-Size: 244061
-SHA256sum: 9ae48bb835de168d7781830979f3fd5eccd35da9243977dc5f3047a955546b2a
+Filename: pcre2_10.47-r4_kindle5.ipk
+Size: 409418
+SHA256sum: 818a7f8cee57b65dcf5eb1e647d94a35c7a875a56e29bff170ba5185d5f39705
 
 Package: pcre
 Version: 8.45-r3
@@ -1863,18 +1863,18 @@ Size: 8968470
 SHA256sum: fecc5b8d9721e463ae0ced90ba2dc326e2cd9c6e9b961a177561cdba20fe50b3
 
 Package: qt5base
-Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r9
+Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r10
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: freetype, jpeg-turbo, libglib2, libgtk3, libopenssl, libpng, libxcb, libxkbcommon, pcre2, toolchain-libatomic, toolchain-libstdcpp, xcb-util-image, xcb-util-keysyms, xcb-util-renderutil, xcb-util-wm, xlib-libx11, xlib-libxext, zlib-ng, zstd
+Depends: freetype, jpeg-turbo, libglib2, libgtk3, libopenssl, libpng, libxcb, libxkbcommon, pcre2 (>= 10.47-r4), toolchain-libatomic, toolchain-libstdcpp, xcb-util-image, xcb-util-keysyms, xcb-util-renderutil, xcb-util-wm, xlib-libx11, xlib-libxext, zlib-ng, zstd
 License: GPL-2.0+ or LGPL-3.0, GPL-3.0 with exception(tools), GFDL-1.3 (docs)
 Installed-Size: 23879680
 Description: qt5base
-Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r9_kindle5.ipk
-Size: 8938598
-SHA256sum: 246fc3c19ed33542ed8249172253a2a1d0e2df7f9c4d76b9f6e9bb963c990150
+Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r10_kindle5.ipk
+Size: 8938616
+SHA256sum: e4407af6358cf46f73caf9830080120ee2e9f2e9e9e22072f2d0d37f2cbc098f
 
 Package: qt5declarative
 Version: 50c8def854806485d66aabcf6918e8b987032e55-r6
