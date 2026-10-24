@@ -1877,18 +1877,18 @@ Size: 8973538
 SHA256sum: 534b1c5a7b90d358e7d9b395a8e4493e1b857204a40b74dd88223727f3714085
 
 Package: qt5base
-Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r10
+Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r11
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: freetype, jpeg-turbo, libglib2, libgtk3, libopenssl, libpng, libxcb, libxkbcommon, pcre2 (>= 10.47-r4), toolchain-libatomic, toolchain-libstdcpp, xcb-util-image, xcb-util-keysyms, xcb-util-renderutil, xcb-util-wm, xlib-libx11, xlib-libxext, zlib-ng, zstd
+Depends: freetype, jpeg-turbo, libglib2 (>= 2.84.4-r4), libgtk3, libopenssl, libpng, libxcb, libxkbcommon, pcre2 (>= 10.47-r4), toolchain-libatomic, toolchain-libstdcpp, xcb-util-image, xcb-util-keysyms, xcb-util-renderutil, xcb-util-wm, xlib-libx11, xlib-libxext, zlib-ng, zstd
 License: GPL-2.0+ or LGPL-3.0, GPL-3.0 with exception(tools), GFDL-1.3 (docs)
 Installed-Size: 23879680
 Description: qt5base
-Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r10_kindlepw2.ipk
-Size: 8933072
-SHA256sum: 5b345c3936838bcedb4db358d0122a7f65857d9a639b452af85bccc8f397e4c2
+Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r11_kindlepw2.ipk
+Size: 8933079
+SHA256sum: b4b9c04faf73927f4d9c2531492623aca4b72c8beee9b7c6d7d518bd919ef6bf
 
 Package: qt5declarative
 Version: 50c8def854806485d66aabcf6918e8b987032e55-r6

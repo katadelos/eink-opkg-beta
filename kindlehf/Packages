@@ -713,18 +713,18 @@ Size: 82020
 SHA256sum: 3c689d6affafbcd8a0bacd197e4b484b3ac470cab21b8883886d6a010de9edb5
 
 Package: libglib2
-Version: 2.29.18-r3
+Version: 2.84.4-r4
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: libffi, zlib-ng
-License: LGPL-2.0+
-Installed-Size: 8570880
+Depends: gobject-introspection, libffi, pcre2, zlib-ng
+License: LGPL-2.1+
+Installed-Size: 17971200
 Description: libglib2
-Filename: libglib2_2.29.18-r3_kindlehf.ipk
-Size: 2617692
-SHA256sum: 362e82dc9b90473d98a0aa790ada9f24df27828b221ffc8f5ded771747e500b3
+Filename: libglib2_2.84.4-r4_kindlehf.ipk
+Size: 3265241
+SHA256sum: 51dd669001840186e3498096bbb5e5515a48fd531fe8239d0f20c5f4d1eb0b60
 
 Package: libgtk3
 Version: 3.24.51-r4
@@ -1891,18 +1891,18 @@ Size: 8991294
 SHA256sum: 13bc1071c21b416950f83eeea79cdb2b690708a302d7a9b970cc5e4541ec7eb9
 
 Package: qt5base
-Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r10
+Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r11
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: freetype, jpeg-turbo, libglib2, libgtk3, libopenssl, libpng, libxcb, libxkbcommon, pcre2 (>= 10.47-r4), toolchain-libatomic, toolchain-libstdcpp, xcb-util-image, xcb-util-keysyms, xcb-util-renderutil, xcb-util-wm, xlib-libx11, xlib-libxext, zlib-ng, zstd
+Depends: freetype, jpeg-turbo, libglib2 (>= 2.84.4-r4), libgtk3, libopenssl, libpng, libxcb, libxkbcommon, pcre2 (>= 10.47-r4), toolchain-libatomic, toolchain-libstdcpp, xcb-util-image, xcb-util-keysyms, xcb-util-renderutil, xcb-util-wm, xlib-libx11, xlib-libxext, zlib-ng, zstd
 License: GPL-2.0+ or LGPL-3.0, GPL-3.0 with exception(tools), GFDL-1.3 (docs)
 Installed-Size: 23859200
 Description: qt5base
-Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r10_kindlehf.ipk
-Size: 8923861
-SHA256sum: cd76b8eee7157844f4dd3a5cb610557657a400fb0e21a43d3c789c317361c7d3
+Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r11_kindlehf.ipk
+Size: 8923869
+SHA256sum: 6ca5240176c0695dfa4ac81162d54fdee94ea4faf981e46b3b0fe4d5c231bc39
 
 Package: qt5declarative
 Version: 50c8def854806485d66aabcf6918e8b987032e55-r6
