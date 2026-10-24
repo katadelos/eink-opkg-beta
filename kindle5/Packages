@@ -176,7 +176,7 @@ Size: 1162546
 SHA256sum: dc467ae0505649011d0d04774ca55078a366f0ecdd3517058ce7144aa0296bb5
 
 Package: ereader-hal
-Version: 0.5.0-r1
+Version: 0.5.1-r1
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -185,9 +185,9 @@ Depends: python3 (>= 3.14)
 License: MIT
 Installed-Size: 327680
 Description: Kindle and Kobo hardware controls with Python bindings
-Filename: ereader-hal_0.5.0-r1_kindle5.ipk
-Size: 131257
-SHA256sum: 7c0b792a645ea50ee6c0713515905a3fb3a2d615c592e4fd7107c6b2c710bcaa
+Filename: ereader-hal_0.5.1-r1_kindle5.ipk
+Size: 132983
+SHA256sum: f5f2228224cc9f068e5a5470b16d5c9ddebc182d5e646cd7a8f6ff9c97c1d061
 
 Package: evemu
 Version: 2.7.0-r3
