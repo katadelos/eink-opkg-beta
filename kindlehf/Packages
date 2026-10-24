@@ -479,7 +479,7 @@ Size: 189700
 SHA256sum: c42d74269b16cd545373ac2463ad08834efcf459f27ebecedf9d81075d7cdb3a
 
 Package: k2
-Version: 0.2.0-r5
+Version: 0.2.0-r6
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
@@ -488,9 +488,9 @@ Depends: dejavu, eboard (>= 0.1.1-r1), ereader-hal (>= 0.4.0-r1), opkg (>= 0.7.0
 License: MIT
 Installed-Size: 1853440
 Description: k2 package and system manager
-Filename: k2_0.2.0-r5_kindlehf.ipk
-Size: 1143513
-SHA256sum: dc6d63a32f1d5b55323b08425bb102178aa0f08d957976db7eb651ba973324d2
+Filename: k2_0.2.0-r6_kindlehf.ipk
+Size: 1143318
+SHA256sum: c7f2487e2f88d14d1942547d4a7fd9775fc24d2bb80c0e28fd45f6cc2c2747fa
 
 Package: kindletool
 Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r4
