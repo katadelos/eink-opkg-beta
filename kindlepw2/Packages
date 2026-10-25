@@ -148,7 +148,7 @@ Size: 95859
 SHA256sum: 3e883e04aca78fe91f4a2a68419695dde8bc491ae11dd27177d7f30d66882579
 
 Package: eboard
-Version: 0.1.2-r3
+Version: 0.1.2-r5
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -157,9 +157,9 @@ Depends: python-pyqt5, python3, qt5declarative, xlib-libxdamage
 License: MIT
 Installed-Size: 81920
 Description: Shared Qt Quick keyboard and e-paper feedback
-Filename: eboard_0.1.2-r3_kindlepw2.ipk
-Size: 16394
-SHA256sum: 1570be5b3990dffc6339b16d6dbf01d9c7ba162fc5a9aeb279f67d3ca6f9382d
+Filename: eboard_0.1.2-r5_kindlepw2.ipk
+Size: 16910
+SHA256sum: ba536d68b411b6bdb1fe47a2d2a953b67e86e21ea2c4b01a7f5b46a97b8d6ec8
 
 Package: elfutils
 Version: 0.194-r4
@@ -479,18 +479,18 @@ Size: 190140
 SHA256sum: 7d5d8e597fbc837b37fbb15dc994fb23901e2b5b734a0b4ac82ba7798ac0837e
 
 Package: k2
-Version: 0.2.0-r6
+Version: 0.2.0-r12
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: dejavu, eboard (>= 0.1.1-r1), ereader-hal (>= 0.4.0-r1), opkg (>= 0.7.0-r12), python-certifi, python-pyqt5 (>= 5.15.6-r5), python3 (>= 3.14.7-r6), qt5quickcontrols2, qt5svg, xlib-libxdamage
+Depends: dejavu, eboard (>= 0.1.2-r5), ereader-hal (>= 0.4.0-r1), opkg (>= 0.7.0-r12), python-certifi, python-pyqt5 (>= 5.15.6-r5), python3 (>= 3.14.7-r6), qt5quickcontrols2, qt5svg, xlib-libxdamage
 License: MIT
 Installed-Size: 1853440
 Description: k2 package and system manager
-Filename: k2_0.2.0-r6_kindlepw2.ipk
-Size: 1143324
-SHA256sum: dd7e8484f6e80f7b643c68bae492c7afaca344d62a59e5e91866366b384f1aae
+Filename: k2_0.2.0-r12_kindlepw2.ipk
+Size: 1144554
+SHA256sum: 38c90a086842f72597c2b6c95c7c9ac90a989f73d0b9c697c8d735f3ff9fdd43
 
 Package: kindletool
 Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r4
@@ -521,18 +521,46 @@ Size: 112116
 SHA256sum: 265f4228b454620f1d51873cf57e04609981e3f5c44bb91019f78d85f297a732
 
 Package: kppmods
-Version: 2.0.0+git.r14.30d3334-r1
+Version: 2.0.0+git.r15.2789959-r9
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
 Depends: toolchain-libstdcpp
 License: Proprietary, BSL-1.0, MIT, AGPL-3.0
-Installed-Size: 2447360
+Installed-Size: 2508800
 Description: KPP Mods runtime and bundled Kindle extensions
-Filename: kppmods_2.0.0+git.r14.30d3334-r1_kindlepw2.ipk
-Size: 1045335
-SHA256sum: 993144f52addd79f68391a2668edda80d815c6f168a2654afa28c8e146ee9589
+Filename: kppmods_2.0.0+git.r15.2789959-r9_kindlepw2.ipk
+Size: 1070893
+SHA256sum: b1df5f6cc046274d477824f3b7f0d681ade14fe3a9aad40eff7ce96558eec087
+
+Package: kppmods-koreader
+Version: 0.1.0-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: kppmods (>= 2.0.0+git.r15.2789959-r6)
+License: MIT, CC-BY-3.0
+Installed-Size: 51200
+Description: KOReader shortcut in the KPP search bar
+Filename: kppmods-koreader_0.1.0-r4_kindlepw2.ipk
+Size: 19282
+SHA256sum: d39d92a2ea59858d133fab786a112a5ebb94d7305d771a505f4a913aff4607ac
+
+Package: kppmods-supernet
+Version: 0.1.0+git.r6.9f822e4-r1
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: kppmods (>= 2.0.0+git.r10.fa3d0a9-r1)
+License: MIT
+Installed-Size: 51200
+Description: Supernet SSH controls for KPP Mods
+Filename: kppmods-supernet_0.1.0+git.r6.9f822e4-r1_kindlepw2.ipk
+Size: 9047
+SHA256sum: 0e6d4b843e121656701420e8af32483bdd700823155c49b4a948f800b2b9a1fb
 
 Package: kterm
 Version: 2.6-r8
@@ -671,6 +699,19 @@ Filename: libfribidi_1.0.16-r4_kindlepw2.ipk
 Size: 27637
 SHA256sum: 0e102e639f41da5be5a96f93f1dd4033311330406712dd2bf1a4c90149c19e60
 
+Package: libfuse
+Version: 2.9.7-r5
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-2.0, LGPL-2.1
+Installed-Size: 245760
+Description: libfuse
+Filename: libfuse_2.9.7-r5_kindlepw2.ipk
+Size: 82119
+SHA256sum: ec7b248e1a8e9545717d984805f3b4b976bf8fa5f94d18d34c37eb4561eeb0df
+
 Package: libfuse3
 Version: 3.18.2-r5
 Architecture: kindlepw2
@@ -684,19 +725,6 @@ Description: libfuse3
 Filename: libfuse3_3.18.2-r5_kindlepw2.ipk
 Size: 97281
 SHA256sum: 47cfd21c67bffe156e9e0025b08daebc36f62ac735e96b387da106e5c99a50a8
-
-Package: libfuse
-Version: 2.9.7-r5
-Architecture: kindlepw2
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-License: GPL-2.0, LGPL-2.1
-Installed-Size: 245760
-Description: libfuse
-Filename: libfuse_2.9.7-r5_kindlepw2.ipk
-Size: 82119
-SHA256sum: ec7b248e1a8e9545717d984805f3b4b976bf8fa5f94d18d34c37eb4561eeb0df
 
 Package: libglib2
 Version: 2.84.4-r4
@@ -1014,7 +1042,7 @@ Size: 3497702
 SHA256sum: 9988c41cf78aa05732add8e9e928f9c2667942eb22f4da626ba165eb556ac718
 
 Package: opkg
-Version: 0.7.0-r12
+Version: 0.7.0-r13
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -1023,9 +1051,9 @@ Depends: bzip2, libarchive, libcurl, lz4, xz, zstd
 License: GPL-2.0+
 Installed-Size: 624640
 Description: opkg
-Filename: opkg_0.7.0-r12_kindlepw2.ipk
-Size: 315523
-SHA256sum: 9126be5d7b3eaa394aa02838f7a34ff5c7782f0ebd404d5005b8ddae28e674df
+Filename: opkg_0.7.0-r13_kindlepw2.ipk
+Size: 315833
+SHA256sum: 8c5f945abe83dc564fde2d316e285026b6a559f23fedf063813f8ab9110d5eb7
 
 Package: pango
 Version: 1.50.14-r4
@@ -1054,19 +1082,6 @@ Filename: pax-utils_1.3.7-r4_kindlepw2.ipk
 Size: 95943
 SHA256sum: 87f7b629b59186bc7fcef0e86f97a16b24ce88a4cedd5fd7e3d45cab85ce90fc
 
-Package: pcre2
-Version: 10.47-r4
-Architecture: kindlepw2
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-License: BSD-3-Clause
-Installed-Size: 1064960
-Description: pcre2
-Filename: pcre2_10.47-r4_kindlepw2.ipk
-Size: 409369
-SHA256sum: 46c72e831db2aa512bc9fd8791d84b8b4b3781bcc9c5241ab02e0dc2accc6a56
-
 Package: pcre
 Version: 8.45-r4
 Architecture: kindlepw2
@@ -1079,6 +1094,19 @@ Description: pcre
 Filename: pcre_8.45-r4_kindlepw2.ipk
 Size: 153754
 SHA256sum: f14469269ea65bab5bfd886bf9c9a2bb03cc741e74365ed47850dd849a5c7841
+
+Package: pcre2
+Version: 10.47-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: BSD-3-Clause
+Installed-Size: 1064960
+Description: pcre2
+Filename: pcre2_10.47-r4_kindlepw2.ipk
+Size: 409369
+SHA256sum: 46c72e831db2aa512bc9fd8791d84b8b4b3781bcc9c5241ab02e0dc2accc6a56
 
 Package: pixman
 Version: 0.46.4-r4
@@ -1638,20 +1666,6 @@ Filename: python-pyopenssl_26.1.0-r4_kindlepw2.ipk
 Size: 56015
 SHA256sum: ea0816506e9ea85b3c2a1d3fd2524aaf6edfe2f2a1e9b82f1bfb6b0021989100
 
-Package: python-pyqt5-sip
-Version: 12.18.0-r4
-Architecture: kindlepw2
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-Depends: python3
-License: BSD-2-Clause
-Installed-Size: 163840
-Description: python-pyqt5-sip
-Filename: python-pyqt5-sip_12.18.0-r4_kindlepw2.ipk
-Size: 61147
-SHA256sum: ee1ad237cdbfb2d3821e903ad4854e61257637958c17bcfbf876307bc925084f
-
 Package: python-pyqt5
 Version: 5.15.6-r8
 Architecture: kindlepw2
@@ -1666,6 +1680,20 @@ Filename: python-pyqt5_5.15.6-r8_kindlepw2.ipk
 Size: 3034031
 SHA256sum: 41ac4bac5ebd08dc9e439fb4df851d55a67d0fe0d275d7ec972b0ebaa7c8edeb
 
+Package: python-pyqt5-sip
+Version: 12.18.0-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: BSD-2-Clause
+Installed-Size: 163840
+Description: python-pyqt5-sip
+Filename: python-pyqt5-sip_12.18.0-r4_kindlepw2.ipk
+Size: 61147
+SHA256sum: ee1ad237cdbfb2d3821e903ad4854e61257637958c17bcfbf876307bc925084f
+
 Package: python-pysocks
 Version: 1.7.1-r4
 Architecture: kindlepw2
@@ -1679,6 +1707,20 @@ Description: python-pysocks
 Filename: python-pysocks_1.7.1-r4_kindlepw2.ipk
 Size: 15958
 SHA256sum: 33c0c5a9504ace703d86c38031f6efb4b89d4788350e3de91e3b73137adfd434
+
+Package: python-requests
+Version: 2.33.1-r5
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: Apache-2.0
+Installed-Size: 235520
+Description: python-requests
+Filename: python-requests_2.33.1-r5_kindlepw2.ipk
+Size: 58797
+SHA256sum: c5d8589a30a4b1e5383b8a907a92298d5975acd76a9c6bfc4488c05aeedc87cd
 
 Package: python-requests-oauthlib
 Version: 2.0.0-r5
@@ -1707,20 +1749,6 @@ Description: python-requests-toolbelt
 Filename: python-requests-toolbelt_1.0.0-r4_kindlepw2.ipk
 Size: 40465
 SHA256sum: 022deb16217989f1d09450fcec873cad12103c20185d532ab57a887c847c9c00
-
-Package: python-requests
-Version: 2.33.1-r5
-Architecture: kindlepw2
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-Depends: python3
-License: Apache-2.0
-Installed-Size: 235520
-Description: python-requests
-Filename: python-requests_2.33.1-r5_kindlepw2.ipk
-Size: 58797
-SHA256sum: c5d8589a30a4b1e5383b8a907a92298d5975acd76a9c6bfc4488c05aeedc87cd
 
 Package: python-rich
 Version: 15.0.0-r4
@@ -1904,20 +1932,6 @@ Filename: qt5declarative_50c8def854806485d66aabcf6918e8b987032e55-r6_kindlepw2.i
 Size: 4159291
 SHA256sum: e9a54df96b8da9bb13d5336efadc5cf992350da5d74a35c617804f5595b06522
 
-Package: qt5quickcontrols2
-Version: 69fea340f8f4c483a9b2889e4e24a4b1b52ebc87-r5
-Architecture: kindlepw2
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-Depends: qt5base, qt5declarative
-License: GPL-3.0 or LGPL-3.0, GFDL-1.3 (docs)
-Installed-Size: 8632320
-Description: qt5quickcontrols2
-Filename: qt5quickcontrols2_69fea340f8f4c483a9b2889e4e24a4b1b52ebc87-r5_kindlepw2.ipk
-Size: 2021186
-SHA256sum: e9c75d21c7db5904ed5445170bfff9c183d59d5c495dddf143f2596f7caf6b44
-
 Package: qt5quickcontrols
 Version: 9325659ec390eda5b160736a926ba58ccb445cce-r5
 Architecture: kindlepw2
@@ -1931,6 +1945,20 @@ Description: qt5quickcontrols
 Filename: qt5quickcontrols_9325659ec390eda5b160736a926ba58ccb445cce-r5_kindlepw2.ipk
 Size: 1343058
 SHA256sum: a65753fdda67097e8fbb82365dea1d9946493a990b4bc3fcf51443cf978e016e
+
+Package: qt5quickcontrols2
+Version: 69fea340f8f4c483a9b2889e4e24a4b1b52ebc87-r5
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: qt5base, qt5declarative
+License: GPL-3.0 or LGPL-3.0, GFDL-1.3 (docs)
+Installed-Size: 8632320
+Description: qt5quickcontrols2
+Filename: qt5quickcontrols2_69fea340f8f4c483a9b2889e4e24a4b1b52ebc87-r5_kindlepw2.ipk
+Size: 2021186
+SHA256sum: e9c75d21c7db5904ed5445170bfff9c183d59d5c495dddf143f2596f7caf6b44
 
 Package: qt5svg
 Version: 690128b2b8fb6d6fbdc43b2b2633f0f1de3f0638-r5
@@ -2042,6 +2070,20 @@ Description: strace
 Filename: strace_7.0-r4_kindlepw2.ipk
 Size: 860840
 SHA256sum: 9561b0f7c65ac8661812bd24703894cd3034f9477697939fa4aa37ef1acb86ff
+
+Package: supernet
+Version: 0.1.0+git.r6.9f822e4-r2
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: dropbear (>= 2026.93-r6)
+License: MIT
+Installed-Size: 71680
+Description: Optional SSH, ADB and developer controls for k2
+Filename: supernet_0.1.0+git.r6.9f822e4-r2_kindlepw2.ipk
+Size: 28509
+SHA256sum: b4e6ae845e9d7d505493d7ab8d4f9db567596f41c9e9b8ac6a8648858dffd21a
 
 Package: the-silver-searcher
 Version: 7b571a8a94d0e22a06e3313cb0d9672b416fb2c1-r4
@@ -2164,6 +2206,20 @@ Filename: xcb-proto_1.17.0-r4_kindlepw2.ipk
 Size: 197114
 SHA256sum: 30330e0fb265f07f6e97ce81a5c994403e91006e4b67d70d2051b2a8436ae2c9
 
+Package: xcb-util
+Version: 0.4.1-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libxcb
+License: MIT
+Installed-Size: 30720
+Description: xcb-util
+Filename: xcb-util_0.4.1-r4_kindlepw2.ipk
+Size: 6701
+SHA256sum: ba4ea4e53d062628267550294e189be0010c5c48fd619afdf22946030d4a3b95
+
 Package: xcb-util-image
 Version: 0.4.1-r4
 Architecture: kindlepw2
@@ -2219,20 +2275,6 @@ Description: xcb-util-wm
 Filename: xcb-util-wm_0.4.2-r4_kindlepw2.ipk
 Size: 16780
 SHA256sum: c5d18ce10a78d2b76550af9783a7c38efb629a4dd932548a9898b4c24db40de1
-
-Package: xcb-util
-Version: 0.4.1-r4
-Architecture: kindlepw2
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-Depends: libxcb
-License: MIT
-Installed-Size: 30720
-Description: xcb-util
-Filename: xcb-util_0.4.1-r4_kindlepw2.ipk
-Size: 6701
-SHA256sum: ba4ea4e53d062628267550294e189be0010c5c48fd619afdf22946030d4a3b95
 
 Package: xlib-libx11
 Version: 1.8.12-r4
