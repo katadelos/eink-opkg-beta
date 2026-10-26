@@ -479,18 +479,18 @@ Size: 190140
 SHA256sum: 7d5d8e597fbc837b37fbb15dc994fb23901e2b5b734a0b4ac82ba7798ac0837e
 
 Package: k2
-Version: 0.2.0-r12
+Version: 0.2.0-r14
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: dejavu, eboard (>= 0.1.2-r5), ereader-hal (>= 0.4.0-r1), opkg (>= 0.7.0-r12), python-certifi, python-pyqt5 (>= 5.15.6-r5), python3 (>= 3.14.7-r6), qt5quickcontrols2, qt5svg, xlib-libxdamage
+Depends: dejavu, eboard (>= 0.1.2-r5), ereader-hal (>= 0.4.0-r1), opkg (>= 0.7.0-r14), python-certifi, python-pyqt5 (>= 5.15.6-r5), python3 (>= 3.14.7-r6), qt5quickcontrols2, qt5svg, xlib-libxdamage
 License: MIT
 Installed-Size: 1853440
 Description: k2 package and system manager
-Filename: k2_0.2.0-r12_kindlepw2.ipk
-Size: 1144554
-SHA256sum: 38c90a086842f72597c2b6c95c7c9ac90a989f73d0b9c697c8d735f3ff9fdd43
+Filename: k2_0.2.0-r14_kindlepw2.ipk
+Size: 1144846
+SHA256sum: 681220e5133bdaac03b7723d451c9d6e39a04392ce1c4b58173e0bad6f0c1c07
 
 Package: kindletool
 Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r4
@@ -535,7 +535,7 @@ Size: 1070893
 SHA256sum: b1df5f6cc046274d477824f3b7f0d681ade14fe3a9aad40eff7ce96558eec087
 
 Package: kppmods-koreader
-Version: 0.1.0-r4
+Version: 0.1.0-r5
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -544,9 +544,9 @@ Depends: kppmods (>= 2.0.0+git.r15.2789959-r6)
 License: MIT, CC-BY-3.0
 Installed-Size: 51200
 Description: KOReader shortcut in the KPP search bar
-Filename: kppmods-koreader_0.1.0-r4_kindlepw2.ipk
-Size: 19282
-SHA256sum: d39d92a2ea59858d133fab786a112a5ebb94d7305d771a505f4a913aff4607ac
+Filename: kppmods-koreader_0.1.0-r5_kindlepw2.ipk
+Size: 19339
+SHA256sum: 2742710af5c98ad37b1adea4b0dc33ad4d484b46d5c1e34f651dc61c5740aa27
 
 Package: kppmods-supernet
 Version: 0.1.0+git.r6.9f822e4-r1
@@ -1042,7 +1042,7 @@ Size: 3497702
 SHA256sum: 9988c41cf78aa05732add8e9e928f9c2667942eb22f4da626ba165eb556ac718
 
 Package: opkg
-Version: 0.7.0-r13
+Version: 0.7.0-r14
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -1051,9 +1051,9 @@ Depends: bzip2, libarchive, libcurl, lz4, xz, zstd
 License: GPL-2.0+
 Installed-Size: 624640
 Description: opkg
-Filename: opkg_0.7.0-r13_kindlepw2.ipk
-Size: 315833
-SHA256sum: 8c5f945abe83dc564fde2d316e285026b6a559f23fedf063813f8ab9110d5eb7
+Filename: opkg_0.7.0-r14_kindlepw2.ipk
+Size: 317015
+SHA256sum: 6646a95d04485a6d7647a858c3baaf9199125c75cd0019b3454dd00f30edccbb
 
 Package: pango
 Version: 1.50.14-r4

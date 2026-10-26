@@ -479,18 +479,18 @@ Size: 189700
 SHA256sum: 196f50dab4dbb4c990dea53016d30d3493dcca3ce4dffdb2ad8d17872c638ed3
 
 Package: k2
-Version: 0.2.0-r12
+Version: 0.2.0-r14
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: dejavu, eboard (>= 0.1.2-r5), ereader-hal (>= 0.4.0-r1), opkg (>= 0.7.0-r12), python-certifi, python-pyqt5, python3 (>= 3.14.7-r6), qt5quickcontrols2, qt5svg, xlib-libxdamage
+Depends: dejavu, eboard (>= 0.1.2-r5), ereader-hal (>= 0.4.0-r1), opkg (>= 0.7.0-r14), python-certifi, python-pyqt5, python3 (>= 3.14.7-r6), qt5quickcontrols2, qt5svg, xlib-libxdamage
 License: MIT
 Installed-Size: 1853440
 Description: k2 package and system manager
-Filename: k2_0.2.0-r12_kindlehf.ipk
-Size: 1144545
-SHA256sum: 30fb6b79557605ecc4317bb8693a42c4b8ae1e9c6aaca9f68ea84f892e9d8be3
+Filename: k2_0.2.0-r14_kindlehf.ipk
+Size: 1144831
+SHA256sum: e85afc1c641221a29829a4e828885f3ebb73b2ecb948d9bed0e8e9ba560983f0
 
 Package: kindletool
 Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r5
@@ -535,7 +535,7 @@ Size: 1070407
 SHA256sum: a0cb5ec0e5c5394abe6d78253d102552be44b40d35135d963037c262aee9d9e3
 
 Package: kppmods-koreader
-Version: 0.1.0-r4
+Version: 0.1.0-r5
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
@@ -544,9 +544,9 @@ Depends: kppmods (>= 2.0.0+git.r15.2789959-r6)
 License: MIT, CC-BY-3.0
 Installed-Size: 51200
 Description: KOReader shortcut in the KPP search bar
-Filename: kppmods-koreader_0.1.0-r4_kindlehf.ipk
-Size: 19285
-SHA256sum: 70c9aeae3826612d554cafcdeaa866b82fc4e19957bed271e2702f458daf7bc5
+Filename: kppmods-koreader_0.1.0-r5_kindlehf.ipk
+Size: 19337
+SHA256sum: f9c2acacabe7ebe3e469a0e3a5a3a3336775e81ea7de09120ccaac948ba57076
 
 Package: kppmods-supernet
 Version: 0.1.0+git.r6.9f822e4-r1
@@ -1042,7 +1042,7 @@ Size: 3497827
 SHA256sum: 9fd1fec0c9a598a74a6efa481ad18e42981cce7461edf09e41811d5dbfc42234
 
 Package: opkg
-Version: 0.7.0-r13
+Version: 0.7.0-r14
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
@@ -1051,9 +1051,9 @@ Depends: bzip2, libarchive, libcurl, lz4, xz, zstd
 License: GPL-2.0+
 Installed-Size: 634880
 Description: opkg
-Filename: opkg_0.7.0-r13_kindlehf.ipk
-Size: 321605
-SHA256sum: e40ab809cef9c070a8a32be3a4385e0adc1ad224e38b3f332ed82c1fd0ff7c89
+Filename: opkg_0.7.0-r14_kindlehf.ipk
+Size: 323269
+SHA256sum: f9b34e74ed82ba022e280e02d91e5cd362d18403c921fd63a1a2f5374c4bd45e
 
 Package: pango
 Version: 1.50.14-r4

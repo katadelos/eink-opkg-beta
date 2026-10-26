@@ -479,18 +479,18 @@ Size: 190492
 SHA256sum: a42183f75baef4e1f0c52a9baa98eba4b6b803c50e05874f14ac03761b11e13d
 
 Package: k2
-Version: 0.2.0-r12
+Version: 0.2.0-r14
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: dejavu, eboard (>= 0.1.2-r5), ereader-hal (>= 0.4.0-r1), opkg (>= 0.7.0-r12), python-certifi, python-pyqt5, python3 (>= 3.14.7-r6), qt5quickcontrols2, qt5svg, xlib-libxdamage
+Depends: dejavu, eboard (>= 0.1.2-r5), ereader-hal (>= 0.4.0-r1), opkg (>= 0.7.0-r14), python-certifi, python-pyqt5, python3 (>= 3.14.7-r6), qt5quickcontrols2, qt5svg, xlib-libxdamage
 License: MIT
 Installed-Size: 1853440
 Description: k2 package and system manager
-Filename: k2_0.2.0-r12_kindle5.ipk
-Size: 1144544
-SHA256sum: 6c150e2db707aa69b096f505341fd3360735119f94e10d4ce37bf1157c7381e7
+Filename: k2_0.2.0-r14_kindle5.ipk
+Size: 1144830
+SHA256sum: e91a7ae8f0915ffbe8611f2a4682b2d258826b69fff8547c8376902b71ca5fc8
 
 Package: kindletool
 Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r4
@@ -1000,7 +1000,7 @@ Size: 3505026
 SHA256sum: d8f072f573afdeafc07566a7db4fea0867ad9fb2dca125b4dc28d6b3d2fb7a86
 
 Package: opkg
-Version: 0.7.0-r13
+Version: 0.7.0-r14
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -1009,9 +1009,9 @@ Depends: bzip2, libarchive, libcurl, lz4, xz, zstd
 License: GPL-2.0+
 Installed-Size: 624640
 Description: opkg
-Filename: opkg_0.7.0-r13_kindle5.ipk
-Size: 315406
-SHA256sum: 7c904ccd380230e12768fe0e4f599877e8c62985c603b8f2904d7e031be21319
+Filename: opkg_0.7.0-r14_kindle5.ipk
+Size: 316690
+SHA256sum: ceaa73c3cd73dcf6c25290d0de61e4f7f152948bb3f051dcbdd3736370c87464
 
 Package: pango
 Version: 1.50.14-r4
