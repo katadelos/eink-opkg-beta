@@ -107,6 +107,19 @@ Filename: cairo_1.16.0-r4_kindlepw2.ipk
 Size: 508540
 SHA256sum: 145b1b734cf24fac71b22f311f7841465a1e9dabd6d7e13bd280beaccde81c49
 
+Package: cjson
+Version: 1.7.19-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: MIT
+Installed-Size: 40960
+Description: cjson
+Filename: cjson_1.7.19-r4_kindlepw2.ipk
+Size: 11847
+SHA256sum: e2bade32c4cf4ef6cf8c9a7f326b3c48d549ff2d97ae2a4b77c0679d1b6671ff
+
 Package: coreutils
 Version: 9.10-r5
 Architecture: kindlepw2
@@ -245,7 +258,7 @@ Size: 1166078
 SHA256sum: f4fd8afae89801acf6d9f23d7d6541fa56e62a4215030cd149d1951a33ec4336
 
 Package: ereader-hal
-Version: 0.5.1-r8
+Version: 0.5.1-r9
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -254,9 +267,9 @@ Depends: python3 (>= 3.14)
 License: MIT
 Installed-Size: 368640
 Description: Kindle and Kobo hardware controls with Python bindings
-Filename: ereader-hal_0.5.1-r8_kindlepw2.ipk
-Size: 150142
-SHA256sum: 77888b2a8db3ef6e2928c7b8600e47e363d5355cb1919b3c4eba54dd8f5ab376
+Filename: ereader-hal_0.5.1-r9_kindlepw2.ipk
+Size: 150560
+SHA256sum: 66d64492f6b85454a8d47c368429a7bec4a59b1be5a939c69767286144504695
 
 Package: evemu
 Version: 2.7.0-r5
@@ -602,18 +615,18 @@ Size: 11973608
 SHA256sum: 71aa06932038a783046208ada1cecf48e2c5d086013441913384d1750d69aab9
 
 Package: imagemagick
-Version: 7.1.2-26-r6
+Version: 7.1.2-26-r7
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: bzip2, fontconfig, freetype, jpeg-turbo, libpng, libxml2, pango, toolchain-libstdcpp, xz, zlib-ng, zstd
+Depends: bzip2, fontconfig, freetype, jpeg-turbo, libpng, libxml2, libzip, pango, toolchain-libstdcpp, xz, zlib-ng, zstd
 License: Apache-2.0
-Installed-Size: 5990400
+Installed-Size: 6000640
 Description: imagemagick
-Filename: imagemagick_7.1.2-26-r6_kindlepw2.ipk
-Size: 2367644
-SHA256sum: cd7c568a49f8bbd89295d0fe870f5c8a1142ec8f07b6c5c80a6031874316b5ac
+Filename: imagemagick_7.1.2-26-r7_kindlepw2.ipk
+Size: 2369107
+SHA256sum: 3a413fe26efff36c0e81f016a919abf9673f179d1854fa82a696880d872493f7
 
 Package: inotify-tools
 Version: 3.20.2.2-r4
@@ -669,6 +682,20 @@ Filename: k2_0.2.0-r21_kindlepw2.ipk
 Size: 1149270
 SHA256sum: 1c2d129ac979b4bae5496b8281afff51294f7791e7b7f0d13e1ca44ec58cf46f
 
+Package: kindle-epub
+Version: 0.1.0-r2
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: cjson, libxml2, libzip, sqlite, toolchain-libstdcpp, zlib-ng
+License: Proprietary, BSD-3-Clause (libzip)
+Installed-Size: 1812480
+Description: Native EPUB support for the stock Kindle reader
+Filename: kindle-epub_0.1.0-r2_kindlepw2.ipk
+Size: 779514
+SHA256sum: a5e1b6dfd9dc23fa56614acad6fc53566120a26acb1b09d3891a9d1117c5dd19
+
 Package: kindletool
 Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r5
 Architecture: kindlepw2
@@ -712,7 +739,7 @@ Size: 1077561
 SHA256sum: 1b84ee64798b1cda31bca2c842b31690dd8a0cfbb48d0278999c64054680af7a
 
 Package: kppmods-koreader
-Version: 0.1.0-r5
+Version: 0.1.0-r6
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -721,9 +748,9 @@ Depends: kppmods (>= 2.0.0+git.r15.2789959-r6)
 License: MIT, CC-BY-3.0
 Installed-Size: 51200
 Description: KOReader shortcut in the KPP search bar
-Filename: kppmods-koreader_0.1.0-r5_kindlepw2.ipk
-Size: 19339
-SHA256sum: 2742710af5c98ad37b1adea4b0dc33ad4d484b46d5c1e34f651dc61c5740aa27
+Filename: kppmods-koreader_0.1.0-r6_kindlepw2.ipk
+Size: 19354
+SHA256sum: fb8d8d921ff70379357226fb345e738d9aa499e3bd5aa282ee214a9ca02fa229
 
 Package: kppmods-supernet
 Version: 0.1.0+git.r6.9f822e4-r1
@@ -740,7 +767,7 @@ Size: 9047
 SHA256sum: 0e6d4b843e121656701420e8af32483bdd700823155c49b4a948f800b2b9a1fb
 
 Package: kterm
-Version: 2.6-r8
+Version: 2.6-r9
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -749,9 +776,23 @@ Depends: dbus, dejavu, libgtk3, vte (>= 0.66.2-r5)
 License: GPL-3.0+
 Installed-Size: 256000
 Description: GTK3 terminal with an embedded keyboard for Kindle
-Filename: kterm_2.6-r8_kindlepw2.ipk
-Size: 48491
-SHA256sum: a5105d6c693c1e9dcff2d68f53a2b620ec8791e2a63749a002c9eefd011b3f28
+Filename: kterm_2.6-r9_kindlepw2.ipk
+Size: 48569
+SHA256sum: cfa1a446bb836ddefde01c1607d5af660259387176ad42a3f12d7bde1bcf6930
+
+Package: kuala
+Version: f00b4dbfd88d12d6d638010214fb8c847d59267e-r5
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libgtk3, toolchain-libstdcpp
+License: CC0-1.0
+Installed-Size: 174080
+Description: GTK3 launcher for Kindle KUAL extensions
+Filename: kuala_f00b4dbfd88d12d6d638010214fb8c847d59267e-r5_kindlepw2.ipk
+Size: 71488
+SHA256sum: 8862d96db12fb9df3c8e9116d6a3d909502f820ec99c95219a4437b62bf5db43
 
 Package: less
 Version: 692-r4
@@ -1200,6 +1241,20 @@ Description: libyaml
 Filename: libyaml_0.2.5-r4_kindlepw2.ipk
 Size: 47724
 SHA256sum: 5d18552755ee5aed085af7b95b7f4e265c06fa2cd9951661b72c0310331bbb45
+
+Package: libzip
+Version: 1.11.4-r4
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: bzip2, gnutls, libopenssl, xz, zlib-ng, zstd
+License: BSD-3-Clause
+Installed-Size: 204800
+Description: libzip
+Filename: libzip_1.11.4-r4_kindlepw2.ipk
+Size: 82529
+SHA256sum: 64092031974d9e0eaa37d816e7d03ed14cab81202f5f1d3d5fc471b2e3e680f4
 
 Package: lsof
 Version: 4.99.6-r4

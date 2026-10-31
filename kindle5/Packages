@@ -107,6 +107,19 @@ Filename: cairo_1.16.0-r4_kindle5.ipk
 Size: 508981
 SHA256sum: 206c9cef7f31baaf293faed4d38dca71c91f8e006d4233dbf9321963ec8eadb9
 
+Package: cjson
+Version: 1.7.19-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: MIT
+Installed-Size: 40960
+Description: cjson
+Filename: cjson_1.7.19-r4_kindle5.ipk
+Size: 11870
+SHA256sum: 50c9ee8754f1ede1e8cc7f7b7ef15916ac77a31c4a4c968d2ffa01398d19e654
+
 Package: coreutils
 Version: 9.10-r5
 Architecture: kindle5
@@ -245,7 +258,7 @@ Size: 1162548
 SHA256sum: 2603f5383d9cb0ace11203a5058e3bb88f3c69444a532b741ae1e1ce277585ac
 
 Package: ereader-hal
-Version: 0.5.1-r8
+Version: 0.5.1-r9
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -254,9 +267,9 @@ Depends: python3 (>= 3.14)
 License: MIT
 Installed-Size: 368640
 Description: Kindle and Kobo hardware controls with Python bindings
-Filename: ereader-hal_0.5.1-r8_kindle5.ipk
-Size: 150982
-SHA256sum: 2504478ea5a748f2b745548ba51ea97e13e71be959439a07b121d5a28758dc49
+Filename: ereader-hal_0.5.1-r9_kindle5.ipk
+Size: 151098
+SHA256sum: fec27590504a1048fd48254584425745ff7a6aae55d7ab87befac3583ed5c640
 
 Package: evemu
 Version: 2.7.0-r5
@@ -602,18 +615,18 @@ Size: 11983586
 SHA256sum: 794e26e06a53bd597f6f8ab6ca3d1cd99c8d50abffbc0333222e706dffbc2583
 
 Package: imagemagick
-Version: 7.1.2-26-r6
+Version: 7.1.2-26-r7
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: bzip2, fontconfig, freetype, jpeg-turbo, libpng, libxml2, pango, toolchain-libstdcpp, xz, zlib-ng, zstd
+Depends: bzip2, fontconfig, freetype, jpeg-turbo, libpng, libxml2, libzip, pango, toolchain-libstdcpp, xz, zlib-ng, zstd
 License: Apache-2.0
 Installed-Size: 5990400
 Description: imagemagick
-Filename: imagemagick_7.1.2-26-r6_kindle5.ipk
-Size: 2370979
-SHA256sum: c22e01e47a9b79c2a2743e1413ff73988728727dd3bc9d25c535a7cc62f47ad6
+Filename: imagemagick_7.1.2-26-r7_kindle5.ipk
+Size: 2372011
+SHA256sum: 0ef8cc9230c9c4fe10a893db676ee78e99f163c76b6b371502bf85dec54e60f1
 
 Package: inotify-tools
 Version: 3.20.2.2-r4
@@ -669,6 +682,20 @@ Filename: k2_0.2.0-r14_kindle5.ipk
 Size: 1144830
 SHA256sum: e91a7ae8f0915ffbe8611f2a4682b2d258826b69fff8547c8376902b71ca5fc8
 
+Package: kindle-epub
+Version: 0.1.0-r2
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: cjson, libxml2, libzip, sqlite, toolchain-libstdcpp, zlib-ng
+License: Proprietary, BSD-3-Clause (libzip)
+Installed-Size: 1751040
+Description: Native EPUB support for the stock Kindle reader
+Filename: kindle-epub_0.1.0-r2_kindle5.ipk
+Size: 739987
+SHA256sum: 009f08cdf212043141a8baad57122a65e5f07de04ebd95508ae3291f43f59092
+
 Package: kindletool
 Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r5
 Architecture: kindle5
@@ -698,7 +725,7 @@ Size: 112108
 SHA256sum: de33954858322fd0d43641a1f9ac2c34649599a09d81a6bb13b497367ae00dab
 
 Package: kterm
-Version: 2.6-r8
+Version: 2.6-r9
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -707,9 +734,9 @@ Depends: dbus, dejavu, libgtk3, vte (>= 0.66.2-r5)
 License: GPL-3.0+
 Installed-Size: 256000
 Description: GTK3 terminal with an embedded keyboard for Kindle
-Filename: kterm_2.6-r8_kindle5.ipk
-Size: 48507
-SHA256sum: fbb5270a923305da88402f13ab2b3ffd70aec10cdf40cff34be789091966556c
+Filename: kterm_2.6-r9_kindle5.ipk
+Size: 48586
+SHA256sum: dbfed09d9f8da70788316e5f0fabe9df68fb91c3ad9317d849c63bd191e86854
 
 Package: less
 Version: 692-r4
@@ -1158,6 +1185,20 @@ Description: libyaml
 Filename: libyaml_0.2.5-r4_kindle5.ipk
 Size: 47878
 SHA256sum: c4c2bb26614170e796059aea51a42d211e05f7ee3b5f98a1d014567455562e0d
+
+Package: libzip
+Version: 1.11.4-r4
+Architecture: kindle5
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: bzip2, gnutls, libopenssl, xz, zlib-ng, zstd
+License: BSD-3-Clause
+Installed-Size: 204800
+Description: libzip
+Filename: libzip_1.11.4-r4_kindle5.ipk
+Size: 82509
+SHA256sum: 5891427a3bcdacd81929765ea9bfa504c2da9dccad13879f597a9b7bb6c1b9fc
 
 Package: lsof
 Version: 4.99.6-r4
