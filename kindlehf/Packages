@@ -94,18 +94,18 @@ Size: 264423
 SHA256sum: 99be7675df58762af4a1c147bd3fd2032305ae6126a0362bdb3bbd0c863d4848
 
 Package: cairo
-Version: 1.16.0-r4
+Version: 1.16.0-r5
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
 Depends: fontconfig, libglib2, libpng, libxcb, pixman, xlib-libx11, xlib-libxext, xlib-libxrender, zlib-ng
 License: LGPL-2.1 or MPL-1.1 (library)
-Installed-Size: 1044480
+Installed-Size: 1054720
 Description: cairo
-Filename: cairo_1.16.0-r4_kindlehf.ipk
-Size: 505264
-SHA256sum: 0e4bda68cf4c86fcb1619b32953c30821bc06f5e1eb9aacce9571b610e72ee60
+Filename: cairo_1.16.0-r5_kindlehf.ipk
+Size: 511594
+SHA256sum: 57aa18656d23f37a9cda3d8ab147f5ca70b6f66f6940c1815c1465f43c755b3d
 
 Package: cjson
 Version: 1.7.19-r4
@@ -272,7 +272,7 @@ Size: 150271
 SHA256sum: 1a2a118bc9617921a3e7bbbef4794561ce3b6f3d9cbf6dbf7e5b0d8af8b679ff
 
 Package: evemu
-Version: 2.7.0-r5
+Version: 2.7.0-r6
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
@@ -281,9 +281,9 @@ Depends: libevdev, python3
 License: LGPL-3.0 (library), GPL-3.0 (tools)
 Installed-Size: 245760
 Description: evemu
-Filename: evemu_2.7.0-r5_kindlehf.ipk
-Size: 43821
-SHA256sum: dec0a3ec7aaac7fa6f3660aca1559c63f5ced969090d6d1f347030d149a031e1
+Filename: evemu_2.7.0-r6_kindlehf.ipk
+Size: 43820
+SHA256sum: 2f1b6696bdf1a41163bba446638bfed35cd32ceaa2aedb0b5925c5f6c6b680ea
 
 Package: evtest
 Version: 1.36-r4
@@ -683,18 +683,18 @@ Size: 1149263
 SHA256sum: fcb1594da0605adf7ab40d5a03fafc95149779f1f8123fd72dc16914df843efc
 
 Package: kindle-epub
-Version: 0.1.0-r2
+Version: 0.1.0-r11
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: cjson, libxml2, libzip, sqlite, toolchain-libstdcpp, zlib-ng
+Depends: cjson, libxml2, libzip, sqlite (>= 3.31.0), toolchain-libstdcpp, zlib-ng
 License: Proprietary, BSD-3-Clause (libzip)
-Installed-Size: 1802240
+Installed-Size: 1812480
 Description: Native EPUB support for the stock Kindle reader
-Filename: kindle-epub_0.1.0-r2_kindlehf.ipk
-Size: 779254
-SHA256sum: 2eb3510af88a96c249af7e59065a84c6e522bf8f1dcd87d43f4c7ed36578c396
+Filename: kindle-epub_0.1.0-r11_kindlehf.ipk
+Size: 785403
+SHA256sum: 741b6dc83207ee15d499c53d2c4527a456d2ac1bee6e7ad11b3f72c37f0b1d22
 
 Package: kindletool
 Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r6
@@ -724,20 +724,6 @@ Filename: kmod_34.2-r6_kindlehf.ipk
 Size: 112641
 SHA256sum: dde8f5e850c41638c9ade260b237d894961c65b611a86793c244b2a8e2753059
 
-Package: kppmods
-Version: 2.0.0+git.r32.172e9a9-r1
-Architecture: kindlehf
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-Depends: toolchain-libstdcpp
-License: Proprietary, BSL-1.0, MIT, AGPL-3.0
-Installed-Size: 2529280
-Description: KPP Mods runtime and bundled Kindle extensions
-Filename: kppmods_2.0.0+git.r32.172e9a9-r1_kindlehf.ipk
-Size: 1078428
-SHA256sum: 86e2c758eb66d2b60218da07659d15170bcc55d2ca3de4afe36a174ee3f037e1
-
 Package: kppmods-koreader
 Version: 0.1.0-r6
 Architecture: kindlehf
@@ -765,6 +751,20 @@ Description: Supernet SSH controls for KPP Mods
 Filename: kppmods-supernet_0.1.0+git.r6.9f822e4-r1_kindlehf.ipk
 Size: 9041
 SHA256sum: aed352ab2b795dd4b11262f3b9ac48735f442acf9c36d81292117ffc8002a0eb
+
+Package: kppmods
+Version: 2.0.0+git.r32.172e9a9-r1
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: toolchain-libstdcpp
+License: Proprietary, BSL-1.0, MIT, AGPL-3.0
+Installed-Size: 2529280
+Description: KPP Mods runtime and bundled Kindle extensions
+Filename: kppmods_2.0.0+git.r32.172e9a9-r1_kindlehf.ipk
+Size: 1078428
+SHA256sum: 86e2c758eb66d2b60218da07659d15170bcc55d2ca3de4afe36a174ee3f037e1
 
 Package: kterm
 Version: 2.6-r9
@@ -956,19 +956,6 @@ Filename: libfribidi_1.0.16-r4_kindlehf.ipk
 Size: 27593
 SHA256sum: ccdd87a793344d012892379a7623fd0782a136ecc9bf69a5b14d73ecb5506a8c
 
-Package: libfuse
-Version: 2.9.7-r5
-Architecture: kindlehf
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-License: GPL-2.0, LGPL-2.1
-Installed-Size: 245760
-Description: libfuse
-Filename: libfuse_2.9.7-r5_kindlehf.ipk
-Size: 82021
-SHA256sum: 0ee4e45b047af797cbf9600762a0bdc794df8d4e471b6a9a7f7e7f94cf9c2bb2
-
 Package: libfuse3
 Version: 3.18.2-r5
 Architecture: kindlehf
@@ -982,6 +969,19 @@ Description: libfuse3
 Filename: libfuse3_3.18.2-r5_kindlehf.ipk
 Size: 97208
 SHA256sum: 23e29c8844e5df1b7071c26cc69c2140aacbea35e17fe9442782b77b6334f887
+
+Package: libfuse
+Version: 2.9.7-r5
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: GPL-2.0, LGPL-2.1
+Installed-Size: 245760
+Description: libfuse
+Filename: libfuse_2.9.7-r5_kindlehf.ipk
+Size: 82021
+SHA256sum: 0ee4e45b047af797cbf9600762a0bdc794df8d4e471b6a9a7f7e7f94cf9c2bb2
 
 Package: libglib2
 Version: 2.84.4-r4
@@ -1541,19 +1541,6 @@ Filename: pax-utils_1.3.7-r5_kindlehf.ipk
 Size: 99633
 SHA256sum: bccdeeebf135ec1b65b500fe05ba17c9ca0436637ef5f2a9c2e73db83389b47e
 
-Package: pcre
-Version: 8.45-r4
-Architecture: kindlehf
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-License: BSD-3-Clause
-Installed-Size: 409600
-Description: pcre
-Filename: pcre_8.45-r4_kindlehf.ipk
-Size: 153714
-SHA256sum: 3f54541a2d742942fc00ea93d5c906950250a82774dbe10f899008f31ae19258
-
 Package: pcre2
 Version: 10.47-r4
 Architecture: kindlehf
@@ -1566,6 +1553,19 @@ Description: pcre2
 Filename: pcre2_10.47-r4_kindlehf.ipk
 Size: 409355
 SHA256sum: c0df4aee027ae2c0087724b31ea8cb27726b7b551cdf382f1ccb884c92e9bced
+
+Package: pcre
+Version: 8.45-r4
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+License: BSD-3-Clause
+Installed-Size: 409600
+Description: pcre
+Filename: pcre_8.45-r4_kindlehf.ipk
+Size: 153714
+SHA256sum: 3f54541a2d742942fc00ea93d5c906950250a82774dbe10f899008f31ae19258
 
 Package: picocom
 Version: 2024-07-r4
@@ -1929,7 +1929,7 @@ Size: 168596
 SHA256sum: 388ceb0e1d283294993538d0e0ae7faf1cdeb30e7f6995381d15ac9bffa4858c
 
 Package: python-charset-normalizer
-Version: 3.4.5-r6
+Version: 3.4.5-r7
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
@@ -1938,9 +1938,9 @@ Depends: python3
 License: MIT
 Installed-Size: 604160
 Description: python-charset-normalizer
-Filename: python-charset-normalizer_3.4.5-r6_kindlehf.ipk
-Size: 178026
-SHA256sum: 98aeeb293165180c57f99019597b75ce973996b38d1dd32d51a01b5bae04a7b3
+Filename: python-charset-normalizer_3.4.5-r7_kindlehf.ipk
+Size: 178023
+SHA256sum: 6b1d2ba1f23ae0fa678687bb3a98658c82e93552a2e4e687ab8e0abcd646a8aa
 
 Package: python-click
 Version: 8.3.3-r4
@@ -2012,20 +2012,6 @@ Filename: python-defusedxml_0.7.1-r4_kindlehf.ipk
 Size: 20867
 SHA256sum: 3f81063daca6a673dd7777983b0a798a9abaa21bb9ce50b357fb397661bbd6c2
 
-Package: python-fastapi
-Version: 0.136.1-r4
-Architecture: kindlehf
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-Depends: python3
-License: MIT
-Installed-Size: 829440
-Description: python-fastapi
-Filename: python-fastapi_0.136.1-r4_kindlehf.ipk
-Size: 100442
-SHA256sum: cab0a98d2810af109905b273dfd24961b811bf4df6b41610bb12de724a001e6e
-
 Package: python-fastapi-sessions
 Version: 0.3.2-r4
 Architecture: kindlehf
@@ -2040,6 +2026,20 @@ Filename: python-fastapi-sessions_0.3.2-r4_kindlehf.ipk
 Size: 6429
 SHA256sum: 489ae9c03bfd7d935f166c343a84eef3ec9b59b5cda29ddaee3a7c59a20fa975
 
+Package: python-fastapi
+Version: 0.136.1-r4
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 829440
+Description: python-fastapi
+Filename: python-fastapi_0.136.1-r4_kindlehf.ipk
+Size: 100442
+SHA256sum: cab0a98d2810af109905b273dfd24961b811bf4df6b41610bb12de724a001e6e
+
 Package: python-fbink
 Version: d41523291fa8a5de2570749cf1f61135c7039b4f-r4
 Architecture: kindlehf
@@ -2053,20 +2053,6 @@ Description: python-fbink
 Filename: python-fbink_d41523291fa8a5de2570749cf1f61135c7039b4f-r4_kindlehf.ipk
 Size: 36414
 SHA256sum: 2ec60209de8b4978342e3256768de402ee7cab837ad6f9b96daed1756ded84fb
-
-Package: python-flask
-Version: 3.1.3-r4
-Architecture: kindlehf
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-Depends: python3
-License: BSD-3-Clause
-Installed-Size: 389120
-Description: python-flask
-Filename: python-flask_3.1.3-r4_kindlehf.ipk
-Size: 90561
-SHA256sum: c85b62c093aeb47ef157d0432ae5de989da0c9eaeb59e8d3a70050ec812d1d7a
 
 Package: python-flask-babel
 Version: 4.0.0-r4
@@ -2207,6 +2193,20 @@ Description: python-flask-wtf
 Filename: python-flask-wtf_1.3.0-r4_kindlehf.ipk
 Size: 11405
 SHA256sum: 666dabf690b66c74ea569e3e84447731cf92ff4b128b0ed274db12a183142a65
+
+Package: python-flask
+Version: 3.1.3-r4
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: BSD-3-Clause
+Installed-Size: 389120
+Description: python-flask
+Filename: python-flask_3.1.3-r4_kindlehf.ipk
+Size: 90561
+SHA256sum: c85b62c093aeb47ef157d0432ae5de989da0c9eaeb59e8d3a70050ec812d1d7a
 
 Package: python-fonttools
 Version: 4.62.1-r4
@@ -2418,20 +2418,6 @@ Filename: python-jmespath_1.1.0-r4_kindlehf.ipk
 Size: 18874
 SHA256sum: f025d87581cc5fb72b6bc1a19222927e9277c9142a519295e852ec68d77924f0
 
-Package: python-jsonschema
-Version: 4.26.0-r4
-Architecture: kindlehf
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-Depends: python3
-License: MIT
-Installed-Size: 532480
-Description: python-jsonschema
-Filename: python-jsonschema_4.26.0-r4_kindlehf.ipk
-Size: 78805
-SHA256sum: fa59dc7338659901cb39a956f0dc46c90838bf37536b67e4a44b579fbdf2a42b
-
 Package: python-jsonschema-specifications
 Version: 2025.9.1-r4
 Architecture: kindlehf
@@ -2445,6 +2431,20 @@ Description: python-jsonschema-specifications
 Filename: python-jsonschema-specifications_2025.9.1-r4_kindlehf.ipk
 Size: 9752
 SHA256sum: 462ff5a50880d04528972d269eacd3e0498d7fedceb0b5960f14032f0a140130
+
+Package: python-jsonschema
+Version: 4.26.0-r4
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 532480
+Description: python-jsonschema
+Filename: python-jsonschema_4.26.0-r4_kindlehf.ipk
+Size: 78805
+SHA256sum: fa59dc7338659901cb39a956f0dc46c90838bf37536b67e4a44b579fbdf2a42b
 
 Package: python-kmod
 Version: 0.9.2-r4
@@ -2629,7 +2629,7 @@ Size: 1807947
 SHA256sum: affc21d100be7c6bc82034097b35651c1f109d82e4673eab3ea53b1d1ba26ad6
 
 Package: python-numpy
-Version: 2.4.0-r5
+Version: 2.4.0-r6
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
@@ -2638,9 +2638,9 @@ Depends: python3, toolchain-libstdcpp
 License: BSD-3-Clause, MIT, Zlib
 Installed-Size: 37457920
 Description: python-numpy
-Filename: python-numpy_2.4.0-r5_kindlehf.ipk
-Size: 11066293
-SHA256sum: d23fa4069baa17715692c8e46234f22db3623470446df5c327c7c322818a5953
+Filename: python-numpy_2.4.0-r6_kindlehf.ipk
+Size: 11066221
+SHA256sum: 90b238814f6528967e5591d01021215cceefe6d60bb21799f7ff5ea2f04d2ad2
 
 Package: python-oauthlib
 Version: 3.3.1-r5
@@ -2768,20 +2768,6 @@ Filename: python-pycparser_3.0-r5_kindlehf.ipk
 Size: 44501
 SHA256sum: 89bfa4bef368d09165582a49c596fb2fc02d7b9c65c2c96c133e450ef1c5e373
 
-Package: python-pydantic
-Version: 2.13.3-r4
-Architecture: kindlehf
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-Depends: python3
-License: MIT
-Installed-Size: 2017280
-Description: python-pydantic
-Filename: python-pydantic_2.13.3-r4_kindlehf.ipk
-Size: 425609
-SHA256sum: ade22f3b29f434b87231856a31ec8bd80deef020eee36bd35bb8ad71794b2357
-
 Package: python-pydantic-core
 Version: 2.46.3-r4
 Architecture: kindlehf
@@ -2795,6 +2781,20 @@ Description: python-pydantic-core
 Filename: python-pydantic-core_2.46.3-r4_kindlehf.ipk
 Size: 2017700
 SHA256sum: 224a14ea34320611913dd0a9a2567005b69cf39174beaa2b366a6541e823f5a9
+
+Package: python-pydantic
+Version: 2.13.3-r4
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: MIT
+Installed-Size: 2017280
+Description: python-pydantic
+Filename: python-pydantic_2.13.3-r4_kindlehf.ipk
+Size: 425609
+SHA256sum: ade22f3b29f434b87231856a31ec8bd80deef020eee36bd35bb8ad71794b2357
 
 Package: python-pyelftools
 Version: 0.32-r4
@@ -2866,20 +2866,6 @@ Filename: python-pyopenssl_26.1.0-r4_kindlehf.ipk
 Size: 56018
 SHA256sum: 6682e412342b2e8c88f5c950b791253affe3fc485a64191023333683a0eb05af
 
-Package: python-pyqt5
-Version: 5.15.6-r8
-Architecture: kindlehf
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-Depends: python-pyqt5-sip, qt5base, qt5declarative, qt5svg, qt5websockets
-License: GPL-3.0
-Installed-Size: 13721600
-Description: python-pyqt5
-Filename: python-pyqt5_5.15.6-r8_kindlehf.ipk
-Size: 3039637
-SHA256sum: f30dfb0b1164c0c84aee4fb66e84090a038d3a57e5ffcce68a1d7164686cdef5
-
 Package: python-pyqt5-sip
 Version: 12.18.0-r4
 Architecture: kindlehf
@@ -2893,6 +2879,20 @@ Description: python-pyqt5-sip
 Filename: python-pyqt5-sip_12.18.0-r4_kindlehf.ipk
 Size: 61168
 SHA256sum: bf75d8a6eb37ed9af121d4e037328e2de9414fb578dfec6bf99423da33969c26
+
+Package: python-pyqt5
+Version: 5.15.6-r8
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python-pyqt5-sip, qt5base, qt5declarative, qt5svg, qt5websockets
+License: GPL-3.0
+Installed-Size: 13721600
+Description: python-pyqt5
+Filename: python-pyqt5_5.15.6-r8_kindlehf.ipk
+Size: 3039637
+SHA256sum: f30dfb0b1164c0c84aee4fb66e84090a038d3a57e5ffcce68a1d7164686cdef5
 
 Package: python-pysocks
 Version: 1.7.1-r4
@@ -2950,20 +2950,6 @@ Filename: python-referencing_0.37.0-r4_kindlehf.ipk
 Size: 23190
 SHA256sum: 9a08870442bf45a43bfe3a7598347034d56454bb3eba63e99ca5b5f849f9c8ee
 
-Package: python-requests
-Version: 2.33.1-r5
-Architecture: kindlehf
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-Depends: python3
-License: Apache-2.0
-Installed-Size: 235520
-Description: python-requests
-Filename: python-requests_2.33.1-r5_kindlehf.ipk
-Size: 58793
-SHA256sum: cc739e5b02120762d8319374b3478f8be44e365ea51575ccb58c06c5be30c97d
-
 Package: python-requests-oauthlib
 Version: 2.0.0-r5
 Architecture: kindlehf
@@ -2991,6 +2977,20 @@ Description: python-requests-toolbelt
 Filename: python-requests-toolbelt_1.0.0-r4_kindlehf.ipk
 Size: 40464
 SHA256sum: a38d829e05bb83caa51010908c0bfef452e90e75b2b9a7acb9f67eef66eb2ab1
+
+Package: python-requests
+Version: 2.33.1-r5
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: python3
+License: Apache-2.0
+Installed-Size: 235520
+Description: python-requests
+Filename: python-requests_2.33.1-r5_kindlehf.ipk
+Size: 58793
+SHA256sum: cc739e5b02120762d8319374b3478f8be44e365ea51575ccb58c06c5be30c97d
 
 Package: python-rich
 Version: 15.0.0-r4
@@ -3455,18 +3455,18 @@ Size: 1930390
 SHA256sum: 232e8de019d853bdcbc7fb6dbabeaade8265468006d618bcdd3cd4842c3163fb
 
 Package: python3
-Version: 3.14.7-r9
+Version: 3.14.7-r10
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
 Depends: expat, libffi, libopenssl, ncurses, readline, sqlite, zlib-ng
 License: Python-2.0, others
-Installed-Size: 21555200
+Installed-Size: 21565440
 Description: python3
-Filename: python3_3.14.7-r9_kindlehf.ipk
-Size: 8991064
-SHA256sum: 897a09a3717f572dbc522dd16edec09f1384be62aa2ef019892cc79e6f9eeb16
+Filename: python3_3.14.7-r10_kindlehf.ipk
+Size: 8991958
+SHA256sum: 5abe3c47aa15f453b83ac4c56d91ead0ea6d69bf7afa359b7c2794861025a6f9
 
 Package: qt5base
 Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r12
@@ -3496,20 +3496,6 @@ Filename: qt5declarative_50c8def854806485d66aabcf6918e8b987032e55-r6_kindlehf.ip
 Size: 4153315
 SHA256sum: 8c7a07c81c03c5af0739895631280e563c06ddce6300d47b7c9a0edd314143ec
 
-Package: qt5quickcontrols
-Version: 9325659ec390eda5b160736a926ba58ccb445cce-r5
-Architecture: kindlehf
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-Depends: qt5base, qt5declarative
-License: GPL-2.0 or GPL-3.0 or LGPL-3.0, GFDL-1.3 (docs)
-Installed-Size: 5345280
-Description: qt5quickcontrols
-Filename: qt5quickcontrols_9325659ec390eda5b160736a926ba58ccb445cce-r5_kindlehf.ipk
-Size: 1341730
-SHA256sum: 4e8cc83d00ade51d836075010c8a05e70bb3444d9204e8c01f570b92d1b8fd2f
-
 Package: qt5quickcontrols2
 Version: 69fea340f8f4c483a9b2889e4e24a4b1b52ebc87-r5
 Architecture: kindlehf
@@ -3523,6 +3509,20 @@ Description: qt5quickcontrols2
 Filename: qt5quickcontrols2_69fea340f8f4c483a9b2889e4e24a4b1b52ebc87-r5_kindlehf.ipk
 Size: 2017423
 SHA256sum: 857921e25ee3ad9402ee23faf778632b3f5b3f030a58494b463c7d16f4227e71
+
+Package: qt5quickcontrols
+Version: 9325659ec390eda5b160736a926ba58ccb445cce-r5
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: qt5base, qt5declarative
+License: GPL-2.0 or GPL-3.0 or LGPL-3.0, GFDL-1.3 (docs)
+Installed-Size: 5345280
+Description: qt5quickcontrols
+Filename: qt5quickcontrols_9325659ec390eda5b160736a926ba58ccb445cce-r5_kindlehf.ipk
+Size: 1341730
+SHA256sum: 4e8cc83d00ade51d836075010c8a05e70bb3444d9204e8c01f570b92d1b8fd2f
 
 Package: qt5svg
 Version: 690128b2b8fb6d6fbdc43b2b2633f0f1de3f0638-r5
@@ -3662,18 +3662,18 @@ Size: 226429
 SHA256sum: d2979feb3db730bc617cc8aa06044bab61e3f702ca6ca4f843f7d59b76e44754
 
 Package: sqlite
-Version: 3.26.0-r6
+Version: 3.54.1-r1
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
 Depends: ncurses, readline, zlib-ng
 License: blessing
-Installed-Size: 1280000
+Installed-Size: 1464320
 Description: sqlite
-Filename: sqlite_3.26.0-r6_kindlehf.ipk
-Size: 677335
-SHA256sum: d6ec36fd1ba57202f288c710196aff18fd8e64b65bdac69fce20cb2b576f2105
+Filename: sqlite_3.54.1-r1_kindlehf.ipk
+Size: 765403
+SHA256sum: 3db768294316d0c150fd078185d2d0165ab00bd6b40cf572237c5018b368a1c2
 
 Package: sshfs
 Version: 3.7.6-r4
@@ -3974,20 +3974,6 @@ Filename: xcb-proto_1.17.0-r5_kindlehf.ipk
 Size: 197121
 SHA256sum: 6ad7801082119ff1612c8f060d9d54c82f72e57ed8a7d903efc1c6d43af0ad0e
 
-Package: xcb-util
-Version: 0.4.1-r4
-Architecture: kindlehf
-Maintainer: Kindle package maintainers
-Section: utils
-Priority: optional
-Depends: libxcb
-License: MIT
-Installed-Size: 30720
-Description: xcb-util
-Filename: xcb-util_0.4.1-r4_kindlehf.ipk
-Size: 6801
-SHA256sum: 3c57c3d12b667104ea6fcc6f5dbd68c3f5d829ec0c59a27b53ba229f2d070a57
-
 Package: xcb-util-image
 Version: 0.4.1-r4
 Architecture: kindlehf
@@ -4043,6 +4029,20 @@ Description: xcb-util-wm
 Filename: xcb-util-wm_0.4.2-r4_kindlehf.ipk
 Size: 16776
 SHA256sum: 3d4468188c396c8425c826d9d76a57c6d768cd5b10850b36cd2476d8c0c4d4e5
+
+Package: xcb-util
+Version: 0.4.1-r4
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: libxcb
+License: MIT
+Installed-Size: 30720
+Description: xcb-util
+Filename: xcb-util_0.4.1-r4_kindlehf.ipk
+Size: 6801
+SHA256sum: 3c57c3d12b667104ea6fcc6f5dbd68c3f5d829ec0c59a27b53ba229f2d070a57
 
 Package: xdotool
 Version: 3.20211022.1-r4
