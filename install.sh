@@ -24,6 +24,22 @@ bootstrap() {
         kobo) echo 'This installer supports Kindle only (kindle5, kindlepw2, kindlehf).' >&2; return 1 ;;
         *) echo 'A unique Kindle userstore must be mounted.' >&2; return 1 ;;
     esac
+    if [ -n "$offline" ]; then
+        offline=$(CDPATH= cd -- "$offline" && pwd)
+        [ -r "$offline/bundle.tar.gz" ] && [ -r "$offline/extra-packages.list" ] || {
+            echo 'Offline bundle requires bundle.tar.gz and extra-packages.list.' >&2; return 1;
+        }
+    fi
+    # Match control/run: keep userstore local until this process and its hooks exit.
+    if [ -f /var/run/eink-sdk-userstore.lock ]; then
+        exec 9</var/run/eink-sdk-userstore.lock
+        flock -s 9
+        phase=$(cat /var/run/kppmods/userstore 2>/dev/null || :)
+        case "$phase" in
+            ''|local) ;;
+            *) echo 'USB file transfer is active; eject userstore first.' >&2; return 1 ;;
+        esac
+    fi
     store=$userstore/.eink-sdk
     control=$store/control
     machine=$(hexdump -s 18 -n 1 -e '1/1 "%u"' /bin/sh)
@@ -32,7 +48,6 @@ bootstrap() {
     kernel=$(uname -r)
     case "$vendor" in
         kindle)
-            [ -z "$offline" ] || { echo 'Offline installation requires a Kobo bundle.' >&2; return 1; }
             if [ "$((flags & 4))" != 0 ]; then
                 platform=kindlehf
             else
@@ -74,8 +89,17 @@ bootstrap() {
     trap 'exit 1' 1 2 15
     # Keep executable seed files and opkg temporary files on tmpfs; userstore
     # may be noexec and FAT. Store archives and regular IPKs on userstore.
-    work=$(mktemp -d /dev/shm/eink-opkg.XXXXXX)
+    memory_root=$(awk '
+        $3 == "tmpfs" && $4 !~ /(^|,)noexec(,|$)/ {
+            if ($2 == "/dev/shm") shared=$2
+            if ($2 == "/tmp") temporary=$2
+        }
+        END {if (shared != "") print shared; else if (temporary != "") print temporary}
+    ' /proc/mounts)
+    [ -n "$memory_root" ] || { echo 'An executable tmpfs workspace is required.' >&2; return 1; }
+    work=$(mktemp -d "$memory_root/eink-opkg.XXXXXX")
     downloads=$(mktemp -d "$userstore/.eink-opkg.XXXXXX")
+    mkdir "$work/conf"
     TMPDIR=$work
     export TMPDIR
     if [ -n "$offline" ]; then
@@ -90,8 +114,7 @@ bootstrap() {
     fi
     control_scripts="activate run env ssh-server modprobe depmod"
     [ "$vendor" != kobo ] || control_scripts="$control_scripts qt usbnet"
-    extra_files=
-    [ "$vendor" != kobo ] || extra_files=Packages
+    extra_files=feed-index
     tar -xzf "$bundle" -C "$downloads" packages
     set -- seed packages.list platform eink-sdk-links
     for script in $control_scripts $extra_files; do set -- "$@" "$script"; done
@@ -102,7 +125,7 @@ bootstrap() {
         echo "This bundle is for $bundled_platform; this device requires $platform." >&2; return 1;
     }
     mkdir -p "$control" "$store/opkg/info" "$store/opkg/lists" "$store/opkg/cache"
-    cat > "$work/opkg.conf" <<CONF
+    cat > "$work/feed.conf" <<CONF
 src/gz $platform $base/$platform
 dest root /
 option overlay_root $userstore
@@ -118,7 +141,21 @@ option lock_file /tmp/eink-opkg.lock
 CONF
     if [ -f "$store/opkg/opkg.conf" ]; then
         awk '($1 == "src/gz" && $2 == "sdk-kernel") || ($1 == "arch" && $2 ~ /^kernel_/)' \
-            "$store/opkg/opkg.conf" >> "$work/opkg.conf"
+            "$store/opkg/opkg.conf" >> "$work/feed.conf"
+    fi
+    offline_config() {
+        # Existing feed catalogues must never supply a missing offline dependency.
+        awk -v lists="$work/lists" '
+            $1 == "src" || $1 == "src/gz" {next}
+            $1 == "option" && $2 == "lists_dir" {$3=lists}
+            {print}
+        ' "$1" > "$work/opkg.conf"
+    }
+    if [ -n "$offline" ]; then
+        mkdir "$work/lists"
+        offline_config "$work/feed.conf"
+    else
+        cp "$work/feed.conf" "$work/opkg.conf"
     fi
     # Bootstrap hooks need the static helper before any runtime links exist.
     mkdir -p "$store/usr/libexec"
@@ -134,7 +171,7 @@ CONF
     rm -f "$control/ssh"
     /bin/sh "$control/activate"
     seed_opkg() {
-        LD_LIBRARY_PATH="$work/seed/usr/lib:$work/seed/lib" \
+        OPKG_CONF_DIR="$work/conf" LD_LIBRARY_PATH="$work/seed/usr/lib:$work/seed/lib" \
             "$work/seed/usr/bin/opkg" -f "$work/opkg.conf" "$@"
     }
     tab=$(printf '\t')
@@ -147,35 +184,36 @@ CONF
             seed_opkg --force-reinstall install "$downloads/packages/$filename"
         fi
     done < "$work/packages.list"
-    cp "$work/opkg.conf" "$store/opkg/opkg.conf.new"
+    cp "$work/feed.conf" "$store/opkg/opkg.conf.new"
     mv "$store/opkg/opkg.conf.new" "$store/opkg/opkg.conf"
     . "$control/env"
     # A piped installer cannot update the calling shell's environment. Show
     # this before network access so it is available even if updating fails.
     echo "Load opkg in your current shell: . $control/env"
     # Seed the feed index so an offline install can list available packages.
-    [ "$vendor" != kobo ] || cp "$work/Packages" "$store/opkg/lists/$platform"
+    cp "$work/feed-index" "$store/opkg/lists/$platform"
     if [ -n "$offline" ]; then
+        OPKG_CONF_DIR="$work/conf" opkg -f "$work/opkg.conf" list-installed > "$work/installed"
         if [ -f "$offline/kernel-feed" ]; then
             sh "$offline/kernel-feed" "$base" "$offline"
+            offline_config "$store/opkg/opkg.conf"
         fi
         while IFS="$tab" read -r name filename version; do
             installed=$(awk -v name="$name" '$1 == name && $2 == "-" { print $3 }' "$work/installed")
-            if [ -n "$installed" ] && opkg compare-versions "$installed" '>=' "$version"; then
+            if [ -n "$installed" ] && OPKG_CONF_DIR="$work/conf" opkg -f "$work/opkg.conf" compare-versions "$installed" '>=' "$version"; then
                 echo "$name $installed is already installed."
             else
-                opkg install "$offline/$filename"
+                OPKG_CONF_DIR="$work/conf" opkg -f "$work/opkg.conf" install "$offline/$filename"
             fi
         done < "$offline/extra-packages.list"
-    else
-        opkg update
     fi
+    [ -n "$offline" ] || opkg update
     opkg --version
     echo 'Ready.'
     echo "After boot: sh $control/activate (after userstore mounts)."
     # curl | sh runs in a child process and cannot change the caller's PATH.
     # Hand terminal users a shell with the SDK environment already loaded.
-    if [ -t 1 ] && [ -t 2 ] && ( : </dev/tty ) 2>/dev/null; then
+    if [ -z "$offline" ] && [ -t 1 ] && [ -t 2 ] && ( : </dev/tty ) 2>/dev/null; then
         cleanup
         trap - 0 1 2 15
         unset TMPDIR
