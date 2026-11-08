@@ -258,21 +258,21 @@ Size: 1162548
 SHA256sum: 2603f5383d9cb0ace11203a5058e3bb88f3c69444a532b741ae1e1ce277585ac
 
 Package: ereader-hal
-Version: 0.5.1-r9
+Version: 0.5.1-r10
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
 Depends: python3 (>= 3.14)
 License: MIT
-Installed-Size: 368640
+Installed-Size: 358400
 Description: Kindle and Kobo hardware controls with Python bindings
-Filename: ereader-hal_0.5.1-r9_kindle5.ipk
-Size: 151098
-SHA256sum: fec27590504a1048fd48254584425745ff7a6aae55d7ab87befac3583ed5c640
+Filename: ereader-hal_0.5.1-r10_kindle5.ipk
+Size: 150764
+SHA256sum: 8a2aed4919855cc2124a7249fa04ae853c31488d3045e5b43757f5cd6d783ce4
 
 Package: evemu
-Version: 2.7.0-r6
+Version: 2.7.0-r7
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -281,9 +281,9 @@ Depends: libevdev, python3
 License: LGPL-3.0 (library), GPL-3.0 (tools)
 Installed-Size: 245760
 Description: evemu
-Filename: evemu_2.7.0-r6_kindle5.ipk
+Filename: evemu_2.7.0-r7_kindle5.ipk
 Size: 43579
-SHA256sum: 08285006b44082e422267b16e9d4220184844f2d167857b2d591320eba8d25e1
+SHA256sum: 568b4f48e3edbbc1ed09ad1d3d5d2c66efb308f6aa9120759bf4f5b3ba15a800
 
 Package: evtest
 Version: 1.36-r4
@@ -669,21 +669,21 @@ Size: 190492
 SHA256sum: a42183f75baef4e1f0c52a9baa98eba4b6b803c50e05874f14ac03761b11e13d
 
 Package: k2
-Version: 0.2.0-r22
+Version: 0.2.0-r29
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: dejavu, eboard (>= 0.1.2-r8), ereader-hal (>= 0.5.1-r8), opkg (>= 0.7.0-r15), python-certifi, python-pyqt5, python3 (>= 3.14.7-r8), qt5-kobo-platform (>= 0.1.0-r33), qt5quickcontrols2, qt5svg
+Depends: dejavu, eboard (>= 0.1.2-r8), ereader-hal (>= 0.5.1-r9), opkg (>= 0.7.0-r15), python-certifi, python-pyqt5, python3 (>= 3.14.7-r8), qt5-kobo-platform (>= 0.1.0-r37), qt5quickcontrols2, qt5svg, toolchain-libstdcpp
 License: MIT
-Installed-Size: 1873920
+Installed-Size: 1904640
 Description: k2 package and system manager
-Filename: k2_0.2.0-r22_kindle5.ipk
-Size: 1149264
-SHA256sum: aaeae0cf1d0a4014bc44480db3a9831c76894c1609d3b1445c7ab272145c39ba
+Filename: k2_0.2.0-r29_kindle5.ipk
+Size: 1154647
+SHA256sum: ca504b564e78266496b94fb03d63c71f87de1f4f5223a50c64fc719656ade079
 
 Package: kindle-epub
-Version: 0.1.0-r12
+Version: 0.1.0+git.r12.b65b096-r1
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -692,9 +692,9 @@ Depends: cjson, libxml2, libzip, sqlite (>= 3.31.0), toolchain-libstdcpp, zlib-n
 License: Proprietary, BSD-3-Clause (libzip)
 Installed-Size: 1761280
 Description: Native EPUB support for the stock Kindle reader
-Filename: kindle-epub_0.1.0-r12_kindle5.ipk
-Size: 746534
-SHA256sum: 7c977e398216f2afb253d63aa9fc6b6d60e97b27d13f3981d58e8c71284be8fc
+Filename: kindle-epub_0.1.0+git.r12.b65b096-r1_kindle5.ipk
+Size: 746543
+SHA256sum: 214aa3747cee275d7a7ee16341c8f63dc1b42e1a1b785e492851734f34feb614
 
 Package: kindletool
 Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r5
@@ -984,7 +984,7 @@ Size: 2549840
 SHA256sum: 53e2f1495bfea21e802b5a98aab9e8f118df84bf35ea090ece608046f0d83c70
 
 Package: libpcap
-Version: 1.10.6-r4
+Version: 1.10.6-r5
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -992,9 +992,9 @@ Priority: optional
 License: BSD-3-Clause
 Installed-Size: 266240
 Description: libpcap
-Filename: libpcap_1.10.6-r4_kindle5.ipk
-Size: 114087
-SHA256sum: ebbbdb3673c75b82411de77656abf57c831c9404e92893b9c65293b5904b72d2
+Filename: libpcap_1.10.6-r5_kindle5.ipk
+Size: 114091
+SHA256sum: 4b1bbee18a805a3e66660311b2fe3a42481597aa3e50d9580ca2aa4cb81aaeae
 
 Package: libpng
 Version: 1.6.36-r5
@@ -1873,7 +1873,7 @@ Size: 168598
 SHA256sum: e56ce149567c5f315fbe8783313ee0ab2e3e6b51e679f8f6fd6a57073b451e12
 
 Package: python-charset-normalizer
-Version: 3.4.5-r7
+Version: 3.4.5-r8
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -1882,9 +1882,9 @@ Depends: python3
 License: MIT
 Installed-Size: 604160
 Description: python-charset-normalizer
-Filename: python-charset-normalizer_3.4.5-r7_kindle5.ipk
-Size: 177827
-SHA256sum: 69c1974ddd3e6b95ebe3294c21abea2dcbe7785bb850c8abdf6cc385be62d131
+Filename: python-charset-normalizer_3.4.5-r8_kindle5.ipk
+Size: 177823
+SHA256sum: df160d7857954086f63f5d247ecc346b38ad9f203a751a55351e9bf8ce5d000d
 
 Package: python-click
 Version: 8.3.3-r4
@@ -2573,7 +2573,7 @@ Size: 1807949
 SHA256sum: 06dbcab072249d502faa482a2f6e9bd65f6d6304863a160d0320f71f9116daf1
 
 Package: python-numpy
-Version: 2.4.0-r6
+Version: 2.4.0-r7
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -2582,9 +2582,9 @@ Depends: python3, toolchain-libstdcpp
 License: BSD-3-Clause, MIT, Zlib
 Installed-Size: 37365760
 Description: python-numpy
-Filename: python-numpy_2.4.0-r6_kindle5.ipk
+Filename: python-numpy_2.4.0-r7_kindle5.ipk
 Size: 11008909
-SHA256sum: fc46096cdf46a2ce1daefac28bf91924d0e77ad32353c34ee6447cc4c796da74
+SHA256sum: 3adeca23cfa0cc07c6eb47a35ab7099a00a464db29ee25312631a9dda36d4617
 
 Package: python-oauthlib
 Version: 3.3.1-r5
@@ -3399,7 +3399,7 @@ Size: 1930512
 SHA256sum: e130e6b768b80ea0621b2a5d83fe1a4b18ca1ab6e79bf2d8096d8762ca32323c
 
 Package: python3
-Version: 3.14.7-r10
+Version: 3.14.7-r11
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -3408,9 +3408,9 @@ Depends: expat, libffi, libopenssl, ncurses, readline, sqlite, zlib-ng
 License: Python-2.0, others
 Installed-Size: 21514240
 Description: python3
-Filename: python3_3.14.7-r10_kindle5.ipk
+Filename: python3_3.14.7-r11_kindle5.ipk
 Size: 8970586
-SHA256sum: 7567fdfe0355405bf5d8cae130f89d001551e07de64ebada21ce4efc0419c3a2
+SHA256sum: 1e8b13d611a0c0a044393756c0d068f10e846b6aa795d71650d05ed6ee2f5ef1
 
 Package: qt5-gtk
 Version: 5.15.14-r1
@@ -3676,7 +3676,7 @@ Size: 860127
 SHA256sum: 40d1b0876a747da47f2f53915a5fad8daaa8280b814d9206be89a7b367e902ff
 
 Package: supernet
-Version: 0.1.0+git.r9.584ba5e-r1
+Version: 0.1.0+git.r9.584ba5e-r2
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -3685,9 +3685,9 @@ Depends: dropbear (>= 2026.93-r9)
 License: MIT
 Installed-Size: 71680
 Description: Optional SSH, ADB and developer controls for k2
-Filename: supernet_0.1.0+git.r9.584ba5e-r1_kindle5.ipk
-Size: 28539
-SHA256sum: 500f0c47229047e99eb8826e48682b796c534b3c906b5c3f40c6a2b85dfc8dfb
+Filename: supernet_0.1.0+git.r9.584ba5e-r2_kindle5.ipk
+Size: 28649
+SHA256sum: 98b0e18b770738b16f712e9444b786fdf04d3dc278375a6faaee6b25ea4e3ca4
 
 Package: tailscale
 Version: 1.78.1-r4

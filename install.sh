@@ -1,5 +1,4 @@
 #!/bin/sh
-# Kindle-only HTTPS GitHub Pages variant.
 # Invocation at EOF prevents a partial function body from being executed.
 bootstrap() {
     set -eu
@@ -21,8 +20,8 @@ bootstrap() {
         END {if (kindle && !kobo) print "kindle"; else if (kobo && !kindle) print "kobo"}' /proc/mounts)
     case "$vendor" in
         kindle) userstore=/mnt/us ;;
-        kobo) echo 'This installer supports Kindle only (kindle5, kindlepw2, kindlehf).' >&2; return 1 ;;
-        *) echo 'A unique Kindle userstore must be mounted.' >&2; return 1 ;;
+        kobo) userstore=/mnt/onboard ;;
+        *) echo 'A unique Kindle or Kobo userstore must be mounted.' >&2; return 1 ;;
     esac
     if [ -n "$offline" ]; then
         offline=$(CDPATH= cd -- "$offline" && pwd)
@@ -112,7 +111,7 @@ bootstrap() {
             kobo) wget -O "$bundle" "$base/bootstrap/$platform.tar.gz" ;;
         esac
     fi
-    control_scripts="activate run env ssh-server modprobe depmod"
+    control_scripts="activate run package env ssh-server modprobe depmod"
     [ "$vendor" != kobo ] || control_scripts="$control_scripts qt usbnet"
     extra_files=feed-index
     tar -xzf "$bundle" -C "$downloads" packages
