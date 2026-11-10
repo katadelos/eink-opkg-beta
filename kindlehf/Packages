@@ -780,6 +780,20 @@ Filename: kterm_2.6-r9_kindlehf.ipk
 Size: 48569
 SHA256sum: 0921bd3529147bcce6e958369363093bec2dfaca2ec40d53af135f6a3cb56e51
 
+Package: ktrmnl
+Version: 0.1.0-r1
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: eboard, ereader-hal (>= 0.5.1-r8), k2 (>= 0.2.0-r22), python-certifi, python-charset-normalizer, python-idna, python-requests, python-urllib3
+License: Proprietary
+Installed-Size: 20264960
+Description: TRMNL and image display for stock e-reader firmware
+Filename: ktrmnl_0.1.0-r1_kindlehf.ipk
+Size: 15695835
+SHA256sum: 5e508fe8ebe86a3f9c82211ae5487a7931690c24fdedd7d3aa497035bdb13f9f
+
 Package: kuala
 Version: f00b4dbfd88d12d6d638010214fb8c847d59267e-r5
 Architecture: kindlehf
