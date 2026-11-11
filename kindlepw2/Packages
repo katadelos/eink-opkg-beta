@@ -339,7 +339,7 @@ Size: 552322
 SHA256sum: 3e45e12430e309cf7f9e9f7569222480803e61a8a4dde658c4279cd5ecb64508
 
 Package: file
-Version: 5.47-r4
+Version: 5.47-r5
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -348,9 +348,9 @@ Depends: bzip2, xz, zlib-ng, zstd
 License: BSD-2-Clause, BSD-3-Clause (vasprintf.c)
 Installed-Size: 10864640
 Description: file
-Filename: file_5.47-r4_kindlepw2.ipk
-Size: 542760
-SHA256sum: d67cad062f644e06547fb6c2c9b1a15d7ba6dfe2a30d87de9c460968e1f2324e
+Filename: file_5.47-r5_kindlepw2.ipk
+Size: 542617
+SHA256sum: a7cd692ab9ffcba8b5240ef98813c8915fa6e5f797a64a1b54f78b9dd7c50364
 
 Package: findutils
 Version: 4.10.0-r4
@@ -379,7 +379,7 @@ Size: 668905
 SHA256sum: 706407eaec7a7b29edd35714ce920f15f6e6e0965982c2e74a00d8832d5159b5
 
 Package: fontconfig
-Version: 2.17.1-r4
+Version: 2.17.1-r5
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -388,9 +388,9 @@ Depends: expat, freetype
 License: fontconfig license
 Installed-Size: 665600
 Description: fontconfig
-Filename: fontconfig_2.17.1-r4_kindlepw2.ipk
-Size: 179015
-SHA256sum: 79ad305b6144e17c5a9e2d2aa8efc243d4eaf59f4f41e646cfaf17bd6ba41239
+Filename: fontconfig_2.17.1-r5_kindlepw2.ipk
+Size: 178970
+SHA256sum: 15144b31e71a63cb77440408ec7952d497eb67358c382e8fbfcdeb5034ceaca8
 
 Package: freetype
 Version: 2.14.3-r5
@@ -463,18 +463,18 @@ Size: 298403
 SHA256sum: c552eb180998d37ec844fcfdbb4540ee05d24241d1d80e28e3755b33b7030bbe
 
 Package: git
-Version: 2.54.0-r4
+Version: 2.54.0-r5
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
 Depends: expat, libcurl, libopenssl, pcre2, zlib-ng
 License: GPL-2.0, LGPL-2.1+
-Installed-Size: 23726080
+Installed-Size: 23736320
 Description: git
-Filename: git_2.54.0-r4_kindlepw2.ipk
-Size: 11830136
-SHA256sum: 9ced4af5efdb893ff4082e256ec69b1f7b2d26abe85b3717b632cceb458e3d56
+Filename: git_2.54.0-r5_kindlepw2.ipk
+Size: 11829756
+SHA256sum: 0aeda738a6a6c6c20b7ed44d057172b2f1158e1527d4fb938e52c5ae75fd718e
 
 Package: gmp
 Version: 6.3.0-r4
@@ -697,7 +697,7 @@ Size: 785445
 SHA256sum: 42b05f725517a8de62c0f31aff8fc157d73fd49036f49b216f56a5a0267a8fe6
 
 Package: kindletool
-Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r5
+Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r6
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -706,9 +706,9 @@ Depends: libarchive, nettle, zlib-ng
 License: GPL-3.0+
 Installed-Size: 133120
 Description: kindletool
-Filename: kindletool_95291295e039a1a3bc0bc9d6040b07f640dae74a-r5_kindlepw2.ipk
-Size: 57626
-SHA256sum: 9db105f4e606f1dcf8066953e81d87b584c177394fc6be4f940bc038f45c4333
+Filename: kindletool_95291295e039a1a3bc0bc9d6040b07f640dae74a-r6_kindlepw2.ipk
+Size: 57624
+SHA256sum: a9b8a30e5b5f32d7ae4a2bdf87b10a5e5207c7a6d900522dbfb148639d9bf8d0
 
 Package: kmod
 Version: 34.2-r6
@@ -877,18 +877,18 @@ Size: 23638
 SHA256sum: 07b2c12b31a5d07d35abda27af667ee535aabc41da76800ff8716fde6e63aa8d
 
 Package: libcurl
-Version: 7.86.0-r5
+Version: 7.86.0-r6
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: brotli, libopenssl, toolchain-libatomic, zlib-ng, zstd
+Depends: brotli, ca-certificates, libopenssl, toolchain-libatomic, zlib-ng, zstd
 License: curl
 Installed-Size: 645120
 Description: libcurl
-Filename: libcurl_7.86.0-r5_kindlepw2.ipk
-Size: 309909
-SHA256sum: 3698117f9faccebe987f5b429e794f046ae5260edb4ec16e323fa6733d4999a8
+Filename: libcurl_7.86.0-r6_kindlepw2.ipk
+Size: 309975
+SHA256sum: 43fb1e3d143acc3c4805a673f650d0b86f610777fa2cf18f6c76911d507a92e5
 
 Package: libepoxy
 Version: 1.5.10-r4
@@ -998,7 +998,7 @@ Size: 97281
 SHA256sum: 47cfd21c67bffe156e9e0025b08daebc36f62ac735e96b387da106e5c99a50a8
 
 Package: libglib2
-Version: 2.84.4-r4
+Version: 2.84.4-r5
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -1007,9 +1007,9 @@ Depends: gobject-introspection, libffi, pcre2, zlib-ng
 License: LGPL-2.1+
 Installed-Size: 17971200
 Description: libglib2
-Filename: libglib2_2.84.4-r4_kindlepw2.ipk
-Size: 3266249
-SHA256sum: aabe933810d31cda39945835d3336e2b704477e2248dc15d04b62958b23aabf1
+Filename: libglib2_2.84.4-r5_kindlepw2.ipk
+Size: 3266323
+SHA256sum: 618ca0839800f21d761162e220ef4660a2a2e17367754e8a08050b85ba095682
 
 Package: libgtk3
 Version: 3.24.51-r5
@@ -1040,18 +1040,18 @@ Size: 115928
 SHA256sum: 0561ab9062c19b12ba3c925ddf24d8b75a93af58ebcf9a8eb29f261b6626fcf6
 
 Package: libopenssl
-Version: 3.6.3-r5
+Version: 3.6.3-r6
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: toolchain-libatomic, zlib-ng
+Depends: ca-certificates, toolchain-libatomic, zlib-ng
 License: Apache-2.0
 Installed-Size: 5908480
 Description: libopenssl
-Filename: libopenssl_3.6.3-r5_kindlepw2.ipk
-Size: 2553285
-SHA256sum: 00bbd2ab69b145da28c00bb2e7f4f26bd2f14199d38f7ff76bf468bda3229ed2
+Filename: libopenssl_3.6.3-r6_kindlepw2.ipk
+Size: 2553476
+SHA256sum: dcdf9419f4128480e61d75f97d3f342ea79da01b72671273d4da35149f508e23
 
 Package: libpcap
 Version: 1.10.6-r5
@@ -1379,7 +1379,7 @@ Size: 292029
 SHA256sum: 537b14fdc726c72a94dd75d2e2ffccabed746fcd4ff46d1e25e801206684037b
 
 Package: nano
-Version: 9.0-r4
+Version: 9.0-r5
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -1388,12 +1388,12 @@ Depends: file, ncurses
 License: GPL-3.0+
 Installed-Size: 481280
 Description: nano
-Filename: nano_9.0-r4_kindlepw2.ipk
-Size: 211348
-SHA256sum: f5a54f7f7f4de4c73d170a20f7a07826500ecdbf6cadbe90c6e10f70b2fceabf
+Filename: nano_9.0-r5_kindlepw2.ipk
+Size: 211369
+SHA256sum: 02d9d832d293f04dac02193be4fe0ee6020ca87d8ddd3fd36b7fe7981f9a36b4
 
 Package: ncurses
-Version: 6.6-20251231-r4
+Version: 6.6-20251231-r5
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -1401,9 +1401,9 @@ Priority: optional
 License: MIT with advertising clause
 Installed-Size: 829440
 Description: ncurses
-Filename: ncurses_6.6-20251231-r4_kindlepw2.ipk
-Size: 320330
-SHA256sum: 0d33d3d1904593a64e48a0f4616ba968dcb9b3ffc613a78c9e272ba5b3f24ce4
+Filename: ncurses_6.6-20251231-r5_kindlepw2.ipk
+Size: 320339
+SHA256sum: 81d065904f43c1619e5721f7218b7c1f1df82eab3a57e24aaee0caaf827cc7a3
 
 Package: neofetch
 Version: 7.1.0-r4
@@ -1460,7 +1460,7 @@ Size: 340557
 SHA256sum: d6a45f09ecd3cae37df439e6712c26df3a46544b899d4e02be78c66c05e61d15
 
 Package: ntp
-Version: 4.2.8p18-r4
+Version: 4.2.8p18-r5
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -1469,9 +1469,9 @@ Depends: libevent, libopenssl
 License: NTP
 Installed-Size: 1034240
 Description: ntp
-Filename: ntp_4.2.8p18-r4_kindlepw2.ipk
-Size: 487070
-SHA256sum: 8bf55ebd7aae6275966dceecb996deff10edc9d576079d55724fb6da76bc6e62
+Filename: ntp_4.2.8p18-r5_kindlepw2.ipk
+Size: 487058
+SHA256sum: 2c59a1f3c2d23a2110b8ee999483e5cfc1e2bbcb16d43605c2caf7d22dd464ec
 
 Package: oniguruma
 Version: 6.9.10-r4
@@ -3636,7 +3636,7 @@ Size: 276096
 SHA256sum: 349aa590323ad22a8590699db712e94658d82af7044e608e8861067edc58c5f6
 
 Package: ruby
-Version: 4.0.5-r4
+Version: 4.0.5-r5
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -3645,9 +3645,9 @@ Depends: gmp, libffi, libopenssl, libxcrypt, libyaml, ncurses, readline, toolcha
 License: Ruby or BSD-2-Clause, BSD-3-Clause, MIT, others
 Installed-Size: 15267840
 Description: ruby
-Filename: ruby_4.0.5-r4_kindlepw2.ipk
-Size: 4695950
-SHA256sum: 9e4e75e847d2c9d59ed339bde95f5f2508bdbdacde261aeba2c3e515cd4642db
+Filename: ruby_4.0.5-r5_kindlepw2.ipk
+Size: 4695989
+SHA256sum: 02493dd5d65c7ef5cec0648433b926fb9e12ed661ef349f52c25cd79222bad1f
 
 Package: sed
 Version: 4.10-r4
@@ -3690,7 +3690,7 @@ Size: 4489
 SHA256sum: d530addfad33d30d993336e5ebb544bfe45a70c1c41ec738d5e07c122b0b116b
 
 Package: socat
-Version: 1.8.1.3-r4
+Version: 1.8.1.3-r5
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -3699,9 +3699,9 @@ Depends: libopenssl
 License: GPL-2.0 with OpenSSL exception
 Installed-Size: 563200
 Description: socat
-Filename: socat_1.8.1.3-r4_kindlepw2.ipk
-Size: 222160
-SHA256sum: 466d8245d4ce37b904123c84e68f6fe63b45d556e0315b995ca7811efc2cf3a1
+Filename: socat_1.8.1.3-r5_kindlepw2.ipk
+Size: 222159
+SHA256sum: 810dd7e20dd8458b7198c3a85111db976bb27927fb8246aff71403413823b1ff
 
 Package: sqlite
 Version: 3.54.1-r1
@@ -3935,7 +3935,7 @@ Size: 3038
 SHA256sum: f1de20df1e2ec48b7f9afb7b24f660ffce2081595c0fdb608c1d97b81a44d71a
 
 Package: util-linux
-Version: 2.12r-r4
+Version: 2.12r-r5
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -3944,9 +3944,9 @@ Depends: ncurses, zlib-ng
 License: GPL-2.0+, BSD-4-Clause
 Installed-Size: 1597440
 Description: util-linux
-Filename: util-linux_2.12r-r4_kindlepw2.ipk
-Size: 594627
-SHA256sum: 6c0de2051124b606dc921e96f2084fd483f2d46542342bf6224dd0e25fee6bb8
+Filename: util-linux_2.12r-r5_kindlepw2.ipk
+Size: 594622
+SHA256sum: b79322b27bdbd1a1300db6465bd33c422415f20818629946a249a44df2be23d2
 
 Package: valgrind
 Version: 3.26.0-r4
@@ -3962,7 +3962,7 @@ Size: 7519935
 SHA256sum: 5a9223442f7fccba7ea860d521b0af34706038819d8022c7a87bde52da448803
 
 Package: vim
-Version: 9.2.0943-r4
+Version: 9.2.0943-r5
 Architecture: kindlepw2
 Maintainer: Kindle package maintainers
 Section: utils
@@ -3971,9 +3971,9 @@ Depends: libsodium, ncurses
 License: Charityware
 Installed-Size: 18370560
 Description: vim
-Filename: vim_9.2.0943-r4_kindlepw2.ipk
-Size: 4897606
-SHA256sum: 25ad57f9ec0151f3a234fb605262d16adca04f89d0028b9d1e0cf1852f3b9372
+Filename: vim_9.2.0943-r5_kindlepw2.ipk
+Size: 4897579
+SHA256sum: 96ca298690c3dbe73b309268b7dc6c60f7a8308a670da283a3e6aa5798da07dd
 
 Package: vte
 Version: 0.66.2-r5
