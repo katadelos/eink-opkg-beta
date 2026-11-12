@@ -54,6 +54,20 @@ Filename: binutils_2.45.1-r4_kindlehf.ipk
 Size: 3515068
 SHA256sum: 67b3a81bf4c395e9fc16e07f40f8a202aa8a8455e322eb3105e2c239a1f736fe
 
+Package: bluez5-utils
+Version: 5.79-r11
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: dbus, libglib2, readline
+License: GPL-2.0+, LGPL-2.1+
+Installed-Size: 4157440
+Description: bluez5_utils
+Filename: bluez5-utils_5.79-r11_kindlehf.ipk
+Size: 1616277
+SHA256sum: 51105a5cf63afd1e03e651adb2cdc243e1c1ecb1b7b66dc4dc3db13b65fffb15
+
 Package: brotli
 Version: 1.2.0-r4
 Architecture: kindlehf
@@ -230,7 +244,7 @@ Size: 99383
 SHA256sum: 72da4a39b48717617aa260aa7fa7b6889e9d5d35065aac99f48a3d4cea8733f8
 
 Package: eboard
-Version: 0.1.2-r8
+Version: 0.1.2-r10
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
@@ -239,9 +253,9 @@ Depends: python-pyqt5, python3, qt5-xcb, qt5declarative, xlib-libxdamage
 License: MIT
 Installed-Size: 81920
 Description: Shared Qt Quick keyboard and e-paper feedback
-Filename: eboard_0.1.2-r8_kindlehf.ipk
-Size: 16964
-SHA256sum: 1130a8e06213ba253173d3c40be77305dc55dddb51d45cd6382f86fbd0f47be4
+Filename: eboard_0.1.2-r10_kindlehf.ipk
+Size: 16961
+SHA256sum: 7a28330b7b8a9730aeae44f8355afb995b6b965b98df26d3e562d9e9c84dbe01
 
 Package: elfutils
 Version: 0.194-r4
@@ -258,7 +272,7 @@ Size: 1166408
 SHA256sum: 32d488b48479d4729a94405a20b82496ad6f189449dbd6514277aa95a38d4106
 
 Package: ereader-hal
-Version: 0.5.1-r10
+Version: 0.5.1-r12
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
@@ -267,9 +281,9 @@ Depends: python3 (>= 3.14)
 License: MIT
 Installed-Size: 368640
 Description: Kindle and Kobo hardware controls with Python bindings
-Filename: ereader-hal_0.5.1-r10_kindlehf.ipk
-Size: 149892
-SHA256sum: d81b41dd7e049aecda8f8216fcf782f45a3bd5d2939cbc0e47102799ead6c0d7
+Filename: ereader-hal_0.5.1-r12_kindlehf.ipk
+Size: 150783
+SHA256sum: 7a9da153962047639e2918c24744809e3280070917b0c6e122459b92211cf3e2
 
 Package: evemu
 Version: 2.7.0-r7
@@ -669,18 +683,18 @@ Size: 189700
 SHA256sum: 196f50dab4dbb4c990dea53016d30d3493dcca3ce4dffdb2ad8d17872c638ed3
 
 Package: k2
-Version: 0.2.0-r29
+Version: 0.2.0-r33
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: dejavu, eboard (>= 0.1.2-r8), ereader-hal (>= 0.5.1-r9), opkg (>= 0.7.0-r15), python-certifi, python-pyqt5, python3 (>= 3.14.7-r8), qt5-xcb, qt5quickcontrols2, qt5svg, toolchain-libstdcpp, xlib-libxdamage
+Depends: dejavu, eboard (>= 0.1.2-r10), ereader-hal (>= 0.5.1-r9), opkg (>= 0.7.0-r15), python-certifi, python-pyqt5, python3 (>= 3.14.7-r8), qt5-xcb, qt5quickcontrols2, qt5svg, toolchain-libstdcpp, xlib-libxdamage
 License: MIT
 Installed-Size: 1904640
 Description: k2 package and system manager
-Filename: k2_0.2.0-r29_kindlehf.ipk
-Size: 1154644
-SHA256sum: 895310653c2698488f49cd49e1f98963e82e771876a7507ece4d9fdabc80548a
+Filename: k2_0.2.0-r33_kindlehf.ipk
+Size: 1154636
+SHA256sum: 562530554519e4be7f104f3640bb47cab3a609060b7dfbd1c7ed9d38819ccb89
 
 Package: kindle-epub
 Version: 0.1.0+git.r12.b65b096-r1
@@ -781,18 +795,18 @@ Size: 48569
 SHA256sum: 0921bd3529147bcce6e958369363093bec2dfaca2ec40d53af135f6a3cb56e51
 
 Package: ktrmnl
-Version: 0.1.0-r1
+Version: 0.1.0-r4
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: eboard, ereader-hal (>= 0.5.1-r8), k2 (>= 0.2.0-r22), python-certifi, python-charset-normalizer, python-idna, python-requests, python-urllib3
+Depends: eboard (>= 0.1.2-r10), ereader-hal (>= 0.5.1-r8), k2 (>= 0.2.0-r33), python-certifi, python-charset-normalizer, python-idna, python-requests, python-urllib3
 License: Proprietary
-Installed-Size: 20264960
+Installed-Size: 20541440
 Description: TRMNL and image display for stock e-reader firmware
-Filename: ktrmnl_0.1.0-r1_kindlehf.ipk
-Size: 15695835
-SHA256sum: 5e508fe8ebe86a3f9c82211ae5487a7931690c24fdedd7d3aa497035bdb13f9f
+Filename: ktrmnl_0.1.0-r4_kindlehf.ipk
+Size: 15917619
+SHA256sum: 1c2ac9391b59b665defc40afd257a8ef2d56a260ec48df3d179c1b85827580e9
 
 Package: kuala
 Version: f00b4dbfd88d12d6d638010214fb8c847d59267e-r5
@@ -3511,18 +3525,18 @@ Size: 278705
 SHA256sum: 25c46a29186e488aba84f21b7212e935daa543d09694616f57ee73530ceed8f9
 
 Package: qt5base
-Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r13
+Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r14
 Architecture: kindlehf
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
 Depends: double-conversion, freetype, jpeg-turbo, libglib2 (>= 2.84.4-r4), libopenssl, libpng, pcre2 (>= 10.47-r4), sqlite, toolchain-libatomic, toolchain-libstdcpp, zlib-ng, zstd
 License: GPL-2.0+ or LGPL-3.0, GPL-3.0 with exception(tools), GFDL-1.3 (docs)
-Installed-Size: 22865920
+Installed-Size: 23142400
 Description: qt5base
-Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r13_kindlehf.ipk
-Size: 8598611
-SHA256sum: 80b9781db9d9b53024c65977e7561145e92383739835bd2b8ecd5f8d51f2c2a3
+Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r14_kindlehf.ipk
+Size: 8698461
+SHA256sum: fbe3e5ac46d37f006ca53c97f938ff64cfdfe1deed942c5426af9e21126dcde6
 
 Package: qt5declarative
 Version: 50c8def854806485d66aabcf6918e8b987032e55-r6

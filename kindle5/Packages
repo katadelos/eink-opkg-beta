@@ -258,18 +258,18 @@ Size: 1162548
 SHA256sum: 2603f5383d9cb0ace11203a5058e3bb88f3c69444a532b741ae1e1ce277585ac
 
 Package: ereader-hal
-Version: 0.5.1-r10
+Version: 0.5.1-r12
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
 Depends: python3 (>= 3.14)
 License: MIT
-Installed-Size: 358400
+Installed-Size: 368640
 Description: Kindle and Kobo hardware controls with Python bindings
-Filename: ereader-hal_0.5.1-r10_kindle5.ipk
-Size: 150764
-SHA256sum: 8a2aed4919855cc2124a7249fa04ae853c31488d3045e5b43757f5cd6d783ce4
+Filename: ereader-hal_0.5.1-r12_kindle5.ipk
+Size: 151346
+SHA256sum: 7571781b2c43a412c0e23a8c632aed768332bda5fcd8d00822c8aad4b2260bed
 
 Package: evemu
 Version: 2.7.0-r7
@@ -3455,7 +3455,7 @@ Size: 280679
 SHA256sum: 95ce8565cec86293209ffa52e692404d3a5d1faca48c2f4ef5fd405282de95be
 
 Package: qt5base
-Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r13
+Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r14
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -3464,9 +3464,9 @@ Depends: double-conversion, freetype, jpeg-turbo, libglib2 (>= 2.84.4-r4), libop
 License: GPL-2.0+ or LGPL-3.0, GPL-3.0 with exception(tools), GFDL-1.3 (docs)
 Installed-Size: 23152640
 Description: qt5base
-Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r13_kindle5.ipk
+Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r14_kindle5.ipk
 Size: 8713983
-SHA256sum: 2751022f343f94566f965f9777e3d567d93d52e85ee1a16fffcbc51735a77eb1
+SHA256sum: 0172cc8e805c1c051fcb00d483be0bbe43c9c32317fa2e855d5cd49826d97940
 
 Package: qt5declarative
 Version: 50c8def854806485d66aabcf6918e8b987032e55-r6
