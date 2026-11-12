@@ -3496,6 +3496,20 @@ Filename: python3_3.14.7-r11_kindlehf.ipk
 Size: 8994677
 SHA256sum: bb8b4d2616fa763af672460c7389fa0cecbf7161d8adfd8fa738ae170d3f1f39
 
+Package: qt5-ereader-platform
+Version: 0.1.0-r39
+Architecture: kindlehf
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: fbink, qt5base
+License: GPL-3.0
+Installed-Size: 327680
+Description: qt5-ereader-platform
+Filename: qt5-ereader-platform_0.1.0-r39_kindlehf.ipk
+Size: 114101
+SHA256sum: fa4a1a7846fe674105acc14af0bd1e6083f29f75aa5ac452c78da131ec5062fc
+
 Package: qt5-gtk
 Version: 5.15.14-r1
 Architecture: kindlehf

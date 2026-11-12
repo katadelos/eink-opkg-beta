@@ -3496,6 +3496,20 @@ Filename: python3_3.14.7-r11_kindlepw2.ipk
 Size: 8977147
 SHA256sum: 30bc189967ec4b27ae94558e4113c2b2d0ccde64406d1f29178d45880d1a81d9
 
+Package: qt5-ereader-platform
+Version: 0.1.0-r39
+Architecture: kindlepw2
+Maintainer: Kindle package maintainers
+Section: utils
+Priority: optional
+Depends: fbink, qt5base
+License: GPL-3.0
+Installed-Size: 327680
+Description: qt5-ereader-platform
+Filename: qt5-ereader-platform_0.1.0-r39_kindlepw2.ipk
+Size: 114140
+SHA256sum: 13e5afb4de10a28dc5b7c2157a7250ca3009ff7830122d2a10995c89784073fd
+
 Package: qt5-gtk
 Version: 5.15.14-r1
 Architecture: kindlepw2
