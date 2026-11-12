@@ -230,18 +230,18 @@ Size: 99842
 SHA256sum: 952ce8536f79b94b16651b4effe39c606c3035112743d64cb79051464bbdbe69
 
 Package: eboard
-Version: 0.1.2-r8
+Version: 0.1.2-r11
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: python-pyqt5, python3, qt5-kobo-platform (>= 0.1.0-r31), qt5declarative
+Depends: python-pyqt5, python3, qt5-ereader-platform (>= 0.1.0-r38), qt5-xcb, qt5declarative, xlib-libxdamage
 License: MIT
 Installed-Size: 81920
 Description: Shared Qt Quick keyboard and e-paper feedback
-Filename: eboard_0.1.2-r8_kindle5.ipk
-Size: 16974
-SHA256sum: 3817d278ba452ebb59bfb7737bd01501502c62c3a775bdffb1ce93f65684e8b9
+Filename: eboard_0.1.2-r11_kindle5.ipk
+Size: 16990
+SHA256sum: 60ede44d07236efbcd1b437f66369ef11cc126813644f88ce747a293b38109e4
 
 Package: elfutils
 Version: 0.194-r4
@@ -669,32 +669,32 @@ Size: 190492
 SHA256sum: a42183f75baef4e1f0c52a9baa98eba4b6b803c50e05874f14ac03761b11e13d
 
 Package: k2
-Version: 0.2.0-r29
+Version: 0.2.0-r34
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: dejavu, eboard (>= 0.1.2-r8), ereader-hal (>= 0.5.1-r9), opkg (>= 0.7.0-r15), python-certifi, python-pyqt5, python3 (>= 3.14.7-r8), qt5-kobo-platform (>= 0.1.0-r37), qt5quickcontrols2, qt5svg, toolchain-libstdcpp
+Depends: dejavu, eboard (>= 0.1.2-r10), ereader-hal (>= 0.5.1-r9), opkg (>= 0.7.0-r15), python-certifi, python-pyqt5, python3 (>= 3.14.7-r8), qt5-ereader-platform (>= 0.1.0-r38), qt5-xcb, qt5quickcontrols2, qt5svg, toolchain-libstdcpp, xlib-libxdamage
 License: MIT
 Installed-Size: 1904640
 Description: k2 package and system manager
-Filename: k2_0.2.0-r29_kindle5.ipk
-Size: 1154647
-SHA256sum: ca504b564e78266496b94fb03d63c71f87de1f4f5223a50c64fc719656ade079
+Filename: k2_0.2.0-r34_kindle5.ipk
+Size: 1154686
+SHA256sum: 8d459dd69cec386af93b7d10ab41a4ac950a9c146b2bcd5abb85f387abb8e40b
 
 Package: kindle-epub
-Version: 0.1.0+git.r12.b65b096-r1
+Version: 0.1.0+git.r12.b65b096-r2
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
 Depends: cjson, libxml2, libzip, sqlite (>= 3.31.0), toolchain-libstdcpp, zlib-ng
 License: Proprietary, BSD-3-Clause (libzip)
-Installed-Size: 1761280
+Installed-Size: 7557120
 Description: Native EPUB support for the stock Kindle reader
-Filename: kindle-epub_0.1.0+git.r12.b65b096-r1_kindle5.ipk
-Size: 746543
-SHA256sum: 214aa3747cee275d7a7ee16341c8f63dc1b42e1a1b785e492851734f34feb614
+Filename: kindle-epub_0.1.0+git.r12.b65b096-r2_kindle5.ipk
+Size: 3477262
+SHA256sum: 22eece7e10770b4948eea311f1105cbb6ba251c4cb97a55b5b3f2ce83bf65756
 
 Package: kindletool
 Version: 95291295e039a1a3bc0bc9d6040b07f640dae74a-r6
@@ -739,18 +739,18 @@ Size: 48586
 SHA256sum: dbfed09d9f8da70788316e5f0fabe9df68fb91c3ad9317d849c63bd191e86854
 
 Package: ktrmnl
-Version: 0.1.0-r1
+Version: 0.1.0-r5
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
-Depends: eboard, ereader-hal (>= 0.5.1-r8), k2 (>= 0.2.0-r22), python-certifi, python-charset-normalizer, python-idna, python-requests, python-urllib3
+Depends: eboard (>= 0.1.2-r10), ereader-hal (>= 0.5.1-r12), k2 (>= 0.2.0-r34), python-certifi, python-charset-normalizer, python-idna, python-requests, python-urllib3, qt5-ereader-platform (>= 0.1.0-r38), qt5base (>= 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r15)
 License: Proprietary
-Installed-Size: 20264960
+Installed-Size: 20541440
 Description: TRMNL and image display for stock e-reader firmware
-Filename: ktrmnl_0.1.0-r1_kindle5.ipk
-Size: 15695837
-SHA256sum: d3e202c33de0b3efbae558d0b1e63a2e5960697e026ae82b4e91d1a6b48d5cca
+Filename: ktrmnl_0.1.0-r5_kindle5.ipk
+Size: 15918955
+SHA256sum: e7c8efa36a7287345c2ab9f879e2ad3d8d701c4a1ba537282d9c26a460c411d1
 
 Package: less
 Version: 692-r4
@@ -3455,7 +3455,7 @@ Size: 280679
 SHA256sum: 95ce8565cec86293209ffa52e692404d3a5d1faca48c2f4ef5fd405282de95be
 
 Package: qt5base
-Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r14
+Version: 2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r15
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
@@ -3464,9 +3464,9 @@ Depends: double-conversion, freetype, jpeg-turbo, libglib2 (>= 2.84.4-r4), libop
 License: GPL-2.0+ or LGPL-3.0, GPL-3.0 with exception(tools), GFDL-1.3 (docs)
 Installed-Size: 23152640
 Description: qt5base
-Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r14_kindle5.ipk
-Size: 8713983
-SHA256sum: 0172cc8e805c1c051fcb00d483be0bbe43c9c32317fa2e855d5cd49826d97940
+Filename: qt5base_2b9835f5c9bcfe3105b60a8dd33c1db7d8611378-r15_kindle5.ipk
+Size: 8713863
+SHA256sum: da62f50509640680becb803e8a655231ecd2df6a941f51ce291862fa77703c60
 
 Package: qt5declarative
 Version: 50c8def854806485d66aabcf6918e8b987032e55-r6
@@ -3690,18 +3690,18 @@ Size: 860127
 SHA256sum: 40d1b0876a747da47f2f53915a5fad8daaa8280b814d9206be89a7b367e902ff
 
 Package: supernet
-Version: 0.1.0+git.r9.584ba5e-r2
+Version: 0.1.0+git.r9.584ba5e-r3
 Architecture: kindle5
 Maintainer: Kindle package maintainers
 Section: utils
 Priority: optional
 Depends: dropbear (>= 2026.93-r9)
 License: MIT
-Installed-Size: 71680
+Installed-Size: 81920
 Description: Optional SSH, ADB and developer controls for k2
-Filename: supernet_0.1.0+git.r9.584ba5e-r2_kindle5.ipk
-Size: 28649
-SHA256sum: 98b0e18b770738b16f712e9444b786fdf04d3dc278375a6faaee6b25ea4e3ca4
+Filename: supernet_0.1.0+git.r9.584ba5e-r3_kindle5.ipk
+Size: 29880
+SHA256sum: 16468347cc15fcd8900cd0f4fb725a3c2565ca2e774b0d1c0c76026b7ea23d82
 
 Package: tailscale
 Version: 1.78.1-r4
